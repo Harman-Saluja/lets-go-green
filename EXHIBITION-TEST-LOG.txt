@@ -1,0 +1,48 @@
+Exhibition review validation — 14 October 2026
+
+Production build and complete portable regression suite
+
+> lets-go-green@1.0.0 test
+> node scripts/test-production.mjs
+
+Production build succeeded: 102 static files → build/ (no transpilation or external build service).
+PASS: both scope filters; all 15 production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).
+PASS: Chemistry Lab main entry and contextual materials panels.
+PASS weighted scoring, missing-data normalization, directional changes, independent factors and all 10 alternatives. Starch: 77.98349220221266 → 80.27416788872895.
+PASS: motion code endpoints, increase/decrease/unchanged, reduced motion and comparison guard (mock animation API; not browser visual QA).
+PASS: score display and signed differences use one decimal; changed metrics reach correct endpoints.
+PASS: all six controlled tabs, desktop/mobile mascot positioning, spring endpoints and reduced motion (DOM harness).
+PASS: all 15 educational profiles; five industrial equations, molar masses, metrics, missing-data boundaries and responsive edits.
+PASS: exact five names/order, Dashboard-only placement, image build bytes, hover/touch/focus/Escape interactions (DOM harness); responsive/reduced-motion CSS declarations checked, not browser layout QA.
+PASS: journey removed; 15 comparison datasets; range endpoints/input; 12 persistent wheel selections, hover does not change selection, keyboard wrap; score increase/decrease/zero/missing/rapid updates and precision. DOM/clock harness, not visual browser QA.
+PASS: score continuity across tabs; bounded pointer tilt, exit reset and touch/reduced-motion suppression.
+PASS: factor selection and keyboard disclosure show the supplied engine explanation.
+PASS: twelve glass segments/reflections, bounded pointer light/reset, accessible selection retained; scoped spacing and plain-language markup checks. Visual appearance is not browser-tested.
+PASS: 15 simulator isolation/edit/reset/compare flows; invalid inputs, unchanged atom economy, stale baseline rejection; all subsection routes and back navigation; all referenced process stages; dropdown pointer/tap/keyboard/outside dismissal (mock DOM).
+PASS: 22 local CID/3D/SDF atom/bond records; exact-name identity and material fallbacks; all 22 industrial stages and presentation controls; 7 Atlas categories, source-coordinate anchors and full tour; Canvas projection/input/cleanup harness. Browser WebGL/visual/touch rendering NOT verified.
+PASS: 36 selectable regions (28+8), 50 historical districts, all 7 filters, regional selection/reset and India tour, sourced case links, 7 local flag assets, visible shared molecular controls. DOM harness, not real browser.
+PASS: 15 curated records + archive compatibility; 21 CID/structure/formula checks; all 15 five-scene cinema controls with clock/reduced-motion/visibility/cleanup harness; 36 sourced regions, 34 numerical records, year-isolated chart; 7 diagrams; independent World/India/MP tours (7/10/6 stops). Not browser visual QA.
+PASS: Part 1 legacy/canonical routes, five industrial selectors, all 36 complete boundary fits and bounded markers, honest better/worse/unchanged feedback, unchanged reaction dataset. DOM/data checks; no real-browser visual claim.
+PASS: Haber reactant/product atom counts; all 15 × 5 scenes dispatched into the 3D renderer API; finite model geometry; supported material representations; cleanup and removal of separate molecular entry. WebGL output not verified by this harness.
+PASS: 184 object/state combinations; four complete six-beat successes; eight distinct failure routes; all 12 character poses; desktop/mobile SVG; controller timers, delayed popups, retry/next, pause/resume, restart, pointer-drop/keyboard adapters, optional audio and exit cleanup. Browser visual/touch timing not verified.
+PASS: four cardinal elbows, shared artwork, rotation wrap, correct/wrong placement, installed connection validation, Level 1 completion.
+PASS: 10 material-specific waste journeys, 10 recovery processes, dedicated battery route, stage content/artwork, contamination feedback, and detailed prevention guides for all 50 Atlas records.
+PASS: 10 sourced field stories with four scoped narrative stages; eight distinct conceptual comparisons and valid related processes.
+PASS: eight material-specific comparison illustrations, distinct scenario labels and no measured-outcome claims.
+Full pass 1: all 10 demos passed (337 checks).
+Full pass 2: all 10 demos passed (337 checks).
+PASS: 791 checks; 10 complete case-study optimization loops.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+Supplemental Chromium production browser checks
+PASS browser: 10 journeys, 10 processes, sort/contamination guards, playback, map controls, future choices, comparison, Atlas solutions, mobile layout/reduced motion, wrong/correct pipe orientation and Level 1.
+PASS: seven-stop visitor tour, embedded interactions, replay/exit, moving process material, actual browser pointer drag/drop and Level 1 completion; no uncaught errors.
+PASS production browser: perspective/plan/keyboard/pointer/touch map; river choices; 40 story stages; 8 dragged comparisons; 150 sourced case panels; wrong-sort playback reset; actual 14-second transition and controlled 98-second tour; 320/390/768px layouts; reduced motion; exit cleanup.
+
+Production asset validation: 107 files, every file HTTP 200 and byte-identical; no broken local references.
+Isolated editable-ZIP npm ci and npm run build passed. All 107 rebuilt files match the production manifest.
+ZIP CRC, path layout, required source files, index.html at deployment root, exact byte equality and credential-pattern scan passed.

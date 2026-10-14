@@ -1,0 +1,671 @@
+{
+  "date": "2026-10-14",
+  "productionFiles": 107,
+  "allHTTP200AndExactBytes": true,
+  "brokenLocalReferences": [],
+  "preservedOriginalFiles": [
+    "src/engine.js",
+    "src/data.js",
+    "src/styles.css",
+    "src/workspace-tools.js",
+    "src/components/ui/anime-navbar.tsx"
+  ],
+  "assetManifest": [
+    {
+      "path": "app.js",
+      "bytes": 100494,
+      "sha256": "3f3f25510fd3c05185e240b335309a55a9117a38fa5c1e20f7589e68e2c0cbfb",
+      "http": 200
+    },
+    {
+      "path": "assets/country-anchors.json",
+      "bytes": 160,
+      "sha256": "df00f8e720c15cf7eca3153a564d68b408979d9625ce9b6b4be424902e41a12e",
+      "http": 200
+    },
+    {
+      "path": "assets/earth.json",
+      "bytes": 251701,
+      "sha256": "54b46eff26f4cdc3bfab768ac374b50f4070e98fffbf389a3ce0e22a2c3b5165",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/LICENSE",
+      "bytes": 1087,
+      "sha256": "8f1195d55a2fd315a07d812328470ca9ba2abb78c8d317ff19619d5125e00cea",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/au.svg",
+      "bytes": 1296,
+      "sha256": "cbb2206c5e59a25d79228306af973666a191e163f0ae337681f447977e6edb18",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/de.svg",
+      "bytes": 221,
+      "sha256": "efd480af5a154a7651f29da23ee0d09dbc892410fb4041898ddf8face336c575",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/gb.svg",
+      "bytes": 504,
+      "sha256": "c8be1e7208798a4ae692ee1e937065d498bb29e741943f6172b29118b8ed8066",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/gh.svg",
+      "bytes": 293,
+      "sha256": "53c55ca455293bceecfe6a5d6b12dc0bb670734c50bfd95cb21dc4ef12197405",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/in.svg",
+      "bytes": 1090,
+      "sha256": "91185efa1a9b52cdc0e470712518efeefc4e4d6a6555bae9de997ba71885bb98",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/jp.svg",
+      "bytes": 470,
+      "sha256": "bfea80baf9989383dc4bf7ca594ed95be0df0ff125bfc88d0bfa878eb0198022",
+      "http": 200
+    },
+    {
+      "path": "assets/flags/us.svg",
+      "bytes": 648,
+      "sha256": "e7be4240cf57987926673708f09233be1ab6bdf35acc7b86bd32a263f197a2a7",
+      "http": 200
+    },
+    {
+      "path": "assets/india-states-metadata.json",
+      "bytes": 1738,
+      "sha256": "c694a090b75394aa80214c04de4eb74325a9769fa128a317746d33bf193643d0",
+      "http": 200
+    },
+    {
+      "path": "assets/india-states.json",
+      "bytes": 4484764,
+      "sha256": "e9422a331659606b5be9c6808ee1f291d5ab353468095141075adcf45e3320f8",
+      "http": 200
+    },
+    {
+      "path": "assets/indore-district.json",
+      "bytes": 10472,
+      "sha256": "9502630738e245c3128c565770cc97d534b5def29a5e52b573b226c2d82c842e",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/1119.sdf",
+      "bytes": 1272,
+      "sha256": "94f0dd795a92d0c99c1dd1e6586db45b622718d50af8a5bb859668d3fb5e81b4",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/174.sdf",
+      "bytes": 1993,
+      "sha256": "531e06d1e3f5078d2b213af47be7173f5260d80dfafb693a206d57aa7b5fdd6f",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/176.sdf",
+      "bytes": 1830,
+      "sha256": "78cdfe15a93a20015550ea0e7e9de7a3bf3163d73926f7a0c7d72ea6da97feb0",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/222.sdf",
+      "bytes": 1304,
+      "sha256": "806bcd39ea0609512a8761d509fb70765cd5ac3a4584b620f5c841fd04bb622c",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/24682.sdf",
+      "bytes": 1385,
+      "sha256": "3bea597642d8406f83c3e779a120ded4a0951f2b25e3ce9af484c19f8684ff5d",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/280.sdf",
+      "bytes": 1224,
+      "sha256": "b3fc248424ff2817a8891541990a7bca449526d988a46204035bbb914d163ec1",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/281.sdf",
+      "bytes": 1107,
+      "sha256": "d39ba1b5316d9fbc7c45e5b092aa79d999d8ec4c02224fb8cdfd2b6b57ea253d",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/297.sdf",
+      "bytes": 1359,
+      "sha256": "b5f2219f80df129ed401c666f848f03792915ef5e75c2654f874db7f2f30c894",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/311.sdf",
+      "bytes": 3839,
+      "sha256": "26645b8b1dbab0e20289fa510266fad20ad0b62e5a756c010c5372f9574fe6ad",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/5793.sdf",
+      "bytes": 4037,
+      "sha256": "bc6cf23e76f1974225c4e204bf1c61c24883b602ae269e90bcf97d5ae34d11f4",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/5984.sdf",
+      "bytes": 4474,
+      "sha256": "d8ae3111297cc0bd15fdfd97fb900f906ccafc530196de448e2e2ea9f34d4e0c",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/5988.sdf",
+      "bytes": 6370,
+      "sha256": "0349203afb98af6c2493a7a2369ae3d9c4de9272a9e2c2763101d14d867c992b",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/6036.sdf",
+      "bytes": 3946,
+      "sha256": "252a7b16fab3d78f99459109ff9b01fcec04dabe8c41f28ffba9c664bbeb3288",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/612.sdf",
+      "bytes": 2377,
+      "sha256": "9b8f56246d6bd49e7a48fb1561ca48c6e0cb9e77f36ac1a3b1414f4a3248a262",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/6134.sdf",
+      "bytes": 7384,
+      "sha256": "4e3b997042ef91a2a05223377c64da1573dfd937d23914208d3a7fcacbe8ada5",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/702.sdf",
+      "bytes": 1832,
+      "sha256": "4bb700444108590782319f7682749b204cb9ae28ffe15f5fa0863c89335fccd5",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/7489.sdf",
+      "bytes": 3528,
+      "sha256": "4d6eb60bc5147319584045cb6ef07278abc28970c1660247e6f99f21a2e60b39",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/783.sdf",
+      "bytes": 1650,
+      "sha256": "1a4c25266ad410f42860d3f3cd3e65e1dea5ab23699a1bb2a8fd674d0c7bc10e",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/8857.sdf",
+      "bytes": 2473,
+      "sha256": "8ebd917e84aaec5f55f9c73a8f39fabafa5108549c5d0e92787930227d95069f",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/887.sdf",
+      "bytes": 1541,
+      "sha256": "304b8f1ebcd37ad1ed232c5f5e31a48305beceef39feafc592dd9ef4993f8418",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/947.sdf",
+      "bytes": 1077,
+      "sha256": "135b37307b5d55741bfdecae6aa535db52e30f6015cc5ad5a504210474534dfe",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/962.sdf",
+      "bytes": 1220,
+      "sha256": "c098ce4b351a55f0448a79360d72b782514432a9bc8a931aa82ab16756729376",
+      "http": 200
+    },
+    {
+      "path": "assets/molecules/977.sdf",
+      "bytes": 1077,
+      "sha256": "74dabeb9738e4603716c8f62aaf91b8a06a710dc1d207d97770c01578bd8a2da",
+      "http": 200
+    },
+    {
+      "path": "assets/mp-districts-metadata.json",
+      "bytes": 1767,
+      "sha256": "facae06e1656838ebcbd6fc9198cdba8dd568ca2aec19d69759b3263a1511962",
+      "http": 200
+    },
+    {
+      "path": "assets/mp-districts.json",
+      "bytes": 758938,
+      "sha256": "061c6cbcdae34478630d23b4808c085ea55d80b0b6d42302ee14ca25b884579f",
+      "http": 200
+    },
+    {
+      "path": "assets/science-provenance.json",
+      "bytes": 1254,
+      "sha256": "8f4dee55c238cc792114a1485612c8d14b04f4a7335d19e66d2424b78d985b45",
+      "http": 200
+    },
+    {
+      "path": "atlas-content.js",
+      "bytes": 10377,
+      "sha256": "ac6f9da0d0a9be8d7626ed9f6b1ddd78e0606e0933f7530832097861a5818698",
+      "http": 200
+    },
+    {
+      "path": "atlas-globe.js",
+      "bytes": 6168,
+      "sha256": "199d2fce39a89ae9bda95253065e19df7c22b58f3adde674ce581eb869c13748",
+      "http": 200
+    },
+    {
+      "path": "atlas-national-data.js",
+      "bytes": 14856,
+      "sha256": "8e8d47f9b40c48f9b08a2fe4b7d871b070d748d31f719c0c80482eaa2f56e5f6",
+      "http": 200
+    },
+    {
+      "path": "atlas-regions.js",
+      "bytes": 6431,
+      "sha256": "2466fe32fbc1bcdc7c4441af659bf76277816d1374879c8127a991bc331f446b",
+      "http": 200
+    },
+    {
+      "path": "case-solutions.js",
+      "bytes": 11618,
+      "sha256": "a66fe5edc0f1a4ca6c5470357096da2ed7019fe53afe47d85a6afb263fe05571",
+      "http": 200
+    },
+    {
+      "path": "cinema-premium.css",
+      "bytes": 962,
+      "sha256": "7a3bc2f5359c29afb05095405cdbdc3b7e07e25ad8516d2937a418ac6939b726",
+      "http": 200
+    },
+    {
+      "path": "cinema-stage-model.js",
+      "bytes": 2185,
+      "sha256": "43ba73ab34ef6feb9eb504e98f26cd5c75d4d792e339fb7edcbb2927c1e12174",
+      "http": 200
+    },
+    {
+      "path": "cinema-stage.css",
+      "bytes": 1105,
+      "sha256": "b1ff87190a1703b473b2ee4bed66e5ab958f9f949f7535a919c85e7e393b45af",
+      "http": 200
+    },
+    {
+      "path": "cinema-stage.html",
+      "bytes": 737,
+      "sha256": "4819f1eab2e40159e56954e4e035df9ce8d45943ef16fe923e9c5ea544a2e6f8",
+      "http": 200
+    },
+    {
+      "path": "cinema-stage.js",
+      "bytes": 5750,
+      "sha256": "bbbf5b078f2b220f0dd19d2d8d00aa167e529e683e0e6c5a6a60bf2e49a053d1",
+      "http": 200
+    },
+    {
+      "path": "components/ui/anime-navbar.js",
+      "bytes": 2569,
+      "sha256": "048d1615abcd38024cebf1b3ebbd30782fa3bf949673347197e9f87890adabb2",
+      "http": 200
+    },
+    {
+      "path": "data.js",
+      "bytes": 51814,
+      "sha256": "c09f5127069fa918b896ca5f81ea48ea13f77a3c966d888a1d5bbe0d3070553b",
+      "http": 200
+    },
+    {
+      "path": "engine.js",
+      "bytes": 25164,
+      "sha256": "d55721f86cca43202eac38c007097def8e1aeab2a28d0f31814e316fdac985a2",
+      "http": 200
+    },
+    {
+      "path": "environment-stories.js",
+      "bytes": 13218,
+      "sha256": "b6c5a2feb39ee06a217ea3d3cead29cff038b82d41b8a245bcd0f44429b3d95a",
+      "http": 200
+    },
+    {
+      "path": "exhibition-data.js",
+      "bytes": 23375,
+      "sha256": "a22bfcee4ce65e5ed78bd199cfa9ce7921395a80436522ff9d292255af16362b",
+      "http": 200
+    },
+    {
+      "path": "exhibition-polish.css",
+      "bytes": 4012,
+      "sha256": "c508571c682b98262b4ffb11073d963a3fb3f94aff93e0d716bd86d5de07dbc4",
+      "http": 200
+    },
+    {
+      "path": "experience-controls.js",
+      "bytes": 3890,
+      "sha256": "1ffd58573199d8a399b47130bb08cccbe1427a73ba810a69f878767ca985660d",
+      "http": 200
+    },
+    {
+      "path": "experiences.css",
+      "bytes": 4805,
+      "sha256": "2c2696bebfc7f7b7a0a365116a11f1378f48f42b9ac0bd3c0f9323da74737963",
+      "http": 200
+    },
+    {
+      "path": "experiences.js",
+      "bytes": 11112,
+      "sha256": "3f59c2b4a11a319ca03da1fb6b6cc825212d1c2fbdde8711f8c0fa56c5eaece0",
+      "http": 200
+    },
+    {
+      "path": "fonts/dmsans-OFL.txt",
+      "bytes": 4482,
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-0.ttf",
+      "bytes": 48280,
+      "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-1.ttf",
+      "bytes": 48308,
+      "sha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-2.ttf",
+      "bytes": 48280,
+      "sha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-3.ttf",
+      "bytes": 48200,
+      "sha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-4.ttf",
+      "bytes": 94972,
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-5.ttf",
+      "bytes": 95060,
+      "sha256": "f433e5d333be1128d8ec8a28b8aadd0314d10e14e4105406076666bc830fc15d",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-6.ttf",
+      "bytes": 95096,
+      "sha256": "6bad1a774228464cc88b8b0271555b266f7a3c64a7bedf15e165fdab4f6ac0ce",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-7.ttf",
+      "bytes": 94928,
+      "sha256": "b9584e099e0e7f1e1e914c3037aabb9010c50346a3ce8df5eeeeecc0563044d8",
+      "http": 200
+    },
+    {
+      "path": "fonts/font-8.ttf",
+      "bytes": 95688,
+      "sha256": "b8f802f05b322a7345805f5b89f8bb976604cc719a91530918d5ce3c47160950",
+      "http": 200
+    },
+    {
+      "path": "fonts/fonts.css",
+      "bytes": 1332,
+      "sha256": "28ae28c2cec9a0b6df018761642dfde15e6ae1d1fab94db2b38f1b59276ff0dc",
+      "http": 200
+    },
+    {
+      "path": "fonts/manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "http": 200
+    },
+    {
+      "path": "green-rescue-art.js",
+      "bytes": 19802,
+      "sha256": "8915e5f3174c43d1e0e782e862354a209838894766df199cada87b20879493e5",
+      "http": 200
+    },
+    {
+      "path": "green-rescue-dialog.js",
+      "bytes": 1043,
+      "sha256": "20efce3880ad60229839a836049b7e6addfe83a86c863b5f27c22a7f70a44d44",
+      "http": 200
+    },
+    {
+      "path": "green-rescue-state.js",
+      "bytes": 7990,
+      "sha256": "83e9bf9b66444dbe2329f6f312facfdf7c412d56f58ddfda218e7bd76f5cb8cf",
+      "http": 200
+    },
+    {
+      "path": "green-rescue.css",
+      "bytes": 14424,
+      "sha256": "39f8513648ff5acc5c8428fefcf276d39227579173e0f3b38cea1dd2295a32ae",
+      "http": 200
+    },
+    {
+      "path": "green-rescue.html",
+      "bytes": 358,
+      "sha256": "864a28594a5363d363c03f9060590cf3df8afef78af3a4056d3c22abd1fb7210",
+      "http": 200
+    },
+    {
+      "path": "green-rescue.js",
+      "bytes": 9804,
+      "sha256": "3d4f178853a618622b95230ba4239100ca959de02a7d65f695946d1991dc5095",
+      "http": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 1610,
+      "sha256": "d1e1bc691dfd1ade66ca71e4f04f75b629c9e083b7e207b966692143a46ac57c",
+      "http": 200
+    },
+    {
+      "path": "indore-comparisons.js",
+      "bytes": 7225,
+      "sha256": "eec332b5eabcfc65325163aa7bf34b06bc1b848e01fc3ffd476ff3d1dc3e8c1a",
+      "http": 200
+    },
+    {
+      "path": "indore-explorer.js",
+      "bytes": 28163,
+      "sha256": "bb56ae131b699f79c6d610ab9bd8babe58369820741dcb56f86b639c987eddda",
+      "http": 200
+    },
+    {
+      "path": "indore.css",
+      "bytes": 20670,
+      "sha256": "85a4775ff42972f725fd812efa28d3620d090a94a8f4faae045d6cce4688ed40",
+      "http": 200
+    },
+    {
+      "path": "molecular-frame.html",
+      "bytes": 995,
+      "sha256": "ba5994f718cad2b9a1cb24394934132e6f708faaf58e76fbc08499a635aad3e6",
+      "http": 200
+    },
+    {
+      "path": "molecular-frame.js",
+      "bytes": 1981,
+      "sha256": "88c387b57e5997cd6c61a4f66ba56b02f7ced776ececa0151e87194808541950",
+      "http": 200
+    },
+    {
+      "path": "part-1.css",
+      "bytes": 1979,
+      "sha256": "5b1aaf642324a96acb91b2e8bc799b64bd699cb9df10a12746cf32b2e5e8d6c8",
+      "http": 200
+    },
+    {
+      "path": "pipe-model.js",
+      "bytes": 662,
+      "sha256": "a181588c680f9bd7b00d9eb60982e47326a4f6be1be135f0cd6140fa65129a27",
+      "http": 200
+    },
+    {
+      "path": "platform-2.css",
+      "bytes": 3411,
+      "sha256": "7752a1da53858cae190b2a729c78f51e009307acf594fee1f75507804cf49018",
+      "http": 200
+    },
+    {
+      "path": "reaction-cinema.js",
+      "bytes": 11835,
+      "sha256": "2e0656137b34ea74606b2f1b253e15d72610e395abcb96c36b6f26a29c858449",
+      "http": 200
+    },
+    {
+      "path": "resource-art.js",
+      "bytes": 7133,
+      "sha256": "966dc56e3c3e77c936fe78369cd7fd9dc6e110d7f92329a8346d749bfce39e1e",
+      "http": 200
+    },
+    {
+      "path": "resource-data.js",
+      "bytes": 17947,
+      "sha256": "2436d3e9a528e06ded385670aed7712e295f8584046c0e95b9af71f80c40459d",
+      "http": 200
+    },
+    {
+      "path": "resource-player.js",
+      "bytes": 7587,
+      "sha256": "c71d1e1c04b3cca425b22661fee94938d3c81e4fe646981c000380050d84fb79",
+      "http": 200
+    },
+    {
+      "path": "science-controls.js",
+      "bytes": 16701,
+      "sha256": "7d370eb4001f016af1277f86f3ab998391a04b98e6cad3244adff8a38674398c",
+      "http": 200
+    },
+    {
+      "path": "science-data.js",
+      "bytes": 14319,
+      "sha256": "83fb93aeb421a2db3750845ab7fec39d02e98b244cd788a8268638359ef0dbaf",
+      "http": 200
+    },
+    {
+      "path": "science-upgrade.css",
+      "bytes": 3547,
+      "sha256": "4cec864f8b998519b571f877b815eecc9fcc49caa402f90823ddb228ee04ce6e",
+      "http": 200
+    },
+    {
+      "path": "science-views.js",
+      "bytes": 5527,
+      "sha256": "826b43038e2ffcfee78ac7aadb651805d2e57a09e15d0242191059e903abcccd",
+      "http": 200
+    },
+    {
+      "path": "styles.css",
+      "bytes": 38043,
+      "sha256": "fd1a055232dabfc2cc0d1618e68d79342f2eac4fb2920f484e5d0f4e3bb26e19",
+      "http": 200
+    },
+    {
+      "path": "team/dipanshu.jpeg",
+      "bytes": 735773,
+      "sha256": "e9a0ae9f2ba7ed749672afe773b27274ebc7dd385fd0e47330c65aa7f7c5a862",
+      "http": 200
+    },
+    {
+      "path": "team/disha.jpeg",
+      "bytes": 71616,
+      "sha256": "69ea7441d7d7f1d337a74e994e82ac2f221687efec718b8f481bdb9210291463",
+      "http": 200
+    },
+    {
+      "path": "team/durgesh.jpeg",
+      "bytes": 33267,
+      "sha256": "7273f170606d3cd958986f70a02c9ee9a3237be4bf516b4811413b8b5f3a5446",
+      "http": 200
+    },
+    {
+      "path": "team/harman.jpeg",
+      "bytes": 739701,
+      "sha256": "2f105362b5b48eff5b31b9537952ddef723775e7292cc2c1721eea37f6e5462f",
+      "http": 200
+    },
+    {
+      "path": "team/harsh.jpeg",
+      "bytes": 122439,
+      "sha256": "50e8518f9bb760376b039ae10c46ba097f975d2eedd895c9356e69099f16eaee",
+      "http": 200
+    },
+    {
+      "path": "team.css",
+      "bytes": 2543,
+      "sha256": "8ceca59efe04ff8ddda82a246334230cfdcd7169a046bfc8ed161e6628f3bfc7",
+      "http": 200
+    },
+    {
+      "path": "team.js",
+      "bytes": 1491,
+      "sha256": "ae45a4d7bbef964189daa963abb5dc2278e4617dbe498c9e7cae004121d91ac7",
+      "http": 200
+    },
+    {
+      "path": "vendor/3Dmol-LICENSE.txt",
+      "bytes": 4283,
+      "sha256": "4c6eaaed856f3f28a3b1a98e74f4a8a71618de7d51ea4155c29f6f793bcef861",
+      "http": 200
+    },
+    {
+      "path": "vendor/3Dmol-min.js",
+      "bytes": 545215,
+      "sha256": "4ab374e1830bccec950b280fd285a430e05e91bd13c9ef0097c611c66de6cb36",
+      "http": 200
+    },
+    {
+      "path": "workspace-nav.js",
+      "bytes": 2360,
+      "sha256": "52a0af74e6cc24077b8ff3e4feef2fb0af535f166b8298b126780d282120de79",
+      "http": 200
+    },
+    {
+      "path": "workspace-tools.css",
+      "bytes": 3791,
+      "sha256": "6c6cf6a9c482bc5b99b5ced55c2315b6e9d0295d40bba8a049aee99dff980c38",
+      "http": 200
+    },
+    {
+      "path": "workspace-tools.js",
+      "bytes": 9731,
+      "sha256": "e3216077a4972f502e82c460a7cf7f7102429367806a0a5f5beb3e92003370df",
+      "http": 200
+    }
+  ],
+  "scope": "Local production server, no deployment or external source verification.",
+  "editableZipFreshInstall": "npm ci --ignore-scripts --no-audit --no-fund passed in an isolated extracted directory",
+  "editableZipRebuild": "npm run build passed; all 107 rebuilt files exactly match production manifest",
+  "browserChecks": [
+    "PASS browser: 10 journeys, 10 processes, sort/contamination guards, playback, map controls, future choices, comparison, Atlas solutions, mobile layout/reduced motion, wrong/correct pipe orientation and Level 1.",
+    "PASS: seven-stop visitor tour, embedded interactions, replay/exit, moving process material, actual browser pointer drag/drop and Level 1 completion; no uncaught errors.",
+    "PASS production browser: perspective/plan/keyboard/pointer/touch map; river choices; 40 story stages; 8 dragged comparisons; 150 sourced case panels; wrong-sort playback reset; actual 14-second transition and controlled 98-second tour; 320/390/768px layouts; reduced motion; exit cleanup."
+  ],
+  "portableRegression": "npm test passed, including 791 chemistry checks and 184 game object/state combinations",
+  "archiveChecks": {
+    "sourceRoot": "src/, scripts/, public/, package.json, package-lock.json, netlify.toml and test baseline fixtures",
+    "deploymentRoot": "index.html and all 107 production files",
+    "integrity": "CRC and exact-byte comparisons passed; no .git, dependencies or credential-pattern matches in source package"
+  }
+}

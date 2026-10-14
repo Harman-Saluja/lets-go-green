@@ -1,0 +1,52 @@
+// Optional Chromium CDP checks; see EXHIBITION-DELIVERY.md for setup.
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const page=(await (await fetch((process.env.CDP_URL||'http://127.0.0.1:9222')+'/json/list')).json()).find(p=>p.type==='page');
+const ws=new WebSocket(page.webSocketDebuggerUrl);await new Promise(r=>ws.onopen=r);let seq=0;const pending=new Map(),errors=[];
+ws.onmessage=e=>{let x=JSON.parse(e.data);if(x.id){const p=pending.get(x.id);pending.delete(x.id);x.error?p.reject(x.error):p.resolve(x.result);}else if(x.method==='Runtime.exceptionThrown')errors.push(x.params.exceptionDetails);};
+const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
+const until=async expression=>{for(let i=0;i<100;i++){if(await evaluate(expression))return;await new Promise(r=>setTimeout(r,100));}throw Error('Timed out: '+expression);};
+const click=async selector=>{await until(`!!document.querySelector(${JSON.stringify(selector)})`);await evaluate(`document.querySelector(${JSON.stringify(selector)}).dispatchEvent(new MouseEvent('click',{bubbles:true}))`);};
+const shot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
+await send('Runtime.enable');await send('Page.enable');await send('Emulation.setEmulatedMedia',{features:[]});
+await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
+await send('Page.navigate',{url:(process.env.SITE_URL||'http://127.0.0.1:4174')+'/?browser-check='+Date.now()+'#/dashboard'});await until("document.querySelector('[data-action=indore]')");
+await click('[data-action=indore][data-section=city]');await until("document.querySelector('indore-explorer [data-indore-map]')");
+assert.equal(await evaluate("document.querySelector('impact-atlas').classList.contains('atlas-indore-open')"),true);
+await shot('indore-desktop');
+await click('[data-indore=zoom][data-delta=".25"]');assert.equal(await evaluate("document.querySelector('[data-map-zoom]').textContent"),'1.3×');
+await click('[data-indore=reset]');
+await click('[data-indore=story][data-step="2"]');assert.equal(await evaluate("document.querySelector('indore-explorer').story"),2);
+await click('[data-indore=tab][data-tab=journeys]');
+const items=await evaluate("[...document.querySelectorAll('[data-rp=choose]')].map(b=>b.dataset.id)");assert.equal(items.length,10);
+for(const id of items){
+ await click(`[data-rp=choose][data-id="${id}"]`);
+ const bin=await evaluate("document.querySelector('resource-player').item.sort");
+ await click('[data-rp=next]');assert.equal(await evaluate("document.querySelector('resource-player').step"),0);
+ await click(`[data-rp=sort][data-bin="${bin==='special'?'dry':'special'}"]`);assert.equal(await evaluate("document.querySelector('resource-player').sorted"),false);
+ await click(`[data-rp=sort][data-bin="${bin}"]`);
+ await click('[data-rp=next]');assert.equal(await evaluate("document.querySelector('resource-player').step"),1);
+ await click('[data-rp=contamination]');await click('[data-rp=next]');assert.equal(await evaluate("document.querySelector('resource-player').step"),1);
+ await click('[data-rp=contamination]');
+ const count=await evaluate("document.querySelector('resource-player').process.stages.length");
+ for(let i=2;i<count;i++)await click('[data-rp=next]');
+ assert.equal(await evaluate("document.querySelector('resource-player').step"),count-1);
+ await click('[data-rp=replay]');assert.equal(await evaluate("document.querySelector('resource-player').step"),0);
+}
+await click('[data-rp=choose][data-id=vegetables]');await click('[data-rp=sort][data-bin=organics]');await click('[data-rp=play]');await until("document.querySelector('resource-player').step>0");await click('[data-rp=play]');assert.equal(await evaluate("document.querySelector('resource-player').playing"),false);await shot('journey-desktop');
+await click('[data-indore=tab][data-tab=processes]');const processes=await evaluate("[...document.querySelectorAll('[data-rp=choose]')].map(b=>b.dataset.id)");assert.equal(processes.length,10);
+for(const id of processes){await click(`[data-rp=choose][data-id="${id}"]`);const count=await evaluate("document.querySelector('resource-player').process.stages.length");for(let i=1;i<count;i++)await click('[data-rp=next]');assert.equal(await evaluate("document.querySelector('resource-player').step"),count-1);}
+await click('[data-indore=tab][data-tab=future]');for(const key of ['water','green','segregation'])await click(`[data-indore=future][data-key="${key}"]`);assert.equal(await evaluate("document.querySelector('indore-explorer').choices.length"),3);await shot('future-desktop');
+await click('[data-indore=tab][data-tab=compare]');await evaluate("document.querySelector('[data-indore-compare]').value=80;document.querySelector('[data-indore-compare]').dispatchEvent(new Event('input',{bubbles:true}))");assert.equal(await evaluate("document.querySelector('indore-explorer').compare"),80);
+await click('[data-indore=exit]');await click('[data-atlas-case=plastics-us]');await until("document.querySelector('case-solutions button')");await click('[data-solution-step="1"]');assert.match(await evaluate("document.querySelector('case-solutions').textContent"),/deposit/);
+await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await click('[data-open-indore]');await until("document.querySelector('indore-explorer')");await shot('indore-mobile');
+await click('[data-indore=tab][data-tab=journeys]');await evaluate("document.querySelector('resource-player').scrollIntoView({block:'start'})");await shot('journey-mobile');assert.equal(await evaluate('document.documentElement.scrollWidth'),390);
+await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await click('[data-rp=sort][data-bin=organics]');await click('[data-rp=play]');assert.equal(await evaluate("document.querySelector('resource-player').playing"),false);
+await send('Page.navigate',{url:(process.env.SITE_URL||'http://127.0.0.1:4174')+'/green-rescue.html'});await until("document.querySelector('[data-control=start]')");await click('[data-control=start]');await click('[data-control=begin]');
+await click('[data-control=rotate-pipe]');await click('[data-object=pipe]');await click('[data-object=socket]');await until("document.querySelector('[data-control=retry]')");await click('[data-control=retry]');for(let i=0;i<3;i++)await click('[data-control=rotate-pipe]');await click('[data-object=pipe]');await click('[data-object=socket]');await until("!document.querySelector('[data-object=pipe]') && document.querySelector('[data-object=treatment]').getAttribute('aria-disabled')==='false'");
+const overlap=await evaluate("(()=>{const a=document.querySelector('.action-hint').getBoundingClientRect(),b=document.querySelector('[data-object=tap]').getBoundingClientRect();return a.top<b.bottom&&a.bottom>b.top})()");assert.equal(overlap,false);
+await shot('pipe-fixed-mobile');await click('[data-object=treatment]');await until("document.querySelector('[data-object=tap]').getAttribute('aria-disabled')==='false'");await click('[data-object=tap]');await until("document.querySelector('[data-control=next]')");
+assert.equal(errors.length,0,JSON.stringify(errors));
+await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/resource-browser-results.json',JSON.stringify({items,processes,exceptions:errors,pipe:'wrong orientation rejected; corrected orientation completes Level 1',mobile:'390px, no page overflow, hint does not overlap tap',scope:'Chromium real DOM/UI click-event tests; not a physical touch or audio test'},null,2));
+console.log('PASS browser: 10 journeys, 10 processes, sort/contamination guards, playback, map controls, future choices, comparison, Atlas solutions, mobile layout/reduced motion, wrong/correct pipe orientation and Level 1.');ws.close();

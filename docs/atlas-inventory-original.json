@@ -1,0 +1,1387 @@
+{
+  "coverage": [
+    {
+      "category": "Plastic Waste",
+      "world": 1,
+      "india": 36,
+      "mp": 0
+    },
+    {
+      "category": "Water Pollution",
+      "world": 1,
+      "india": 4,
+      "mp": 4
+    },
+    {
+      "category": "Air Pollution",
+      "world": 1,
+      "india": 2,
+      "mp": 1
+    },
+    {
+      "category": "Industrial and Hazardous Waste",
+      "world": 1,
+      "india": 0,
+      "mp": 0
+    },
+    {
+      "category": "Electronic Waste",
+      "world": 2,
+      "india": 0,
+      "mp": 0
+    },
+    {
+      "category": "Carbon / Greenhouse-Gas Emissions",
+      "world": 1,
+      "india": 0,
+      "mp": 0
+    },
+    {
+      "category": "Soil Contamination",
+      "world": 0,
+      "india": 1,
+      "mp": 1
+    }
+  ],
+  "cases": [
+    {
+      "id": "plastics-us",
+      "category": 0,
+      "country": "United States of America",
+      "coordinates": [
+        -97.482602,
+        39.538479
+      ],
+      "location": "United States · plastic waste prevention",
+      "period": "EPA background page; accessed 10 Oct 2026",
+      "source": "https://www.epa.gov/plastics/about-plastic-products-and-plastic-pollution",
+      "type": "Educational case study",
+      "problem": "Discarded plastic can enter land and water environments.",
+      "cause": "Product use, disposal and waste-management gaps contribute to releases.",
+      "importance": "Persistent plastic waste can affect ecosystems.",
+      "connection": "Prevention and safer material design consider the whole product life cycle.",
+      "improvement": "Reduce unnecessary plastic use and design products for reuse and practical recovery.",
+      "principle": 0
+    },
+    {
+      "id": "minamata",
+      "category": 1,
+      "country": "Japan",
+      "coordinates": [
+        138.44217,
+        36.142538
+      ],
+      "location": "Minamata, Japan · historical mercury pollution",
+      "period": "Official historical account, 2002; accessed 10 Oct 2026",
+      "source": "https://www.env.go.jp/en/chemi/hs/minamata2002/summary.html",
+      "type": "Documented historical contamination",
+      "problem": "Industrial methylmercury contamination entered the local food chain.",
+      "cause": "Contaminated factory wastewater reached the surrounding waters.",
+      "importance": "Eating contaminated seafood caused serious harm to health.",
+      "connection": "Less hazardous synthesis and pollution prevention seek to avoid hazardous releases.",
+      "improvement": "Prevent mercury releases and evaluate safer processes; existing contamination still requires management.",
+      "principle": 2
+    },
+    {
+      "id": "london-smog",
+      "category": 2,
+      "country": "United Kingdom",
+      "coordinates": [
+        -2.116346,
+        54.402739
+      ],
+      "location": "London, UK · Great Smog of 1952",
+      "period": "December 1952; Met Office history accessed 10 Oct 2026",
+      "source": "https://weather.metoffice.gov.uk/learn-about/weather/case-studies/great-smog",
+      "type": "Documented historical air-pollution episode",
+      "problem": "Smoke and fog accumulated during a severe pollution episode.",
+      "cause": "Coal combustion, including domestic and industrial sources, combined with weather that trapped pollution.",
+      "importance": "The polluted air harmed people’s health.",
+      "connection": "Energy efficiency and safer processes can reduce combustion-related burdens.",
+      "improvement": "Reduce avoidable fuel use and assess cleaner energy sources alongside emission controls.",
+      "principle": 5
+    },
+    {
+      "id": "love-canal",
+      "category": 3,
+      "country": "United States of America",
+      "coordinates": [
+        -97.482602,
+        39.538479
+      ],
+      "location": "Love Canal, Niagara Falls, USA",
+      "period": "EPA retrospective, 6 Aug 2018; historical disposal and cleanup",
+      "source": "https://www.epa.gov/archive/epa/newsreleases/love-canal-revealed-national-problem-superfund-provided-solution.html",
+      "type": "Documented contamination and remediation case",
+      "problem": "Buried chemical waste contaminated groundwater and affected a nearby community.",
+      "cause": "Hazardous waste disposal created a long-lived contamination problem.",
+      "importance": "The case shows why disposal risks extend beyond the factory.",
+      "connection": "Waste prevention is preferable to managing hazardous residues after they form.",
+      "improvement": "Reduce hazardous waste at source; containment and monitoring remain important for existing sites.",
+      "principle": 0
+    },
+    {
+      "id": "ghana-ewaste",
+      "category": 4,
+      "country": "Ghana",
+      "coordinates": [
+        -1.036941,
+        7.717639
+      ],
+      "location": "Agbogbloshie, Ghana · documented e-waste practices",
+      "period": "WHO account, 29 Aug 2024; historical site example",
+      "source": "https://www.who.int/news-room/facts-in-pictures/detail/e-waste-and-child-health",
+      "type": "Documented educational case study",
+      "problem": "Unsafe e-waste processing can release harmful substances.",
+      "cause": "Open burning and poorly controlled recovery expose people and the environment.",
+      "importance": "Workers and nearby children can be exposed to toxic substances.",
+      "connection": "Safer product design and controlled material recovery can reduce risks.",
+      "improvement": "Use formal collection and safer recovery systems; avoid uncontrolled burning.",
+      "principle": 3
+    },
+    {
+      "id": "australia-hfc",
+      "category": 5,
+      "country": "Australia",
+      "location": "Australia · HFC phase-down",
+      "period": "DCCEEW programme page, accessed 10 October 2026",
+      "source": "https://www.dcceew.gov.au/environment/protection/ozone/hfc-phase-down",
+      "type": "Documented refrigerant policy, not an emissions inventory",
+      "problem": "Australia limits bulk HFC imports through a gradual phase-down.",
+      "cause": "HFC refrigerants can contribute to warming when released.",
+      "importance": "Refrigerant choice, containment and equipment efficiency affect climate impacts.",
+      "connection": "Design safer chemicals and assess substitutes over their life cycle.",
+      "improvement": "Evaluate lower-global-warming-potential alternatives with safety, equipment compatibility and energy use.",
+      "principle": 3,
+      "iso": "au",
+      "coordinates": [
+        134.04972,
+        -24.129522
+      ]
+    },
+    {
+      "id": "germany-ewaste",
+      "category": 4,
+      "country": "Germany",
+      "location": "Germany · separate e-waste collection",
+      "period": "German Environment Agency guidance, accessed 10 October 2026",
+      "source": "https://www.umweltbundesamt.de/en/topics/waste-resources/product-stewardship-waste-management/electrical-electronic-waste",
+      "type": "Documented resource-recovery system",
+      "problem": "Discarded electronics contain both recoverable materials and components requiring controlled treatment.",
+      "cause": "Mixed disposal makes recovery and pollutant separation harder.",
+      "importance": "Separate collection supports recovery and safe handling.",
+      "connection": "Design for reuse and recovery while reducing hazardous material use.",
+      "improvement": "Use suitable collection and treatment systems; prevent waste through longer product life.",
+      "principle": 0,
+      "iso": "de",
+      "coordinates": [
+        9.678348,
+        50.961733
+      ]
+    },
+    {
+      "id": "indore-khan",
+      "category": 1,
+      "district": "Indore",
+      "location": "Indore · River Khan",
+      "period": "MPPCB monthly report, April 2024, Annexure VIII and p.36",
+      "source": "https://nmcg.nic.in/writereaddata/fileupload/ngtmpr/7_Madhya%20Pradesh%20-%20MPR%20April%202024.pdf",
+      "type": "Historical monitoring report · local river coverage",
+      "problem": "The report records unsatisfactory water quality at monitored Khan River locations.",
+      "cause": "The report identifies sewage entering the river and describes treatment infrastructure.",
+      "importance": "Untreated wastewater can harm river quality and downstream use.",
+      "connection": "Prevent pollution at source and reduce avoidable wastewater.",
+      "improvement": "Evaluate process-water reuse alongside effective wastewater treatment; chemistry alone cannot replace sanitation infrastructure.",
+      "principle": 0,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "accessed": "10 Oct 2026"
+    },
+    {
+      "id": "singrauli-air",
+      "category": 2,
+      "district": "Singrauli",
+      "location": "Singrauli · industrial air controls",
+      "period": "MPPCB revised CEPI action plan; schedules include 2023–2025, publication date not stated",
+      "source": "https://cpcb.gov.in/industrial_pollution/New_Action_Plans/CEPI_Action_Plan_Singrauli.pdf",
+      "type": "Documented action plan · not current air-quality measurement",
+      "problem": "The plan addresses combustion emissions and fugitive dust in the Singrauli industrial region.",
+      "cause": "Thermal generation, coal handling and ash management are addressed in the plan.",
+      "importance": "Air emission controls matter for surrounding communities.",
+      "connection": "Energy efficiency can reduce fuel demand; pollution controls are also needed.",
+      "improvement": "Consider efficient energy use and appropriate dust and combustion-emission controls. The plan does not prove that every action is complete.",
+      "principle": 5,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "accessed": "10 Oct 2026"
+    },
+    {
+      "id": "bhopal-soil",
+      "category": 6,
+      "district": "Bhopal",
+      "location": "Bhopal · former UCIL site",
+      "period": "CSE laboratory study, December 2009; sampled sites only",
+      "source": "https://www.bhopal.org/wp-content/uploads/2016/06/CSE-REPORT.pdf",
+      "type": "Historical site investigation · not a citywide or current rating",
+      "problem": "The study detected pesticides, chlorinated benzenes and metals in sampled soil and waste at the former factory site.",
+      "cause": "Legacy pesticide production and waste storage left contaminated materials.",
+      "importance": "Persistent residues require site-specific assessment and management.",
+      "connection": "Prevent hazardous waste and choose less hazardous synthesis where feasible.",
+      "improvement": "Prevent new hazardous residues and assess existing contamination scientifically; no current cleanup status is inferred.",
+      "principle": 2,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "accessed": "10 Oct 2026"
+    },
+    {
+      "id": "ujjain-treatment",
+      "category": 1,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "location": "Ujjain · Ujjain sewage treatment",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "April 2024 · MPPCB report to NMCG, Annexure I",
+      "source": "https://nmcg.nic.in/writereaddata/fileupload/ngtmpr/7_Madhya%20Pradesh%20-%20MPR%20April%202024.pdf",
+      "type": "Historical treatment-infrastructure record, not a pollution ranking",
+      "indicator": {
+        "value": 83,
+        "unit": "MLD installed capacity",
+        "year": "April 2024",
+        "type": "Reported plant capacity",
+        "coverage": "Ujjain sewage treatment"
+      },
+      "problem": "The report lists 83 million litres/day of installed capacity and 65 million litres/day utilized at Ujjain sewage treatment.",
+      "cause": "Sewage treatment infrastructure manages urban wastewater; these numbers do not measure river pollution or prove present-day performance.",
+      "importance": "Treatment capacity and actual throughput are different quantities.",
+      "connection": "Pollution prevention reduces the burden requiring treatment.",
+      "improvement": "Combine source reduction with effective treatment and suitable water reuse. Plant-specific validation remains necessary.",
+      "principle": 0
+    },
+    {
+      "id": "jabalpur-treatment",
+      "category": 1,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "location": "Jabalpur · Kathonda sewage treatment plant",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "April 2024 · MPPCB report to NMCG, Annexure I",
+      "source": "https://nmcg.nic.in/writereaddata/fileupload/ngtmpr/7_Madhya%20Pradesh%20-%20MPR%20April%202024.pdf",
+      "type": "Historical treatment-infrastructure record, not a pollution ranking",
+      "indicator": {
+        "value": 50,
+        "unit": "MLD installed capacity",
+        "year": "April 2024",
+        "type": "Reported plant capacity",
+        "coverage": "Kathonda sewage treatment plant"
+      },
+      "problem": "The report lists 50 million litres/day of installed capacity and 18.6 million litres/day utilized at Kathonda sewage treatment plant.",
+      "cause": "Sewage treatment infrastructure manages urban wastewater; these numbers do not measure river pollution or prove present-day performance.",
+      "importance": "Treatment capacity and actual throughput are different quantities.",
+      "connection": "Pollution prevention reduces the burden requiring treatment.",
+      "improvement": "Combine source reduction with effective treatment and suitable water reuse. Plant-specific validation remains necessary.",
+      "principle": 0
+    },
+    {
+      "id": "gwalior-treatment",
+      "category": 1,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "location": "Gwalior · Jalalpur sewage treatment plant",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "April 2024 · MPPCB report to NMCG, Annexure I",
+      "source": "https://nmcg.nic.in/writereaddata/fileupload/ngtmpr/7_Madhya%20Pradesh%20-%20MPR%20April%202024.pdf",
+      "type": "Historical treatment-infrastructure record, not a pollution ranking",
+      "indicator": {
+        "value": 145,
+        "unit": "MLD installed capacity",
+        "year": "April 2024",
+        "type": "Reported plant capacity",
+        "coverage": "Jalalpur sewage treatment plant"
+      },
+      "problem": "The report lists 145 million litres/day of installed capacity and 97.031 million litres/day utilized at Jalalpur sewage treatment plant.",
+      "cause": "Sewage treatment infrastructure manages urban wastewater; these numbers do not measure river pollution or prove present-day performance.",
+      "importance": "Treatment capacity and actual throughput are different quantities.",
+      "connection": "Pollution prevention reduces the burden requiring treatment.",
+      "improvement": "Combine source reduction with effective treatment and suitable water reuse. Plant-specific validation remains necessary.",
+      "principle": 0
+    },
+    {
+      "id": "india-plastic-0",
+      "category": 0,
+      "country": "India",
+      "state": "Andaman and Nicobar Islands",
+      "location": "Andaman and Nicobar Islands · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.1",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 688.025,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Andaman and Nicobar Islands"
+      },
+      "problem": "The report estimates 688.025 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-1",
+      "category": 0,
+      "country": "India",
+      "state": "Andhra Pradesh",
+      "location": "Andhra Pradesh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.2",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 36620.101,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Andhra Pradesh"
+      },
+      "problem": "The report estimates 36620.1 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-2",
+      "category": 0,
+      "country": "India",
+      "state": "Arunachal Pradesh",
+      "location": "Arunachal Pradesh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.3",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 1693.65,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Arunachal Pradesh"
+      },
+      "problem": "The report estimates 1693.65 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-3",
+      "category": 0,
+      "country": "India",
+      "state": "Assam",
+      "location": "Assam · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.4",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 58765,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Assam"
+      },
+      "problem": "The report estimates 58765 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-4",
+      "category": 0,
+      "country": "India",
+      "state": "Bihar",
+      "location": "Bihar · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.5",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 53232.339,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Bihar"
+      },
+      "problem": "The report estimates 53232.3 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-5",
+      "category": 0,
+      "country": "India",
+      "state": "Chandigarh",
+      "location": "Chandigarh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.6",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 13107.15,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Chandigarh"
+      },
+      "problem": "The report estimates 13107.1 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-6",
+      "category": 0,
+      "country": "India",
+      "state": "Chhattisgarh",
+      "location": "Chhattisgarh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.7",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 51100,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Chhattisgarh"
+      },
+      "problem": "The report estimates 51100 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-7",
+      "category": 0,
+      "country": "India",
+      "state": "Delhi",
+      "location": "Delhi · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.8",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 377596,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Delhi"
+      },
+      "problem": "The report estimates 377596 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-8",
+      "category": 0,
+      "country": "India",
+      "state": "Goa",
+      "location": "Goa · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.9",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 29440.9,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Goa"
+      },
+      "problem": "The report estimates 29440.9 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-9",
+      "category": 0,
+      "country": "India",
+      "state": "Gujarat",
+      "location": "Gujarat · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.10",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 313918.57,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Gujarat"
+      },
+      "problem": "The report estimates 313919 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-10",
+      "category": 0,
+      "country": "India",
+      "state": "Haryana",
+      "location": "Haryana · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.11",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 179406.47,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Haryana"
+      },
+      "problem": "The report estimates 179406 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-11",
+      "category": 0,
+      "country": "India",
+      "state": "Himachal Pradesh",
+      "location": "Himachal Pradesh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.12",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 9654.45,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Himachal Pradesh"
+      },
+      "problem": "The report estimates 9654.45 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-12",
+      "category": 0,
+      "country": "India",
+      "state": "Jammu and Kashmir",
+      "location": "Jammu and Kashmir · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.13",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 34384,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Jammu and Kashmir"
+      },
+      "problem": "The report estimates 34384 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-13",
+      "category": 0,
+      "country": "India",
+      "state": "Jharkhand",
+      "location": "Jharkhand · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.14",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 53432.966,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Jharkhand"
+      },
+      "problem": "The report estimates 53433 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-14",
+      "category": 0,
+      "country": "India",
+      "state": "Karnataka",
+      "location": "Karnataka · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.15",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 528031,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Karnataka"
+      },
+      "problem": "The report estimates 528031 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-15",
+      "category": 0,
+      "country": "India",
+      "state": "Kerala",
+      "location": "Kerala · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.16",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 71000,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Kerala"
+      },
+      "problem": "The report estimates 71000 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-16",
+      "category": 0,
+      "country": "India",
+      "state": "Ladakh",
+      "location": "Ladakh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.17",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 1915.05,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Ladakh"
+      },
+      "problem": "The report estimates 1915.05 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-17",
+      "category": 0,
+      "country": "India",
+      "state": "Lakshadweep",
+      "location": "Lakshadweep · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.18",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 279.09,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Lakshadweep"
+      },
+      "problem": "The report estimates 279.09 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-18",
+      "category": 0,
+      "country": "India",
+      "state": "Madhya Pradesh",
+      "location": "Madhya Pradesh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.19",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 132955.4,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Madhya Pradesh"
+      },
+      "problem": "The report estimates 132955 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-19",
+      "category": 0,
+      "country": "India",
+      "state": "Maharashtra",
+      "location": "Maharashtra · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.20",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 292987,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Maharashtra"
+      },
+      "problem": "The report estimates 292987 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-20",
+      "category": 0,
+      "country": "India",
+      "state": "Meghalaya",
+      "location": "Meghalaya · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.21",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Qualitative management report; comparable quantity unavailable",
+      "indicator": null,
+      "problem": "The report describes collection and separation of dry and wet waste; a plastic-generation quantity was not submitted.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-21",
+      "category": 0,
+      "country": "India",
+      "state": "Mizoram",
+      "location": "Mizoram · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.22",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 2634.794,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Mizoram"
+      },
+      "problem": "The report estimates 2634.79 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-22",
+      "category": 0,
+      "country": "India",
+      "state": "Nagaland",
+      "location": "Nagaland · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.23",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 92.84,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Nagaland"
+      },
+      "problem": "The report estimates 92.84 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-23",
+      "category": 0,
+      "country": "India",
+      "state": "Odisha",
+      "location": "Odisha · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.24",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 40696.43,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Odisha"
+      },
+      "problem": "The report estimates 40696.4 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-24",
+      "category": 0,
+      "country": "India",
+      "state": "Puducherry",
+      "location": "Puducherry · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.25",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 12775,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Puducherry"
+      },
+      "problem": "The report estimates 12775 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-25",
+      "category": 0,
+      "country": "India",
+      "state": "Punjab",
+      "location": "Punjab · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.26",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 94958.95,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Punjab"
+      },
+      "problem": "The report estimates 94958.9 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-26",
+      "category": 0,
+      "country": "India",
+      "state": "Rajasthan",
+      "location": "Rajasthan · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.27",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 72044.771,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Rajasthan"
+      },
+      "problem": "The report estimates 72044.8 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-27",
+      "category": 0,
+      "country": "India",
+      "state": "Sikkim",
+      "location": "Sikkim · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.28",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Qualitative management report; comparable quantity unavailable",
+      "indicator": null,
+      "problem": "The report describes implementation notices and inspections; its summary omits a unit for the quantity, so no comparable value is plotted.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-28",
+      "category": 0,
+      "country": "India",
+      "state": "Tamil Nadu",
+      "location": "Tamil Nadu · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.29",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 397387.684,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Tamil Nadu"
+      },
+      "problem": "The report estimates 397388 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-29",
+      "category": 0,
+      "country": "India",
+      "state": "Telangana",
+      "location": "Telangana · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.30",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 494940,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Telangana"
+      },
+      "problem": "The report estimates 494940 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-30",
+      "category": 0,
+      "country": "India",
+      "state": "Tripura",
+      "location": "Tripura · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.31",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 169.63,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Tripura"
+      },
+      "problem": "The report estimates 169.63 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-31",
+      "category": 0,
+      "country": "India",
+      "state": "Uttar Pradesh",
+      "location": "Uttar Pradesh · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.32",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 375950,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Uttar Pradesh"
+      },
+      "problem": "The report estimates 375950 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-32",
+      "category": 0,
+      "country": "India",
+      "state": "Uttarakhand",
+      "location": "Uttarakhand · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.33",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 44924.71,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Uttarakhand"
+      },
+      "problem": "The report estimates 44924.7 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-33",
+      "category": 0,
+      "country": "India",
+      "state": "West Bengal",
+      "location": "West Bengal · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2021–22 · CPCB Interim Annual Report 2021–22, section 3.34",
+      "source": "https://cpcb.gov.in/uploads/plasticwaste/Annual_Report_2021-22_PWM.pdf",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 128837.03,
+        "unit": "tonnes/year",
+        "year": "2021–22",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "West Bengal"
+      },
+      "problem": "The report estimates 128837 tonnes of plastic waste generated during 2021–22.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-34",
+      "category": 0,
+      "country": "India",
+      "state": "Manipur",
+      "location": "Manipur · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2020–21 · PIB, 27 July 2023, Annexure I (CPCB reports)",
+      "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1943210",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 10303,
+        "unit": "tonnes/year",
+        "year": "2020–21",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Manipur"
+      },
+      "problem": "The official table reports 10303 tonnes of plastic waste generated during 2020–21.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "india-plastic-35",
+      "category": 0,
+      "country": "India",
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "location": "Dadra and Nagar Haveli and Daman and Diu · plastic-waste record",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "period": "2020–21 · PIB, 27 July 2023, Annexure I (CPCB reports)",
+      "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1943210",
+      "type": "Reported estimate from SPCB/PCC submissions",
+      "indicator": {
+        "value": 4726,
+        "unit": "tonnes/year",
+        "year": "2020–21",
+        "type": "Reported estimate from SPCB/PCC submissions",
+        "coverage": "Dadra and Nagar Haveli and Daman and Diu"
+      },
+      "problem": "The official table reports 4726 tonnes of plastic waste generated during 2020–21.",
+      "cause": "This inventory does not apportion local causes or measure environmental leakage. It records waste requiring management.",
+      "importance": "Waste generation and litter pollution are different: collection, use and disposal determine releases.",
+      "connection": "Prevent unnecessary materials and consider practical reuse and recovery.",
+      "improvement": "Evaluate reduction, reusable products and suitable recycling. The data alone do not establish a preferred treatment route.",
+      "principle": 0,
+      "reactionId": "edu-pet",
+      "reactionReason": "Explore PET hydrolysis as one specific polymer-recovery example; these waste totals contain many materials, not only PET."
+    },
+    {
+      "id": "delhi-ncap",
+      "category": 2,
+      "country": "India",
+      "state": "Delhi",
+      "coordinates": [
+        79.358105,
+        22.686852
+      ],
+      "location": "Delhi · National Clean Air Programme",
+      "period": "PIB, 10 January 2019 · programme launch list",
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1559384",
+      "type": "Historical documented air-quality programme",
+      "problem": "Delhi appears in the launch list of non-attainment cities under NCAP.",
+      "cause": "The programme addresses multiple emission sources; this record supplies no city source-apportionment percentages.",
+      "importance": "Monitoring and coordinated prevention are needed beyond a single chemical process.",
+      "connection": "Energy-efficient chemistry can reduce avoidable fuel demand.",
+      "improvement": "Investigate cleaner energy and emission prevention alongside urban pollution controls; no current air-quality improvement is inferred.",
+      "principle": 5,
+      "reactionId": "industrial-ammonia",
+      "reactionReason": "Ammonia illustrates energy and feedstock considerations, not a claim that ammonia production causes Delhi pollution."
+    }
+  ]
+}

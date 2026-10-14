@@ -1,0 +1,25 @@
+// Optional Chromium CDP checks; see EXHIBITION-DELIVERY.md for setup.
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const page=(await (await fetch((process.env.CDP_URL||'http://127.0.0.1:9222')+'/json/list')).json()).find(p=>p.type==='page');
+const ws=new WebSocket(page.webSocketDebuggerUrl);await new Promise(r=>ws.onopen=r);let seq=0;const pending=new Map(),errors=[];
+ws.onmessage=e=>{let x=JSON.parse(e.data);if(x.id){const p=pending.get(x.id);pending.delete(x.id);x.error?p.reject(x.error):p.resolve(x.result);}else if(x.method==='Runtime.exceptionThrown')errors.push(x.params.exceptionDetails);};
+const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
+const until=async expression=>{for(let i=0;i<100;i++){if(await evaluate(expression))return;await new Promise(r=>setTimeout(r,100));}throw Error('Timed out: '+expression);};
+const click=async selector=>{await until(`!!document.querySelector(${JSON.stringify(selector)})`);await evaluate(`document.querySelector(${JSON.stringify(selector)}).dispatchEvent(new MouseEvent('click',{bubbles:true}))`);};
+const shot=async name=>{const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
+await send('Runtime.enable');await send('Page.enable');await send('Emulation.setEmulatedMedia',{features:[]});await send('Emulation.setDeviceMetricsOverride',{width:1365,height:1000,deviceScaleFactor:1,mobile:false});
+await send('Page.navigate',{url:(process.env.SITE_URL||'http://127.0.0.1:4174')+'/?browser-check='+Date.now()+'#/dashboard'});await until("document.querySelector('[data-action=indore]')");await click('[data-action=indore][data-section=exhibition]');await until("document.querySelector('.exhibition-guide')");
+for(let i=0;i<7;i++){assert.equal(await evaluate("document.querySelector('indore-explorer').exhibition"),i);assert.ok(await evaluate("document.querySelector('[data-tour-title]').textContent.length>5"));if(i===3){await click('[data-rp=sort][data-bin=organics]');await click('[data-rp=next]');assert.equal(await evaluate("document.querySelector('resource-player').step"),1);}if(i===4){await click('[data-solution-step="2"]');assert.match(await evaluate("document.querySelector('case-solutions').textContent"),/Material recycling/);}if(i===5){await click('[data-indore=chemistry][data-key=evidence]');assert.match(await evaluate("document.querySelector('.exhibition-lead').textContent"),/unavailable/);}if(i<6)await click('[data-focus=tour-next]');}
+await click('[data-focus=tour-next]');assert.equal(await evaluate("document.querySelector('indore-explorer').exhibition"),0);
+await click('[data-indore=tour][data-step="-1"]');assert.equal(await evaluate("document.querySelector('indore-explorer').exhibition"),-1);
+await click('[data-indore=tab][data-tab=processes]');await click('[data-rp=next]');assert.ok(await evaluate("document.querySelector('.resource-cargo.moving')!==null"));await shot('resource-lab-final');
+await send('Page.navigate',{url:(process.env.SITE_URL||'http://127.0.0.1:4174')+'/green-rescue.html'});await until("document.querySelector('[data-control=start]')");await click('[data-control=start]');await click('[data-control=begin]');
+const position=async sel=>await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(sel)});e.scrollIntoView({block:'center'});const r=e.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+Math.min(30,r.height/3)};})()`);
+const from=await position('[data-object=pipe]'),to=await position('[data-object=socket]');
+await send('Input.dispatchMouseEvent',{type:'mouseMoved',...from});await send('Input.dispatchMouseEvent',{type:'mousePressed',...from,button:'left',clickCount:1});
+for(let i=1;i<=8;i++)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:from.x+(to.x-from.x)*i/8,y:from.y+(to.y-from.y)*i/8,button:'left',buttons:1});
+await shot('pipe-drag-preview');await send('Input.dispatchMouseEvent',{type:'mouseReleased',...to,button:'left',clickCount:1});await until("!document.querySelector('[data-object=pipe]') && document.querySelector('[data-object=treatment]').getAttribute('aria-disabled')==='false'");
+await click('[data-object=treatment]');await until("document.querySelector('[data-object=tap]').getAttribute('aria-disabled')==='false'");await click('[data-object=tap]');await until("document.querySelector('[data-control=next]')");await shot('pipe-drag-complete');
+assert.equal(errors.length,0,JSON.stringify(errors));console.log('PASS: seven-stop visitor tour, embedded interactions, replay/exit, moving process material, actual browser pointer drag/drop and Level 1 completion; no uncaught errors.');ws.close();

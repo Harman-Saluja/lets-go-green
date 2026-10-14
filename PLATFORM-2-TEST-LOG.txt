@@ -1,0 +1,24 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> lets-go-green@1.0.0 test
+> node scripts/test-production.mjs
+
+Production build succeeded: 80 static files → build/ (no transpilation or external build service).
+PASS: both scope filters; all 15 production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).
+PASS weighted scoring, missing-data normalization, directional changes, independent factors and all 10 alternatives. Starch: 77.98349220221266 → 80.27416788872895.
+PASS: motion code endpoints, increase/decrease/unchanged, reduced motion and comparison guard (mock animation API; not browser visual QA).
+PASS: score display and signed differences use one decimal; changed metrics reach correct endpoints.
+PASS: all eight controlled tabs, desktop/mobile mascot positioning, spring endpoints and reduced motion (DOM harness).
+PASS: all 15 educational profiles; five industrial equations, molar masses, metrics, missing-data boundaries and responsive edits.
+PASS: exact five names/order, Dashboard-only placement, image build bytes, hover/touch/focus/Escape interactions (DOM harness); responsive/reduced-motion CSS declarations checked, not browser layout QA.
+PASS: journey removed; 15 comparison datasets; range endpoints/input; 12 persistent wheel selections, hover does not change selection, keyboard wrap; score increase/decrease/zero/missing/rapid updates and precision. DOM/clock harness, not visual browser QA.
+PASS: score continuity across tabs; bounded pointer tilt, exit reset and touch/reduced-motion suppression.
+PASS: factor selection and keyboard disclosure show the supplied engine explanation.
+PASS: twelve glass segments/reflections, bounded pointer light/reset, accessible selection retained; scoped spacing and plain-language markup checks. Visual appearance is not browser-tested.
+PASS: 15 simulator isolation/edit/reset/compare flows; invalid inputs, unchanged atom economy, stale baseline rejection; all subsection routes and back navigation; all referenced process stages; dropdown pointer/tap/keyboard/outside dismissal (mock DOM).
+PASS: 22 local CID/3D/SDF atom/bond records; exact-name identity and material fallbacks; all 22 industrial stages and presentation controls; 7 Atlas categories, source-coordinate anchors and full tour; Canvas projection/input/cleanup harness. Browser WebGL/visual/touch rendering NOT verified.
+PASS: 36 selectable regions (28+8), 50 historical districts, all 7 filters, regional selection/reset and India tour, sourced case links, 7 local flag assets, visible shared molecular controls. DOM harness, not real browser.
+PASS: 15 curated records + archive compatibility; 21 CID/structure/formula checks; all 15 four-scene cinema controls with clock/reduced-motion/visibility/cleanup harness; 36 sourced regions, 34 numerical records, year-isolated chart; 7 diagrams; independent World/India/MP tours (7/10/6 stops). Not browser visual QA.
+Full pass 1: all 10 demos passed (337 checks).
+Full pass 2: all 10 demos passed (337 checks).
+PASS: 791 checks; 10 complete case-study optimization loops.

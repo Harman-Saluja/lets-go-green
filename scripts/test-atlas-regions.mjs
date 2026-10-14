@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {mapView,regionBounds,regionalCases,indiaCases,categoryColors,countryCodes} from '../build/atlas-regions.js';
+import {ImpactAtlas,atlasTours} from '../build/science-controls.js';
+import {moleculeLinks} from '../build/science-views.js';
+import {reactionLibrary} from '../build/data.js';
+const root=new URL('../build/',import.meta.url),geo={};
+for(const [level,file,count] of [['india','india-states',36],['mp','mp-districts',50]]){geo[level]=JSON.parse(await readFile(new URL(`assets/${file}.json`,root)));assert.equal(geo[level].features.length,count);assert.equal(new Set(geo[level].features.map(f=>f.properties.name)).size,count);for(const f of geo[level].features){assert.ok(regionBounds(f).every(Number.isFinite));const html=mapView(geo[level],level,1,f.properties.name);assert.match(html,/aria-pressed="true"/);assert.doesNotMatch(html,/NaN|undefined|Infinity/);}for(let c=0;c<7;c++){const html=mapView(geo[level],level,c,'');assert.equal((html.match(/role="button"/g)||[]).length,count);}}
+const ut=['IN-PY','IN-LD','IN-DL','IN-LA','IN-DH','IN-CH','IN-AN','IN-JK'];assert.equal(geo.india.features.filter(f=>ut.includes(f.properties.id)).length,8);assert.equal(geo.india.features.filter(f=>!ut.includes(f.properties.id)).length,28);
+for(const c of indiaCases.filter(c=>c.district)){assert.ok(geo.mp.features.some(f=>f.properties.name===c.district));assert.ok(c.source.startsWith('https://'));assert.equal(c.state,'Madhya Pradesh');assert.ok(c.period&&c.type&&c.connection);assert.ok(regionalCases('mp',c.category,c.district).includes(c));}
+assert.deepEqual(categoryColors,['#A78BFA','#38BDF8','#F59E0B','#EF5350','#EAB308','#FB923C','#A1887F']);
+for(const code of Object.values(countryCodes))assert.match(await readFile(new URL(`assets/flags/${code}.svg`,root),'utf8'),/<svg/);
+const a=new ImpactAtlas(),nodes=new Map(),events={};a.isConnected=false;a.addEventListener=(k,f)=>events[k]=f;a.querySelector=s=>{if(!nodes.has(s))nodes.set(s,{innerHTML:'',getContext:()=>null});return nodes.get(s)};a.querySelectorAll=()=>[];a.connectedCallback();a.maps=geo;a.setLevel=async level=>{a.level=level;a.region='';a.selected=null;a.complete=false;a.update();};const click=d=>events.click({target:{closest:s=>s==='button'?{dataset:d}:null}});
+for(const level of ['india','mp']){await a.setLevel(level);for(const f of geo[level].features){a.pickRegion(f.properties.name);assert.equal(a.region,f.properties.name);assert.equal(a.selected,null);}for(let category=0;category<7;category++){click({atlasCategory:String(category)});assert.equal(a.level,level);assert.equal(a.region,'');assert.equal(a.selected,null);}}
+click({tour:'start',kind:'india'});for(const c of atlasTours.india){assert.equal(a.selected,c.id);assert.equal(a.category,c.category);click({tour:'next'});}assert.equal(a.complete,true);click({tour:'previous'});assert.equal(a.selected,atlasTours.india.at(-1).id);click({tour:'restart'});assert.equal(a.selected,atlasTours.india[0].id);click({tour:'exit'});assert.equal(a.tour,-1);
+for(const entry of reactionLibrary){const html=moleculeLinks(entry.reaction);assert.doesNotMatch(html,/<details/);assert.match(html,/<section/);if(entry.reaction.reactants.some(r=>r.name==='Ethanol'))assert.match(html,/View 3D/);}
+console.log('PASS: 36 selectable regions (28+8), 50 historical districts, all 7 filters, regional selection/reset and India tour, sourced case links, 7 local flag assets, visible shared molecular controls. DOM harness, not real browser.');

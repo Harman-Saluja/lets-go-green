@@ -1,0 +1,6 @@
+{
+  "files": 96,
+  "result": "HTTP 200 and byte-identical",
+  "protectedFiles": "Nine existing chemistry/theme/navigation/Atlas/team/comparison files unchanged",
+  "browserQA": "Game tested with state and event harnesses; SVG scenes rasterized for static inspection; no live browser/device timing test"
+}

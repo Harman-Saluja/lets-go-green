@@ -1,0 +1,11 @@
+export function closeMenus(doc,restore=false){doc.querySelectorAll('.lgg-nav-entry.is-menu-open').forEach(entry=>{entry.classList.remove('is-menu-open');const button=entry.querySelector('[data-nav-toggle]');button.setAttribute('aria-expanded','false');entry.querySelector('.lgg-nav-menu').inert=true;if(restore)button.focus();});}
+export function openMenu(entry,doc,win){closeMenus(doc);const menu=entry.querySelector('.lgg-nav-menu'),button=entry.querySelector('[data-nav-toggle]'),rect=entry.getBoundingClientRect(),width=Math.min(280,win.innerWidth-32),anchor=entry.closest('.anime-navbar').getBoundingClientRect();menu.style.setProperty('--menu-left',Math.max(16,Math.min(rect.left,win.innerWidth-width-16))-anchor.left+'px');menu.style.setProperty('--menu-top',rect.bottom-anchor.top+'px');menu.style.setProperty('--menu-width',width+'px');menu.style.setProperty('--menu-viewport-top',rect.bottom+'px');entry.classList.add('is-menu-open');menu.inert=false;button.setAttribute('aria-expanded','true');}
+export function installWorkspaceNav(doc,win){
+ doc.addEventListener('pointerover',e=>{const entry=e.target.closest?.('.lgg-nav-entry');if(entry&&e.pointerType==='mouse'&&!entry.classList.contains('is-menu-open'))openMenu(entry,doc,win);});
+ doc.addEventListener('pointerout',e=>{const entry=e.target.closest?.('.lgg-nav-entry');if(e.pointerType==='mouse'&&entry&&!entry.contains(e.relatedTarget))closeMenus(doc);});
+ doc.addEventListener('click',e=>{const button=e.target.closest?.('[data-nav-toggle]');if(button){const entry=button.closest('.lgg-nav-entry');if(entry.classList.contains('is-menu-open'))closeMenus(doc);else openMenu(entry,doc,win);}else if(!e.target.closest?.('.lgg-nav-entry'))closeMenus(doc);});
+ doc.addEventListener('focusout',e=>{const entry=e.target.closest?.('.lgg-nav-entry');if(entry&&!entry.contains(e.relatedTarget))closeMenus(doc);});
+ doc.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenus(doc,true);return;}const entry=e.target.closest?.('.lgg-nav-entry');if(entry&&e.key==='ArrowDown'&&!e.target.closest('.lgg-nav-menu')){e.preventDefault();openMenu(entry,doc,win);entry.querySelector('.lgg-nav-menu a').focus();}});
+ win.addEventListener('resize',()=>closeMenus(doc));win.addEventListener('scroll',()=>closeMenus(doc),{passive:true});
+}
+if(typeof document!=='undefined')installWorkspaceNav(document,window);

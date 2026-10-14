@@ -1,0 +1,2235 @@
+[
+  {
+    "label": "Sugar hydrolysis",
+    "subtitle": "Explore yield & material efficiency",
+    "reaction": {
+      "name": "Sugar hydrolysis · glucose as target",
+      "reactants": [
+        {
+          "name": "Sucrose",
+          "mass": 34.2297,
+          "molar": 342.297,
+          "coeff": 1,
+          "formula": "C12H22O11"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 1.8015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Glucose (target)",
+          "mass": 14.41248,
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        },
+        {
+          "name": "Fructose (coproduct)",
+          "mass": "",
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 60,
+      "catalyst": "enzyme",
+      "catalystMass": 0.1,
+      "otherMass": 5,
+      "temperature": 25,
+      "duration": 2,
+      "yield": 80,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Hypothetical mass-accounting example, not a laboratory procedure or measured yield. Glucose is the only target; fructose is counted as non-target material. Auxiliary water is separate from stoichiometric water. No solvent recovery assumed.",
+      "demo": true,
+      "libraryId": "demo-0",
+      "equation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (fructose)",
+      "category": "Hydrolysis",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "learningPurpose": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "comparisonIds": [
+        "demo-1"
+      ],
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "educationalLevel": "Class 12",
+      "source": "https://openstax.org/books/organic-chemistry/pages/25-8-disaccharides",
+      "processRoute": "A single-use enzyme accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "catalystIdentity": "Invertase",
+      "caseStudy": {
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "alternative": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "source": "https://doi.org/10.3389/fmicb.2020.00633",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "id": "demo-0",
+    "category": "Hydrolysis",
+    "equation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (fructose)",
+    "kind": "Educational Demo",
+    "purpose": "Target choice: glucose receives credit; fructose and other non-target mass contribute to the waste boundary. Compare starch for atom-economy versus auxiliary-water trade-offs.",
+    "optimization": {
+      "title": "Compare recoverable biocatalysis",
+      "baseline": "A single-use enzyme accounting baseline",
+      "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+      "concept": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "changes": {
+        "catalystIdentity": "Immobilized invertase",
+        "catalystMass": 0.04,
+        "otherMass": 5.02
+      },
+      "principles": [
+        1,
+        9
+      ],
+      "tags": [
+        "waste",
+        "catalyst"
+      ],
+      "source": "https://doi.org/10.3389/fmicb.2020.00633",
+      "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "label": "Starch hydrolysis",
+    "subtitle": "See the effect of auxiliary water",
+    "reaction": {
+      "name": "Starch hydrolysis · repeat-unit basis",
+      "reactants": [
+        {
+          "name": "Starch repeat unit",
+          "mass": 16.2141,
+          "molar": 162.141,
+          "coeff": 1,
+          "formula": "C6H10O5"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 1.8015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Glucose",
+          "mass": 16.21404,
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 100,
+      "catalyst": "enzyme",
+      "catalystMass": 0.1,
+      "otherMass": 2,
+      "temperature": 25,
+      "duration": 1,
+      "yield": 90,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Hypothetical accounting on an idealized repeat-unit basis; polymer end groups neglected. Quantities and yield illustrate calculations, not an experimental protocol.",
+      "demo": true,
+      "libraryId": "demo-1",
+      "equation": "(C₆H₁₀O₅)ₙ + n H₂O → n C₆H₁₂O₆",
+      "category": "Hydrolysis",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. Viscosity, density and glucose inhibition matter. This scenario is not the published substrate or solids loading; unchanged yield is assumed.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "learningPurpose": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+      "comparisonIds": [
+        "demo-0"
+      ],
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "educationalLevel": "B.Tech",
+      "source": "https://openstax.org/books/organic-chemistry/pages/25-8-disaccharides",
+      "processRoute": "Dilute aqueous starch hydrolysis",
+      "feedstockOrigin": "Not traced",
+      "catalystIdentity": "Starch-saccharifying enzyme system",
+      "caseStudy": {
+        "baseline": "Dilute aqueous starch hydrolysis",
+        "problem": "Large auxiliary-water inputs dominate this baseline PMI.",
+        "alternative": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+        "limits": "Viscosity, density and glucose inhibition matter. This scenario is not the published substrate or solids loading; unchanged yield is assumed.",
+        "source": "https://doi.org/10.1002/star.70159",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "id": "demo-1",
+    "category": "Hydrolysis",
+    "equation": "(C₆H₁₀O₅)ₙ + n H₂O → n C₆H₁₂O₆",
+    "kind": "Educational Demo",
+    "purpose": "Repeat-unit accounting: high atom economy and yield can coexist with greater auxiliary-water intensity. Compare sugar hydrolysis to see the trade-off.",
+    "optimization": {
+      "title": "Compare concentrated starch processing",
+      "baseline": "Dilute aqueous starch hydrolysis",
+      "problem": "Large auxiliary-water inputs dominate this baseline PMI.",
+      "concept": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+      "changes": {
+        "solventMass": 60,
+        "processRoute": "Concentrated aqueous starch scenario"
+      },
+      "principles": [
+        1,
+        5
+      ],
+      "tags": [
+        "waste",
+        "solvent"
+      ],
+      "source": "https://doi.org/10.1002/star.70159",
+      "limits": "Viscosity, density and glucose inhibition matter. This scenario is not the published substrate or solids loading; unchanged yield is assumed.",
+      "evidenceType": "Reference-based concept + educational scenario"
+    }
+  },
+  {
+    "label": "Glucose isomerization",
+    "subtitle": "High atom economy ≠ zero waste",
+    "reaction": {
+      "name": "Glucose → fructose · accounting demo",
+      "reactants": [
+        {
+          "name": "Glucose",
+          "mass": 18.0156,
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "products": [
+        {
+          "name": "Fructose",
+          "mass": 12.61092,
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 40,
+      "catalyst": "enzyme",
+      "catalystMass": 0.2,
+      "otherMass": 3,
+      "temperature": 25,
+      "duration": 3,
+      "yield": 70,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Hypothetical mass-accounting dataset. The stated yield and duration are illustration inputs, not predictions or measured process performance.",
+      "demo": true,
+      "libraryId": "demo-2",
+      "equation": "C₆H₁₂O₆ (glucose) ⇌ C₆H₁₂O₆ (fructose)",
+      "category": "Isomerization",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "learningPurpose": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "comparisonIds": [],
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "educationalLevel": "Class 12",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/5.html",
+      "processRoute": "A single-use enzyme accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "catalystIdentity": "Glucose isomerase",
+      "caseStudy": {
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "alternative": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "source": "https://doi.org/10.1002/jobm.3630220808",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "id": "demo-2",
+    "category": "Isomerization",
+    "equation": "C₆H₁₂O₆ (glucose) ⇌ C₆H₁₂O₆ (fructose)",
+    "kind": "Educational Demo",
+    "purpose": "Isomerization: identical molecular formulas do not imply identical products; 100% atom economy still permits yield losses and process waste. No same-target alternative is stored.",
+    "optimization": {
+      "title": "Compare recoverable biocatalysis",
+      "baseline": "A single-use enzyme accounting baseline",
+      "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+      "concept": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "changes": {
+        "catalystIdentity": "Immobilized glucose isomerase",
+        "catalystMass": 0.04,
+        "otherMass": 1.02
+      },
+      "principles": [
+        1,
+        9
+      ],
+      "tags": [
+        "waste",
+        "catalyst"
+      ],
+      "source": "https://doi.org/10.1002/jobm.3630220808",
+      "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-lactose",
+    "label": "Lactose hydrolysis",
+    "category": "Disaccharide hydrolysis",
+    "equation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (galactose)",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/2/1/23.html",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 5: avoid unnecessary auxiliary materials. Model a smaller auxiliary-water inventory while holding target yield constant.",
+    "subtitle": "Glucose-only accounting; galactose is a coproduct, not credited as target.",
+    "reaction": {
+      "name": "Lactose hydrolysis",
+      "reactants": [
+        {
+          "name": "Lactose",
+          "mass": 3.42297,
+          "molar": 342.297,
+          "coeff": 1,
+          "formula": "C12H22O11"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 0.18015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Glucose",
+          "mass": "",
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        },
+        {
+          "name": "Galactose",
+          "mass": "",
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "enzyme",
+      "catalystMass": 0.05,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Glucose-only accounting; galactose is a coproduct, not credited as target.",
+      "demo": true,
+      "libraryId": "edu-lactose",
+      "equation": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (galactose)",
+      "category": "Disaccharide hydrolysis",
+      "educationalLevel": "Class 12",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/2/1/23.html",
+      "referenceContext": "Glucose-only accounting; galactose is a coproduct, not credited as target.",
+      "learningPurpose": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "catalystIdentity": "β-Galactosidase (lactase)",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "A single-use enzyme accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "alternative": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "source": "https://doi.org/10.3390/catal13121503",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare recoverable biocatalysis",
+      "baseline": "A single-use enzyme accounting baseline",
+      "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+      "concept": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "changes": {
+        "catalystIdentity": "Immobilized β-galactosidase",
+        "catalystMass": 0.02,
+        "otherMass": 5.01
+      },
+      "principles": [
+        1,
+        9
+      ],
+      "tags": [
+        "waste",
+        "catalyst"
+      ],
+      "source": "https://doi.org/10.3390/catal13121503",
+      "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-cellulose",
+    "label": "Cellulose hydrolysis",
+    "category": "Biomass conversion",
+    "equation": "(C₆H₁₀O₅)ₙ + n H₂O → n C₆H₁₂O₆",
+    "source": "https://openstax.org/books/organic-chemistry/pages/25-9-polysaccharides-and-their-synthesis",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 5: avoid unnecessary auxiliary materials. Model a smaller auxiliary-water inventory while holding target yield constant.",
+    "subtitle": "Ideal repeat units; chain ends, pretreatment and feedstock origin are outside this boundary.",
+    "reaction": {
+      "name": "Cellulose hydrolysis",
+      "reactants": [
+        {
+          "name": "Cellulose repeat unit",
+          "mass": 1.62141,
+          "molar": 162.141,
+          "coeff": 1,
+          "formula": "C6H10O5"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 0.18015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Glucose",
+          "mass": "",
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "enzyme",
+      "catalystMass": 0.05,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Ideal repeat units; chain ends, pretreatment and feedstock origin are outside this boundary.",
+      "demo": true,
+      "libraryId": "edu-cellulose",
+      "equation": "(C₆H₁₀O₅)ₙ + n H₂O → n C₆H₁₂O₆",
+      "category": "Biomass conversion",
+      "educationalLevel": "B.Tech",
+      "source": "https://openstax.org/books/organic-chemistry/pages/25-9-polysaccharides-and-their-synthesis",
+      "referenceContext": "Ideal repeat units; chain ends, pretreatment and feedstock origin are outside this boundary.",
+      "learningPurpose": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+      "catalystIdentity": "Cellulase enzyme system",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. The source identifies water limitation and substrate dependence. Preparation mass is counted; preparation energy and retained conversion are not established.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Dilute enzymatic cellulose hydrolysis",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "Dilute enzymatic cellulose hydrolysis",
+        "problem": "Dilution increases material throughput and subsequent separation demand.",
+        "alternative": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+        "limits": "The source identifies water limitation and substrate dependence. Preparation mass is counted; preparation energy and retained conversion are not established.",
+        "source": "https://doi.org/10.1186/s13068-018-1339-x",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare high-solids cellulose processing",
+      "baseline": "Dilute enzymatic cellulose hydrolysis",
+      "problem": "Dilution increases material throughput and subsequent separation demand.",
+      "concept": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+      "changes": {
+        "solventMass": 15,
+        "otherMass": 6,
+        "processRoute": "High-solids cellulose scenario"
+      },
+      "principles": [
+        1,
+        5
+      ],
+      "tags": [
+        "waste",
+        "solvent"
+      ],
+      "source": "https://doi.org/10.1186/s13068-018-1339-x",
+      "limits": "The source identifies water limitation and substrate dependence. Preparation mass is counted; preparation energy and retained conversion are not established.",
+      "evidenceType": "Reference-based concept + educational scenario"
+    }
+  },
+  {
+    "id": "edu-isomaltulose",
+    "label": "Sucrose to isomaltulose",
+    "category": "Biocatalytic rearrangement",
+    "equation": "C₁₂H₂₂O₁₁ (sucrose) → C₁₂H₂₂O₁₁ (isomaltulose)",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/4/99/11.html",
+    "kind": "Educational Demo",
+    "purpose": "Immobilized sucrose-isomerizing systems are established. Model a lower fresh enzyme allocation per batch; support burden is included as an increased other-input assumption.",
+    "subtitle": "Desired-product net equation. The reference also reports trehalulose formation; selectivity and its amount are not inferred.",
+    "reaction": {
+      "name": "Sucrose to isomaltulose",
+      "reactants": [
+        {
+          "name": "Sucrose",
+          "mass": 3.42297,
+          "molar": 342.297,
+          "coeff": 1,
+          "formula": "C12H22O11"
+        }
+      ],
+      "products": [
+        {
+          "name": "Isomaltulose",
+          "mass": "",
+          "molar": 342.297,
+          "coeff": 1,
+          "formula": "C12H22O11"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "enzyme",
+      "catalystMass": 0.05,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Desired-product net equation. The reference also reports trehalulose formation; selectivity and its amount are not inferred.",
+      "demo": true,
+      "libraryId": "edu-isomaltulose",
+      "equation": "C₁₂H₂₂O₁₁ (sucrose) → C₁₂H₂₂O₁₁ (isomaltulose)",
+      "category": "Biocatalytic rearrangement",
+      "educationalLevel": "B.Tech",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/4/99/11.html",
+      "referenceContext": "Desired-product net equation. The reference also reports trehalulose formation; selectivity and its amount are not inferred.",
+      "learningPurpose": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "catalystIdentity": "Isomaltulose synthase",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "A single-use enzyme accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "alternative": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/4/99/11.html",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare recoverable biocatalysis",
+      "baseline": "A single-use enzyme accounting baseline",
+      "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+      "concept": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "changes": {
+        "catalystIdentity": "Immobilized isomaltulose-producing biocatalyst",
+        "catalystMass": 0.02,
+        "otherMass": 5.01
+      },
+      "principles": [
+        1,
+        9
+      ],
+      "tags": [
+        "waste",
+        "catalyst"
+      ],
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/4/99/11.html",
+      "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-tagatose",
+    "label": "Galactose to tagatose",
+    "category": "Sugar isomerization",
+    "equation": "C₆H₁₂O₆ (galactose) ⇌ C₆H₁₂O₆ (tagatose)",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/4.html",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 1: prevent waste at source. Model less ancillary material, without claiming a specific separation method or performance gain.",
+    "subtitle": "Reference-supported side activity; cofactors are represented only by an illustrative ancillary inventory. No equilibrium conversion is predicted.",
+    "reaction": {
+      "name": "Galactose to tagatose",
+      "reactants": [
+        {
+          "name": "D-Galactose",
+          "mass": 1.80156,
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "products": [
+        {
+          "name": "D-Tagatose",
+          "mass": "",
+          "molar": 180.156,
+          "coeff": 1,
+          "formula": "C6H12O6"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "enzyme",
+      "catalystMass": 0.05,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Reference-supported side activity; cofactors are represented only by an illustrative ancillary inventory. No equilibrium conversion is predicted.",
+      "demo": true,
+      "libraryId": "edu-tagatose",
+      "equation": "C₆H₁₂O₆ (galactose) ⇌ C₆H₁₂O₆ (tagatose)",
+      "category": "Sugar isomerization",
+      "educationalLevel": "B.Tech",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/3/1/4.html",
+      "referenceContext": "Reference-supported side activity; cofactors are represented only by an illustrative ancillary inventory. No equilibrium conversion is predicted.",
+      "learningPurpose": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "catalystIdentity": "L-Arabinose isomerase",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "A single-use enzyme accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "alternative": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "source": "https://doi.org/10.1021/bp025675f",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare recoverable biocatalysis",
+      "baseline": "A single-use enzyme accounting baseline",
+      "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+      "concept": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "changes": {
+        "catalystIdentity": "Immobilized L-arabinose isomerase",
+        "catalystMass": 0.02,
+        "otherMass": 5.01
+      },
+      "principles": [
+        1,
+        9
+      ],
+      "tags": [
+        "waste",
+        "catalyst"
+      ],
+      "source": "https://doi.org/10.1021/bp025675f",
+      "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-citrate",
+    "label": "Citric acid–bicarbonate neutralization",
+    "category": "Acid–base chemistry",
+    "equation": "C₆H₈O₇ + 3 NaHCO₃ → Na₃C₆H₅O₇ + 3 CO₂ + 3 H₂O",
+    "source": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 1: prevent waste at source. Model less ancillary material, without claiming a specific separation method or performance gain.",
+    "subtitle": "Full neutralization net equation. CO₂ is non-target waste; no avoided-emissions claim.",
+    "reaction": {
+      "name": "Citric acid–bicarbonate neutralization",
+      "reactants": [
+        {
+          "name": "Citric acid",
+          "mass": 1.92123,
+          "molar": 192.123,
+          "coeff": 1,
+          "formula": "C6H8O7"
+        },
+        {
+          "name": "Sodium bicarbonate",
+          "mass": 2.52018,
+          "molar": 84.006,
+          "coeff": 3,
+          "formula": "NaHCO3"
+        }
+      ],
+      "products": [
+        {
+          "name": "Trisodium citrate (anhydrous)",
+          "mass": "",
+          "molar": 258.069,
+          "coeff": 1,
+          "formula": "C6H5Na3O7"
+        },
+        {
+          "name": "Carbon dioxide",
+          "mass": "",
+          "molar": 44.009,
+          "coeff": 3,
+          "formula": "CO2"
+        },
+        {
+          "name": "Water",
+          "mass": "",
+          "molar": 18.015,
+          "coeff": 3,
+          "formula": "H2O"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "none",
+      "catalystMass": 0,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Full neutralization net equation. CO₂ is non-target waste; no avoided-emissions claim.",
+      "demo": true,
+      "libraryId": "edu-citrate",
+      "equation": "C₆H₈O₇ + 3 NaHCO₃ → Na₃C₆H₅O₇ + 3 CO₂ + 3 H₂O",
+      "category": "Acid–base chemistry",
+      "educationalLevel": "Class 11",
+      "source": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+      "referenceContext": "Full neutralization net equation. CO₂ is non-target waste; no avoided-emissions claim.",
+      "learningPurpose": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+      "catalystIdentity": "",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference chemistry + derived pathway comparison + educational quantities. No safety, crystallization or environmental superiority is inferred from atom economy alone. Both routes keep the same illustrative target yield and auxiliary inventory.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Citric acid neutralization with bicarbonate",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "Citric acid neutralization with bicarbonate",
+        "problem": "Bicarbonate generates more non-target CO₂ and water per mole of citrate.",
+        "alternative": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+        "limits": "No safety, crystallization or environmental superiority is inferred from atom economy alone. Both routes keep the same illustrative target yield and auxiliary inventory.",
+        "source": "https://openstax.org/books/chemistry-2e/pages/18-6-occurrence-preparation-and-properties-of-carbonates",
+        "evidenceType": "Reference chemistry + derived pathway comparison + educational quantities"
+      }
+    },
+    "optimization": {
+      "title": "Compare carbonate versus bicarbonate",
+      "baseline": "Citric acid neutralization with bicarbonate",
+      "problem": "Bicarbonate generates more non-target CO₂ and water per mole of citrate.",
+      "concept": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+      "changes": {
+        "equation": "2 C₆H₈O₇ + 3 Na₂CO₃ → 2 Na₃C₆H₅O₇ + 3 CO₂ + 3 H₂O",
+        "reactants": [
+          {
+            "name": "Citric acid",
+            "mass": 1.92123,
+            "molar": 192.123,
+            "coeff": 2,
+            "formula": "C6H8O7"
+          },
+          {
+            "name": "Sodium carbonate",
+            "mass": 1.58982,
+            "molar": 105.988,
+            "coeff": 3,
+            "formula": "Na2CO3"
+          }
+        ],
+        "products": [
+          {
+            "name": "Trisodium citrate (anhydrous)",
+            "mass": "",
+            "molar": 258.069,
+            "coeff": 2,
+            "formula": "C6H5Na3O7"
+          },
+          {
+            "name": "Carbon dioxide",
+            "mass": "",
+            "molar": 44.009,
+            "coeff": 3,
+            "formula": "CO2"
+          },
+          {
+            "name": "Water",
+            "mass": "",
+            "molar": 18.015,
+            "coeff": 3,
+            "formula": "H2O"
+          }
+        ],
+        "processRoute": "Sodium-carbonate neutralization"
+      },
+      "principles": [
+        1,
+        2
+      ],
+      "tags": [
+        "atom",
+        "waste"
+      ],
+      "source": "https://openstax.org/books/chemistry-2e/pages/18-6-occurrence-preparation-and-properties-of-carbonates",
+      "limits": "No safety, crystallization or environmental superiority is inferred from atom economy alone. Both routes keep the same illustrative target yield and auxiliary inventory.",
+      "evidenceType": "Reference chemistry + derived pathway comparison + educational quantities",
+      "changeProvenance": {
+        "equation": "reference",
+        "reactants.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.name": "reference",
+        "products.*.coeff": "reference",
+        "products.*.molar": "derived",
+        "products.*.mass": "derived",
+        "processRoute": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-calcium-lactate",
+    "label": "Calcium lactate formation",
+    "category": "Acid–carbonate chemistry",
+    "equation": "2 C₃H₆O₃ + CaCO₃ → Ca(C₃H₅O₃)₂ + CO₂ + H₂O",
+    "source": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C5743475&Mask=80",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 1: prevent waste at source. Model less ancillary material, without claiming a specific separation method or performance gain.",
+    "subtitle": "Anhydrous salt formula; hydrated crystals require a different product inventory.",
+    "reaction": {
+      "name": "Calcium lactate formation",
+      "reactants": [
+        {
+          "name": "Lactic acid",
+          "mass": 1.80156,
+          "molar": 90.078,
+          "coeff": 2,
+          "formula": "C3H6O3"
+        },
+        {
+          "name": "Calcium carbonate",
+          "mass": 1.00086,
+          "molar": 100.086,
+          "coeff": 1,
+          "formula": "CaCO3"
+        }
+      ],
+      "products": [
+        {
+          "name": "Calcium lactate (anhydrous)",
+          "mass": "",
+          "molar": 218.218,
+          "coeff": 1,
+          "formula": "C6H10CaO6"
+        },
+        {
+          "name": "Carbon dioxide",
+          "mass": "",
+          "molar": 44.009,
+          "coeff": 1,
+          "formula": "CO2"
+        },
+        {
+          "name": "Water",
+          "mass": "",
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "none",
+      "catalystMass": 0,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Anhydrous salt formula; hydrated crystals require a different product inventory.",
+      "demo": true,
+      "libraryId": "edu-calcium-lactate",
+      "equation": "2 C₃H₆O₃ + CaCO₃ → Ca(C₃H₅O₃)₂ + CO₂ + H₂O",
+      "category": "Acid–carbonate chemistry",
+      "educationalLevel": "Class 12",
+      "source": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C5743475&Mask=80",
+      "referenceContext": "Anhydrous salt formula; hydrated crystals require a different product inventory.",
+      "learningPurpose": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+      "catalystIdentity": "",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. The paper considers real shells and product hydration; this model retains an anhydrous target and ideal carbonate purity. Cleaning, impurities, transport and hydration need additional inventory. Mass metrics and score correctly stay unchanged.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Virgin calcium carbonate as feedstock",
+      "feedstockOrigin": "Virgin calcium carbonate · ideal purity assumption",
+      "caseStudy": {
+        "baseline": "Virgin calcium carbonate as feedstock",
+        "problem": "A virgin-only feedstock model ignores potentially useful carbonate-rich waste.",
+        "alternative": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+        "limits": "The paper considers real shells and product hydration; this model retains an anhydrous target and ideal carbonate purity. Cleaning, impurities, transport and hydration need additional inventory. Mass metrics and score correctly stay unchanged.",
+        "source": "https://doi.org/10.1021/acsomega.3c02042",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare recovered carbonate feedstock",
+      "baseline": "Virgin calcium carbonate as feedstock",
+      "problem": "A virgin-only feedstock model ignores potentially useful carbonate-rich waste.",
+      "concept": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+      "changes": {
+        "feedstockOrigin": "Recovered shell-derived carbonate · ideal purity assumption",
+        "processRoute": "Recovered-carbonate feedstock scenario"
+      },
+      "principles": [
+        1,
+        7
+      ],
+      "tags": [
+        "feedstock"
+      ],
+      "source": "https://doi.org/10.1021/acsomega.3c02042",
+      "limits": "The paper considers real shells and product hydration; this model retains an anhydrous target and ideal carbonate purity. Cleaning, impurities, transport and hydration need additional inventory. Mass metrics and score correctly stay unchanged.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "qualitativeOnly": true,
+      "changeProvenance": {
+        "feedstockOrigin": "educational-scenario",
+        "processRoute": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-calcite",
+    "label": "Calcium carbonate precipitation",
+    "category": "Precipitation",
+    "equation": "CaCl₂ + Na₂CO₃ → CaCO₃ + 2 NaCl",
+    "source": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 5: avoid unnecessary auxiliary materials. Model a smaller auxiliary-water inventory while holding target yield constant.",
+    "subtitle": "Calcium carbonate is the target. Dissolved salt and wash streams remain in the mass boundary.",
+    "reaction": {
+      "name": "Calcium carbonate precipitation",
+      "reactants": [
+        {
+          "name": "Calcium chloride (anhydrous)",
+          "mass": 1.10978,
+          "molar": 110.978,
+          "coeff": 1,
+          "formula": "CaCl2"
+        },
+        {
+          "name": "Sodium carbonate (anhydrous)",
+          "mass": 1.05988,
+          "molar": 105.988,
+          "coeff": 1,
+          "formula": "Na2CO3"
+        }
+      ],
+      "products": [
+        {
+          "name": "Calcium carbonate",
+          "mass": "",
+          "molar": 100.086,
+          "coeff": 1,
+          "formula": "CaCO3"
+        },
+        {
+          "name": "Sodium chloride",
+          "mass": "",
+          "molar": 58.44,
+          "coeff": 2,
+          "formula": "NaCl"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "none",
+      "catalystMass": 0,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Calcium carbonate is the target. Dissolved salt and wash streams remain in the mass boundary.",
+      "demo": true,
+      "libraryId": "edu-calcite",
+      "equation": "CaCl₂ + Na₂CO₃ → CaCO₃ + 2 NaCl",
+      "category": "Precipitation",
+      "educationalLevel": "Class 11",
+      "source": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+      "referenceContext": "Calcium carbonate is the target. Dissolved salt and wash streams remain in the mass boundary.",
+      "learningPurpose": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+      "catalystIdentity": "",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. Lime manufacture, gas handling, particle properties and purification are outside the model. CO₂ as an input is not proof of net carbon removal; no emissions credit is assigned.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Calcium chloride / sodium carbonate precipitation",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "Calcium chloride / sodium carbonate precipitation",
+        "problem": "The salt route generates sodium chloride as non-target material.",
+        "alternative": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+        "limits": "Lime manufacture, gas handling, particle properties and purification are outside the model. CO₂ as an input is not proof of net carbon removal; no emissions credit is assigned.",
+        "source": "https://doi.org/10.1021/ef200415p",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare carbonation with salt precipitation",
+      "baseline": "Calcium chloride / sodium carbonate precipitation",
+      "problem": "The salt route generates sodium chloride as non-target material.",
+      "concept": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+      "changes": {
+        "equation": "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O",
+        "reactants": [
+          {
+            "name": "Calcium hydroxide",
+            "mass": 0.74092,
+            "molar": 74.092,
+            "coeff": 1,
+            "formula": "CaH2O2"
+          },
+          {
+            "name": "Carbon dioxide",
+            "mass": 0.44009,
+            "molar": 44.009,
+            "coeff": 1,
+            "formula": "CO2"
+          }
+        ],
+        "products": [
+          {
+            "name": "Calcium carbonate",
+            "mass": "",
+            "molar": 100.086,
+            "coeff": 1,
+            "formula": "CaCO3"
+          },
+          {
+            "name": "Water",
+            "mass": "",
+            "molar": 18.015,
+            "coeff": 1,
+            "formula": "H2O"
+          }
+        ],
+        "processRoute": "Calcium hydroxide carbonation"
+      },
+      "principles": [
+        1,
+        2
+      ],
+      "tags": [
+        "atom",
+        "waste"
+      ],
+      "source": "https://doi.org/10.1021/ef200415p",
+      "limits": "Lime manufacture, gas handling, particle properties and purification are outside the model. CO₂ as an input is not proof of net carbon removal; no emissions credit is assigned.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "equation": "reference",
+        "reactants.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.name": "reference",
+        "products.*.coeff": "reference",
+        "products.*.molar": "derived",
+        "products.*.mass": "derived",
+        "processRoute": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-pla",
+    "label": "PLA hydrolysis to lactic acid",
+    "category": "Polymer recycling",
+    "equation": "(C₃H₄O₂)ₙ + n H₂O → n C₃H₆O₃",
+    "source": "https://openstax.org/books/organic-chemistry/pages/21-9-polyamides-and-polyesters-step-growth-polymers",
+    "kind": "Educational Demo",
+    "purpose": "Green Chemistry Principle 5: avoid unnecessary auxiliary materials. Model a smaller auxiliary-water inventory while holding target yield constant.",
+    "subtitle": "Ideal ester-repeat-unit hydrolysis; no catalyst assumed. Chain ends, pretreatment and degradation kinetics are not modeled. Recovered monomer purity is unverified.",
+    "reaction": {
+      "name": "PLA hydrolysis to lactic acid",
+      "reactants": [
+        {
+          "name": "PLA repeat unit",
+          "mass": 0.72063,
+          "molar": 72.063,
+          "coeff": 1,
+          "formula": "C3H4O2"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 0.18015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Lactic acid",
+          "mass": "",
+          "molar": 90.078,
+          "coeff": 1,
+          "formula": "C3H6O3"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "none",
+      "catalystMass": 0,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Ideal ester-repeat-unit hydrolysis; no catalyst assumed. Chain ends, pretreatment and degradation kinetics are not modeled. Recovered monomer purity is unverified.",
+      "demo": true,
+      "libraryId": "edu-pla",
+      "equation": "(C₃H₄O₂)ₙ + n H₂O → n C₃H₆O₃",
+      "category": "Polymer recycling",
+      "educationalLevel": "B.Tech",
+      "source": "https://openstax.org/books/organic-chemistry/pages/21-9-polyamides-and-polyesters-step-growth-polymers",
+      "referenceContext": "Ideal ester-repeat-unit hydrolysis; no catalyst assumed. Chain ends, pretreatment and degradation kinetics are not modeled. Recovered monomer purity is unverified.",
+      "learningPurpose": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+      "catalystIdentity": "",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived",
+        "processRoute": "educational-scenario",
+        "feedstockOrigin": "educational-scenario",
+        "catalystIdentity": "reference"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "Reference-based concept + educational scenario. The lower duration is an illustrative input, not a measured rate. Polymer morphology, molecular weight, buffers and enzyme preparation affect performance; no universal operating conditions are implied.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Uncatalyzed hydrolysis accounting baseline",
+      "feedstockOrigin": "Not traced",
+      "caseStudy": {
+        "baseline": "Uncatalyzed hydrolysis accounting baseline",
+        "problem": "An insoluble polymer can resist hydrolysis; reaction rate is absent from the mass balance.",
+        "alternative": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+        "limits": "The lower duration is an illustrative input, not a measured rate. Polymer morphology, molecular weight, buffers and enzyme preparation affect performance; no universal operating conditions are implied.",
+        "source": "https://doi.org/10.1021/acssuschemeng.5c06901",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare enzyme-assisted PLA depolymerization",
+      "baseline": "Uncatalyzed hydrolysis accounting baseline",
+      "problem": "An insoluble polymer can resist hydrolysis; reaction rate is absent from the mass balance.",
+      "concept": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+      "changes": {
+        "catalyst": "enzyme",
+        "catalystIdentity": "Proteinase K",
+        "catalystMass": 0.05,
+        "duration": 1,
+        "processRoute": "Enzyme-assisted PLA hydrolysis"
+      },
+      "principles": [
+        6,
+        9
+      ],
+      "tags": [
+        "energy",
+        "catalyst"
+      ],
+      "source": "https://doi.org/10.1021/acssuschemeng.5c06901",
+      "limits": "The lower duration is an illustrative input, not a measured rate. Polymer morphology, molecular weight, buffers and enzyme preparation affect performance; no universal operating conditions are implied.",
+      "evidenceType": "Reference-based concept + educational scenario",
+      "changeProvenance": {
+        "catalyst": "reference",
+        "catalystIdentity": "reference"
+      }
+    }
+  },
+  {
+    "id": "edu-pet",
+    "label": "PET hydrolysis to terephthalic acid",
+    "category": "Polymer recycling",
+    "equation": "(C₁₀H₈O₄)ₙ + 2n H₂O → n C₈H₆O₄ + n C₂H₆O₂",
+    "source": "https://doi.org/10.1021/acssuschemeng.4c09388",
+    "kind": "Educational Demo",
+    "purpose": "Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+    "subtitle": "Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary.",
+    "reaction": {
+      "name": "PET hydrolysis to terephthalic acid",
+      "reactants": [
+        {
+          "name": "PET repeat unit",
+          "mass": 1.9217,
+          "molar": 192.17,
+          "coeff": 1,
+          "formula": "C10H8O4"
+        },
+        {
+          "name": "Stoichiometric water",
+          "mass": 0.3603,
+          "molar": 18.015,
+          "coeff": 2,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Terephthalic acid",
+          "mass": "",
+          "molar": 166.132,
+          "coeff": 1,
+          "formula": "C8H6O4"
+        },
+        {
+          "name": "Ethylene glycol (coproduct)",
+          "mass": "",
+          "molar": 62.068,
+          "coeff": 1,
+          "formula": "C2H6O2"
+        }
+      ],
+      "solvent": "water",
+      "solventMass": 30,
+      "catalyst": "enzyme",
+      "catalystMass": 0.05,
+      "otherMass": 5,
+      "temperature": 35,
+      "duration": 2,
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": true,
+      "balanced": true,
+      "notes": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements. Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary.",
+      "demo": true,
+      "libraryId": "edu-pet",
+      "equation": "(C₁₀H₈O₄)ₙ + 2n H₂O → n C₈H₆O₄ + n C₂H₆O₂",
+      "category": "Polymer recycling",
+      "educationalLevel": "B.Tech 2nd–3rd year",
+      "source": "https://doi.org/10.1021/acssuschemeng.4c09388",
+      "referenceContext": "Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary.",
+      "learningPurpose": "Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary. Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+      "catalystIdentity": "Polyester hydrolase",
+      "dataType": "educational-scenario",
+      "provenance": {
+        "name": "reference",
+        "equation": "reference",
+        "balanced": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived",
+        "yield": "educational-scenario",
+        "temperature": "educational-scenario",
+        "duration": "educational-scenario",
+        "solventMass": "educational-scenario",
+        "catalystMass": "educational-scenario",
+        "otherMass": "educational-scenario",
+        "waste": "derived"
+      },
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Quantitative process values in this demo are illustrative educational inputs used to demonstrate Green Chemistry calculations and are not experimental literature measurements.",
+        "chemistry": "Reference-supported net equation; ideal repeat-unit basis for polymers. This is a calculation example, not operating instructions.",
+        "masses": "Molar masses derive from rounded atomic weights. New scenario reactant masses derive from an assumed 10 mmol reaction extent; original accounting examples retain their existing quantities.",
+        "quantities": "Yield, auxiliary masses, catalyst charge and temperature/time are educational assumptions. They do not establish practical compatibility or a feasible operating window.",
+        "waste": "All inputs minus target, water included, with no recovery credit. Individual coproduct recovery is unknown.",
+        "optimization": "The general green-chemistry concept is reference-supported. The size of each change and the retained yield are explicit scenario assumptions.",
+        "safety": "No process safety rating, selectivity prediction or life-cycle claim."
+      },
+      "processRoute": "Enzymatic PET recycling with a preparation-material allowance",
+      "caseStudy": {
+        "baseline": "Enzymatic PET recycling with a preparation-material allowance",
+        "problem": "Additional pretreatment and dilute processing can increase material demand.",
+        "alternative": "Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+        "limits": "This is ideal PET-repeat-unit accounting, not a measured PET-PE batch. PE, additives, enzyme production, buffer chemistry and monomer purification are not resolved. No thermal-energy saving is inferred.",
+        "source": "https://doi.org/10.1021/acssuschemeng.4c09388",
+        "evidenceType": "Reference-based concept + educational scenario"
+      }
+    },
+    "optimization": {
+      "title": "Compare PET recycling without amorphization",
+      "baseline": "Enzymatic PET recycling with a preparation-material allowance",
+      "problem": "Additional pretreatment and dilute processing can increase material demand.",
+      "concept": "Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+      "changes": {
+        "otherMass": 1,
+        "solventMass": 15,
+        "processRoute": "PET hydrolysis without amorphization · accounting scenario"
+      },
+      "principles": [
+        1,
+        5,
+        9
+      ],
+      "tags": [
+        "waste",
+        "solvent"
+      ],
+      "source": "https://doi.org/10.1021/acssuschemeng.4c09388",
+      "limits": "This is ideal PET-repeat-unit accounting, not a measured PET-PE batch. PE, additives, enzyme production, buffer chemistry and monomer purification are not resolved. No thermal-energy saving is inferred.",
+      "evidenceType": "Reference-based concept + educational scenario"
+    }
+  },
+  {
+    "id": "industrial-ammonia",
+    "label": "Haber–Bosch ammonia synthesis",
+    "category": "Industrial synthesis",
+    "equation": "N₂ + 3 H₂ ⇌ 2 NH₃",
+    "source": "https://edu.rsc.org/resources/ammonia/17.article",
+    "kind": "Industrial educational model",
+    "purpose": "Lower-carbon hydrogen and cleaner energy can reduce upstream impacts. Electrolytic hydrogen is a distinct supply route; electricity source, cost and infrastructure matter. No emissions reduction is calculated.",
+    "reaction": {
+      "name": "Haber–Bosch ammonia synthesis",
+      "reactants": [
+        {
+          "name": "Nitrogen",
+          "mass": 0.28014,
+          "molar": 28.014,
+          "coeff": 1,
+          "formula": "N2"
+        },
+        {
+          "name": "Hydrogen",
+          "mass": 0.06048,
+          "molar": 2.016,
+          "coeff": 3,
+          "formula": "H2"
+        }
+      ],
+      "products": [
+        {
+          "name": "Ammonia",
+          "mass": "",
+          "molar": 17.031,
+          "coeff": 2,
+          "formula": "NH3"
+        }
+      ],
+      "solvent": "none",
+      "solventMass": 0,
+      "catalyst": "heterogeneous",
+      "catalystMass": "",
+      "otherMass": "",
+      "temperature": "",
+      "duration": "",
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": false,
+      "balanced": true,
+      "notes": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+      "demo": true,
+      "libraryId": "industrial-ammonia",
+      "equation": "N₂ + 3 H₂ ⇌ 2 NH₃",
+      "category": "Industrial synthesis",
+      "source": "https://edu.rsc.org/resources/ammonia/17.article",
+      "catalystIdentity": "Promoted iron catalyst",
+      "dataType": "educational-scenario",
+      "referenceContext": "Reference teaching conditions: approximately 450 °C and 200 atmospheres with an iron catalyst. These are context, not a universal plant specification. Residence time and measured energy: Data unavailable.",
+      "learningPurpose": "Reaction-level stoichiometry and educational yield; plant performance is outside the model.",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "provenance": {
+        "equation": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "catalystIdentity": "reference",
+        "yield": "educational-scenario",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+        "chemistry": "Balanced net equation; formula masses calculated with the existing rounded CIAAW atomic weights.",
+        "conditions": "Reference teaching conditions: approximately 450 °C and 200 atmospheres with an iron catalyst. These are context, not a universal plant specification. Residence time and measured energy: Data unavailable.",
+        "optimization": "Qualitative reference-supported opportunities only. No paired experimental dataset or automatic numerical improvement is supplied.",
+        "environment": "Data unavailable for measured energy, emissions and full process hazards."
+      }
+    },
+    "industrialEducation": true
+  },
+  {
+    "id": "industrial-contact",
+    "label": "Contact process — sulfur dioxide oxidation",
+    "category": "Catalytic oxidation",
+    "equation": "2 SO₂ + O₂ ⇌ 2 SO₃",
+    "source": "https://www.topsoe.com/solutions/catalysts/sulfuric-acid-catalysts",
+    "kind": "Industrial educational model",
+    "purpose": "Heat recovery and well-designed catalyst and absorption systems can improve resource use. Wet-gas sulfuric-acid technology is an established but different process configuration, not an automatic drop-in replacement.",
+    "reaction": {
+      "name": "Contact process — sulfur dioxide oxidation",
+      "reactants": [
+        {
+          "name": "Sulfur dioxide",
+          "mass": 1.28116,
+          "molar": 64.058,
+          "coeff": 2,
+          "formula": "SO2"
+        },
+        {
+          "name": "Oxygen",
+          "mass": 0.31998000000000004,
+          "molar": 31.998,
+          "coeff": 1,
+          "formula": "O2"
+        }
+      ],
+      "products": [
+        {
+          "name": "Sulfur trioxide",
+          "mass": "",
+          "molar": 80.057,
+          "coeff": 2,
+          "formula": "SO3"
+        }
+      ],
+      "solvent": "none",
+      "solventMass": 0,
+      "catalyst": "heterogeneous",
+      "catalystMass": "",
+      "otherMass": "",
+      "temperature": "",
+      "duration": "",
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": false,
+      "balanced": true,
+      "notes": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+      "demo": true,
+      "libraryId": "industrial-contact",
+      "equation": "2 SO₂ + O₂ ⇌ 2 SO₃",
+      "category": "Catalytic oxidation",
+      "source": "https://www.topsoe.com/solutions/catalysts/sulfuric-acid-catalysts",
+      "catalystIdentity": "Supported vanadium-based sulfuric-acid catalyst",
+      "dataType": "educational-scenario",
+      "referenceContext": "Hot catalytic gas conversion with vanadium-based catalyst and staged temperature management. A specific plant temperature, pressure and residence time: Data unavailable.",
+      "learningPurpose": "Reaction-level stoichiometry and educational yield; plant performance is outside the model.",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "provenance": {
+        "equation": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "catalystIdentity": "reference",
+        "yield": "educational-scenario",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+        "chemistry": "Balanced net equation; formula masses calculated with the existing rounded CIAAW atomic weights.",
+        "conditions": "Hot catalytic gas conversion with vanadium-based catalyst and staged temperature management. A specific plant temperature, pressure and residence time: Data unavailable.",
+        "optimization": "Qualitative reference-supported opportunities only. No paired experimental dataset or automatic numerical improvement is supplied.",
+        "environment": "Data unavailable for measured energy, emissions and full process hazards."
+      }
+    },
+    "industrialEducation": true
+  },
+  {
+    "id": "industrial-methanol",
+    "label": "Methanol synthesis — carbon monoxide route",
+    "category": "Industrial synthesis",
+    "equation": "CO + 2 H₂ ⇌ CH₃OH",
+    "source": "https://matthey.com/en/products-and-markets/chemicals/synthesis",
+    "kind": "Industrial educational model",
+    "purpose": "Lower-carbon synthesis gas or renewable hydrogen with suitable carbon sources are possible approaches. CO₂ + 3 H₂ ⇌ CH₃OH + H₂O is a different route; it needs a separate inventory and electricity assessment.",
+    "reaction": {
+      "name": "Methanol synthesis — carbon monoxide route",
+      "reactants": [
+        {
+          "name": "Carbon monoxide",
+          "mass": 0.2801,
+          "molar": 28.01,
+          "coeff": 1,
+          "formula": "CO"
+        },
+        {
+          "name": "Hydrogen",
+          "mass": 0.04032,
+          "molar": 2.016,
+          "coeff": 2,
+          "formula": "H2"
+        }
+      ],
+      "products": [
+        {
+          "name": "Methanol",
+          "mass": "",
+          "molar": 32.042,
+          "coeff": 1,
+          "formula": "CH4O"
+        }
+      ],
+      "solvent": "none",
+      "solventMass": 0,
+      "catalyst": "heterogeneous",
+      "catalystMass": "",
+      "otherMass": "",
+      "temperature": "",
+      "duration": "",
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": false,
+      "balanced": true,
+      "notes": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+      "demo": true,
+      "libraryId": "industrial-methanol",
+      "equation": "CO + 2 H₂ ⇌ CH₃OH",
+      "category": "Industrial synthesis",
+      "source": "https://matthey.com/en/products-and-markets/chemicals/synthesis",
+      "catalystIdentity": "Copper/zinc oxide-based methanol catalyst",
+      "dataType": "educational-scenario",
+      "referenceContext": "Pressurized catalytic synthesis with heat removal; exact temperature, pressure, residence time and recycle inventory: Data unavailable.",
+      "learningPurpose": "Reaction-level stoichiometry and educational yield; plant performance is outside the model.",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "provenance": {
+        "equation": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "catalystIdentity": "reference",
+        "yield": "educational-scenario",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+        "chemistry": "Balanced net equation; formula masses calculated with the existing rounded CIAAW atomic weights.",
+        "conditions": "Pressurized catalytic synthesis with heat removal; exact temperature, pressure, residence time and recycle inventory: Data unavailable.",
+        "optimization": "Qualitative reference-supported opportunities only. No paired experimental dataset or automatic numerical improvement is supplied.",
+        "environment": "Data unavailable for measured energy, emissions and full process hazards."
+      }
+    },
+    "industrialEducation": true
+  },
+  {
+    "id": "industrial-iron",
+    "label": "Iron oxide reduction — carbon monoxide route",
+    "category": "Metallurgical reduction",
+    "equation": "Fe₂O₃ + 3 CO → 2 Fe + 3 CO₂",
+    "source": "https://arxiv.org/abs/2201.13356",
+    "kind": "Industrial educational model",
+    "purpose": "Hydrogen reduction, Fe₂O₃ + 3 H₂ → 2 Fe + 3 H₂O, is an alternative pathway under development and deployment. Its benefit depends on hydrogen production, electricity and ore quality; water formation alone does not prove zero emissions.",
+    "reaction": {
+      "name": "Iron oxide reduction — carbon monoxide route",
+      "reactants": [
+        {
+          "name": "Iron(III) oxide",
+          "mass": 1.5968700000000002,
+          "molar": 159.687,
+          "coeff": 1,
+          "formula": "Fe2O3"
+        },
+        {
+          "name": "Carbon monoxide",
+          "mass": 0.8403,
+          "molar": 28.01,
+          "coeff": 3,
+          "formula": "CO"
+        }
+      ],
+      "products": [
+        {
+          "name": "Iron",
+          "mass": "",
+          "molar": 55.845,
+          "coeff": 2,
+          "formula": "Fe"
+        },
+        {
+          "name": "Carbon dioxide",
+          "mass": "",
+          "molar": 44.009,
+          "coeff": 3,
+          "formula": "CO2"
+        }
+      ],
+      "solvent": "none",
+      "solventMass": 0,
+      "catalyst": "none",
+      "catalystMass": 0,
+      "otherMass": "",
+      "temperature": "",
+      "duration": "",
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": false,
+      "balanced": true,
+      "notes": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+      "demo": true,
+      "libraryId": "industrial-iron",
+      "equation": "Fe₂O₃ + 3 CO → 2 Fe + 3 CO₂",
+      "category": "Metallurgical reduction",
+      "source": "https://arxiv.org/abs/2201.13356",
+      "catalystIdentity": "",
+      "dataType": "educational-scenario",
+      "referenceContext": "Elevated-temperature solid/gas reduction. Furnace-specific temperature, duration, ore composition and heat demand: Data unavailable.",
+      "learningPurpose": "Reaction-level stoichiometry and educational yield; plant performance is outside the model.",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "provenance": {
+        "equation": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "catalystIdentity": "reference",
+        "yield": "educational-scenario",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+        "chemistry": "Balanced net equation; formula masses calculated with the existing rounded CIAAW atomic weights.",
+        "conditions": "Elevated-temperature solid/gas reduction. Furnace-specific temperature, duration, ore composition and heat demand: Data unavailable.",
+        "optimization": "Qualitative reference-supported opportunities only. No paired experimental dataset or automatic numerical improvement is supplied.",
+        "environment": "Data unavailable for measured energy, emissions and full process hazards."
+      }
+    },
+    "industrialEducation": true
+  },
+  {
+    "id": "industrial-hydrogen",
+    "label": "Hydrogen production — steam methane reforming",
+    "category": "Hydrogen production",
+    "equation": "CH₄ + H₂O ⇌ CO + 3 H₂",
+    "source": "https://www.energy.gov/cmei/fuels/hydrogen-production-natural-gas-reforming",
+    "kind": "Industrial educational model",
+    "purpose": "Water electrolysis uses electricity and is a different route: 2 H₂O → 2 H₂ + O₂. Its environmental outcome depends on electricity and equipment. Capture on reforming routes also needs a full system assessment.",
+    "reaction": {
+      "name": "Hydrogen production — steam methane reforming",
+      "reactants": [
+        {
+          "name": "Methane",
+          "mass": 0.16043,
+          "molar": 16.043,
+          "coeff": 1,
+          "formula": "CH4"
+        },
+        {
+          "name": "Steam (reactant water)",
+          "mass": 0.18015,
+          "molar": 18.015,
+          "coeff": 1,
+          "formula": "H2O"
+        }
+      ],
+      "products": [
+        {
+          "name": "Hydrogen",
+          "mass": "",
+          "molar": 2.016,
+          "coeff": 3,
+          "formula": "H2"
+        },
+        {
+          "name": "Carbon monoxide",
+          "mass": "",
+          "molar": 28.01,
+          "coeff": 1,
+          "formula": "CO"
+        }
+      ],
+      "solvent": "none",
+      "solventMass": 0,
+      "catalyst": "heterogeneous",
+      "catalystMass": "",
+      "otherMass": "",
+      "temperature": "",
+      "duration": "",
+      "yield": 75,
+      "yieldMode": "yield",
+      "waste": "",
+      "complete": false,
+      "balanced": true,
+      "notes": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+      "demo": true,
+      "libraryId": "industrial-hydrogen",
+      "equation": "CH₄ + H₂O ⇌ CO + 3 H₂",
+      "category": "Hydrogen production",
+      "source": "https://www.energy.gov/cmei/fuels/hydrogen-production-natural-gas-reforming",
+      "catalystIdentity": "Reforming catalyst (specific formulation not supplied)",
+      "dataType": "educational-scenario",
+      "referenceContext": "DOE reference range for steam reforming: 700–1,000 °C and 3–25 bar with a catalyst. Reaction heat, residence time and purification energy: Data unavailable.",
+      "learningPurpose": "Reaction-level stoichiometry and educational yield; plant performance is outside the model.",
+      "units": {
+        "mass": "g",
+        "molar": "g/mol",
+        "temperature": "°C",
+        "duration": "h",
+        "yield": "%"
+      },
+      "provenance": {
+        "equation": "reference",
+        "solvent": "reference",
+        "catalyst": "reference",
+        "catalystIdentity": "reference",
+        "yield": "educational-scenario",
+        "reactants.*.name": "reference",
+        "products.*.name": "reference",
+        "reactants.*.coeff": "reference",
+        "products.*.coeff": "reference",
+        "reactants.*.molar": "derived",
+        "products.*.molar": "derived",
+        "reactants.*.mass": "derived",
+        "products.*.mass": "derived"
+      },
+      "evidence": {
+        "level": "educational-scenario",
+        "origin": "Educational Assumptions: a 10 mmol stoichiometric reaction extent and 75% target yield are chosen only to illustrate arithmetic, not measured conversion or recommended conditions. Process auxiliaries, catalyst allocation, waste inventory, energy and emissions are unavailable. PMI and E-factor remain unavailable until a complete inventory is supplied. The solvent-free reaction step is not the entire plant.",
+        "chemistry": "Balanced net equation; formula masses calculated with the existing rounded CIAAW atomic weights.",
+        "conditions": "DOE reference range for steam reforming: 700–1,000 °C and 3–25 bar with a catalyst. Reaction heat, residence time and purification energy: Data unavailable.",
+        "optimization": "Qualitative reference-supported opportunities only. No paired experimental dataset or automatic numerical improvement is supplied.",
+        "environment": "Data unavailable for measured energy, emissions and full process hazards."
+      }
+    },
+    "industrialEducation": true
+  }
+]

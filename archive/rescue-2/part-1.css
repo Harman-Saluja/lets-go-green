@@ -1,0 +1,15 @@
+/* Scoped presentation additions; existing theme tokens and typography unchanged. */
+.lgg-change-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}
+.lgg-change{padding:12px;border:1px solid var(--line);border-radius:12px;display:grid;gap:8px}
+.lgg-change span{font-size:12px;color:var(--muted)}
+.lgg-change.better{border-color:#438c72}.lgg-change.worse{border-color:#af8059}
+.lgg-change-bars{display:grid;gap:4px}.lgg-change-bars i{display:block;height:5px;background:var(--muted);border-radius:4px}
+.lgg-change-bars i+ i{background:var(--green);opacity:calc(.35 + var(--after-share,.5)*.65);transform:scaleX(calc(.9 + var(--after-share,.5)*.1));transform-origin:left;transition:transform .12s,opacity .12s}
+.lgg-change.worse .lgg-change-bars i+ i{background:#c99369}.lgg-change.neutral .lgg-change-bars i+ i{background:var(--muted)}
+.lgg-reveal__divider{box-shadow:0 0 0 3px var(--surface)}
+[aria-label="Reaction materials"]{display:grid;gap:12px;margin-block:18px}
+[aria-label="Reaction materials"] summary{cursor:pointer;font-weight:600}
+@media(prefers-reduced-motion:reduce){.lgg-change-bars i+ i{transition:none;transform:none}}
+/* Five existing navbar items: reuse original card, mascot and active pill styling. */
+.anime-navbar:has([data-tab="Chemistry Lab"]),.presenting nav.anime-navbar:has([data-tab="Chemistry Lab"]){grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:600px){.anime-navbar:has([data-tab="Chemistry Lab"]),.presenting nav.anime-navbar:has([data-tab="Chemistry Lab"]){grid-template-columns:repeat(3,minmax(0,1fr));row-gap:34px}}

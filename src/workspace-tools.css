@@ -1,0 +1,31 @@
+/* Additive controls only; existing theme variables and navbar animation code stay intact. */
+.anime-navbar .lgg-nav-entry { display:grid; grid-template-columns:minmax(0,1fr) 22px; min-width:0; }
+.anime-navbar .lgg-nav-entry .nav-tab { width:100%; min-width:0; }
+.lgg-nav-chevron { padding:0; border:0; border-radius:8px; background:transparent; color:var(--ink); cursor:pointer; position:relative; z-index:4; }
+.lgg-nav-chevron span { display:inline-block; transition:transform 200ms ease; }
+.lgg-nav-chevron[aria-expanded=true] span { transform:rotate(180deg); }
+.lgg-nav-chevron:focus-visible { outline:2px solid var(--green); }
+.lgg-nav-menu { position:absolute; left:var(--menu-left,16px); top:var(--menu-top,100px); width:var(--menu-width,260px); padding-top:5px; z-index:100; visibility:hidden; opacity:0; transform:translateY(-5px) scale(.98); transform-origin:top; transition:opacity 160ms ease,transform 180ms ease,visibility 180ms; }
+.lgg-nav-menu > div { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 10px 24px #00000038; padding:8px; max-height:calc(100vh - var(--menu-viewport-top,100px) - 20px); overflow:auto; }
+.lgg-nav-menu a { display:block; padding:12px; border-radius:8px; color:var(--ink); font-size:13px; text-decoration:none; white-space:normal; }
+.lgg-nav-menu a:hover,.lgg-nav-menu a:focus-visible { background:var(--mint); color:var(--green); outline:1px solid var(--green); }
+.lgg-nav-entry.is-menu-open .lgg-nav-menu { visibility:visible; opacity:1; transform:translateY(0) scale(1); }
+.lgg-subsections { margin:0 0 24px; flex-wrap:wrap; }
+.lgg-subview.is-switching { animation:lgg-subsection-in 220ms ease-out; }
+@keyframes lgg-subsection-in { from { opacity:.55; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+.lgg-simulation .form-grid input[type=range] { padding:0; min-height:44px; accent-color:var(--green); }
+.lgg-simulation .dashboard-grid { align-items:start; }
+.lgg-process-layout { display:grid; grid-template-columns:minmax(200px,1fr) 2fr; gap:24px; align-items:start; }
+.lgg-process-flow { list-style:none; padding:0; margin:0; }
+.lgg-process-flow li { display:flex; flex-direction:column; align-items:center; }
+.lgg-process-flow .btn { width:100%; white-space:normal; transition:transform 180ms ease,box-shadow 180ms ease; }
+.lgg-process-flow .btn:hover { transform:translateY(-2px); box-shadow:0 4px 12px #00000025; }
+.lgg-process-flow .btn[aria-pressed=true] { outline:1px solid var(--green); outline-offset:3px; }
+.lgg-flow-arrow { color:var(--green); padding:6px; animation:lgg-flow-in 650ms ease 1; }
+@keyframes lgg-flow-in { from { opacity:.3; transform:translateY(-4px); } to { opacity:1; transform:translateY(0); } }
+.lgg-process-detail { border-left:2px solid var(--line); padding-left:20px; min-height:280px; animation:lgg-subsection-in 220ms ease-out; }
+@media(max-width:600px) { .lgg-process-layout { grid-template-columns:1fr; } .lgg-process-detail { min-height:0; } .lgg-subsections .btn { white-space:normal; flex:1 1 130px; } .anime-navbar .lgg-nav-entry { grid-template-columns:minmax(0,1fr) 18px; } .anime-navbar .lgg-nav-entry .nav-tab { font-size:10px; gap:3px; } }
+@media(prefers-reduced-motion:reduce) { .lgg-nav-menu,.lgg-nav-chevron span,.lgg-process-flow .btn { transition:none; } .lgg-subview.is-switching,.lgg-flow-arrow,.lgg-process-detail { animation:none; } .lgg-process-flow .btn:hover { transform:none; } }
+/* Keep shortcut overlays above adjacent content without changing header styling. */
+header:has(.lgg-nav-entry) { position:relative; z-index:20; }
+@media(min-width:761px) and (max-width:1100px) { .anime-navbar .lgg-nav-entry .nav-label { font-size:11px; } .anime-navbar .lgg-nav-entry .nav-tab { gap:3px; padding-inline:2px; } }

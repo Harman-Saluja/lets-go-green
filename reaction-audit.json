@@ -1,0 +1,572 @@
+{
+  "scope": "12 researched educational case studies, each with an applicable educational optimization",
+  "passes": [
+    {
+      "pass": 1,
+      "reactions": 12,
+      "checks": 405,
+      "failures": 0
+    },
+    {
+      "pass": 2,
+      "reactions": 12,
+      "checks": 405,
+      "failures": 0
+    }
+  ],
+  "checks": 926,
+  "browserQA": "Mock DOM integration; real-browser visual/mobile QA unavailable",
+  "acceptance": "All 12 satisfy the educational-scenario requirements",
+  "provenance": "Reference chemistry; mathematically derived values; explicitly illustrative process and optimization quantities; user edits tracked",
+  "records": [
+    {
+      "id": "demo-0",
+      "name": "Sugar hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 50,
+        "yield": 80,
+        "ef": 6.016918670485579,
+        "pmi": 7.016918670485579,
+        "rme": 40
+      },
+      "score": 70,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recoverable biocatalysis",
+        "concept": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "source": "https://doi.org/10.3389/fmicb.2020.00633",
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "changes": {
+          "catalystIdentity": "Immobilized invertase",
+          "catalystMass": 0.04,
+          "otherMass": 5.02
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "demo-1",
+      "name": "Starch hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+      "metrics": {
+        "atom": 100,
+        "yield": 90,
+        "ef": 6.4081228367513585,
+        "pmi": 7.4081228367513585,
+        "rme": 90.00000000000001
+      },
+      "score": 72,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare concentrated starch processing",
+        "concept": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+        "source": "https://doi.org/10.1002/star.70159",
+        "baseline": "Dilute aqueous starch hydrolysis",
+        "problem": "Large auxiliary-water inputs dominate this baseline PMI.",
+        "limits": "Viscosity, density and glucose inhibition matter. This scenario is not the published substrate or solids loading; unchanged yield is assumed.",
+        "changes": {
+          "solventMass": 60,
+          "processRoute": "Concentrated aqueous starch scenario"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "demo-2",
+      "name": "Glucose isomerization",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 70,
+        "ef": 3.854174001579584,
+        "pmi": 4.854174001579584,
+        "rme": 70
+      },
+      "score": 69,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recoverable biocatalysis",
+        "concept": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "source": "https://doi.org/10.1002/jobm.3630220808",
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "changes": {
+          "catalystIdentity": "Immobilized glucose isomerase",
+          "catalystMass": 0.04,
+          "otherMass": 1.02
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-lactose",
+      "name": "Lactose hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 50,
+        "yield": 75,
+        "ef": 27.60714787924539,
+        "pmi": 28.607147879245392,
+        "rme": 37.50000000000001
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recoverable biocatalysis",
+        "concept": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "source": "https://doi.org/10.3390/catal13121503",
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "changes": {
+          "catalystIdentity": "Immobilized β-galactosidase",
+          "catalystMass": 0.02,
+          "otherMass": 5.01
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-cellulose",
+      "name": "Cellulose hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 26.27381454591206,
+        "pmi": 27.27381454591206,
+        "rme": 75
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare high-solids cellulose processing",
+        "concept": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+        "source": "https://doi.org/10.1186/s13068-018-1339-x",
+        "baseline": "Dilute enzymatic cellulose hydrolysis",
+        "problem": "Dilution increases material throughput and subsequent separation demand.",
+        "limits": "The source identifies water limitation and substrate dependence. Preparation mass is counted; preparation energy and retained conversion are not established.",
+        "changes": {
+          "solventMass": 15,
+          "otherMass": 6,
+          "processRoute": "High-solids cellulose scenario"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-isomaltulose",
+      "name": "Sucrose to isomaltulose",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 13.986194250412167,
+        "pmi": 14.986194250412169,
+        "rme": 74.99999999999999
+      },
+      "score": 66,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recoverable biocatalysis",
+        "concept": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/4/99/11.html",
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "changes": {
+          "catalystIdentity": "Immobilized isomaltulose-producing biocatalyst",
+          "catalystMass": 0.02,
+          "otherMass": 5.01
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-tagatose",
+      "name": "Galactose to tagatose",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 26.27381454591206,
+        "pmi": 27.27381454591206,
+        "rme": 75
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recoverable biocatalysis",
+        "concept": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+        "source": "https://doi.org/10.1021/bp025675f",
+        "baseline": "A single-use enzyme accounting baseline",
+        "problem": "Discarding an active enzyme requires fresh catalyst for every modeled batch.",
+        "limits": "No reuse count, retained activity, selectivity or net life-cycle benefit is inferred. Support preparation is represented by an illustrative aggregate, not a measured inventory.",
+        "changes": {
+          "catalystIdentity": "Immobilized L-arabinose isomerase",
+          "catalystMass": 0.02,
+          "otherMass": 5.01
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-citrate",
+      "name": "Citric acid–bicarbonate neutralization",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+      "metrics": {
+        "atom": 58.105196322789396,
+        "yield": 75,
+        "ef": 19.377707770660816,
+        "pmi": 20.377707770660816,
+        "rme": 43.57889724209205
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare carbonate versus bicarbonate",
+        "concept": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+        "source": "https://openstax.org/books/chemistry-2e/pages/18-6-occurrence-preparation-and-properties-of-carbonates",
+        "baseline": "Citric acid neutralization with bicarbonate",
+        "problem": "Bicarbonate generates more non-target CO₂ and water per mole of citrate.",
+        "limits": "No safety, crystallization or environmental superiority is inferred from atom economy alone. Both routes keep the same illustrative target yield and auxiliary inventory.",
+        "changes": {
+          "equation": "2 C₆H₈O₇ + 3 Na₂CO₃ → 2 Na₃C₆H₅O₇ + 3 CO₂ + 3 H₂O",
+          "reactants": [
+            {
+              "name": "Citric acid",
+              "mass": 1.92123,
+              "molar": 192.123,
+              "coeff": 2,
+              "formula": "C6H8O7"
+            },
+            {
+              "name": "Sodium carbonate",
+              "mass": 1.58982,
+              "molar": 105.988,
+              "coeff": 3,
+              "formula": "Na2CO3"
+            }
+          ],
+          "products": [
+            {
+              "name": "Trisodium citrate (anhydrous)",
+              "mass": "",
+              "molar": 258.069,
+              "coeff": 2,
+              "formula": "C6H5Na3O7"
+            },
+            {
+              "name": "Carbon dioxide",
+              "mass": "",
+              "molar": 44.009,
+              "coeff": 3,
+              "formula": "CO2"
+            },
+            {
+              "name": "Water",
+              "mass": "",
+              "molar": 18.015,
+              "coeff": 3,
+              "formula": "H2O"
+            }
+          ],
+          "processRoute": "Sodium-carbonate neutralization"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-calcium-lactate",
+      "name": "Calcium lactate formation",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+      "metrics": {
+        "atom": 77.86770005923451,
+        "yield": 75,
+        "ef": 22.097648528841194,
+        "pmi": 23.097648528841194,
+        "rme": 58.40077504442587
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare recovered carbonate feedstock",
+        "concept": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+        "source": "https://doi.org/10.1021/acsomega.3c02042",
+        "baseline": "Virgin calcium carbonate as feedstock",
+        "problem": "A virgin-only feedstock model ignores potentially useful carbonate-rich waste.",
+        "limits": "The paper considers real shells and product hydration; this model retains an anhydrous target and ideal carbonate purity. Cleaning, impurities, transport and hydration need additional inventory. Mass metrics and score correctly stay unchanged.",
+        "changes": {
+          "feedstockOrigin": "Recovered shell-derived carbonate · ideal purity assumption",
+          "processRoute": "Recovered-carbonate feedstock scenario"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-calcite",
+      "name": "Calcium carbonate precipitation",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+      "metrics": {
+        "atom": 46.12980835706977,
+        "yield": 75,
+        "ef": 48.51696207927848,
+        "pmi": 49.51696207927848,
+        "rme": 34.59735626780234
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare carbonation with salt precipitation",
+        "concept": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+        "source": "https://doi.org/10.1021/ef200415p",
+        "baseline": "Calcium chloride / sodium carbonate precipitation",
+        "problem": "The salt route generates sodium chloride as non-target material.",
+        "limits": "Lime manufacture, gas handling, particle properties and purification are outside the model. CO₂ as an input is not proof of net carbon removal; no emissions credit is assigned.",
+        "changes": {
+          "equation": "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O",
+          "reactants": [
+            {
+              "name": "Calcium hydroxide",
+              "mass": 0.74092,
+              "molar": 74.092,
+              "coeff": 1,
+              "formula": "CaH2O2"
+            },
+            {
+              "name": "Carbon dioxide",
+              "mass": 0.44009,
+              "molar": 44.009,
+              "coeff": 1,
+              "formula": "CO2"
+            }
+          ],
+          "products": [
+            {
+              "name": "Calcium carbonate",
+              "mass": "",
+              "molar": 100.086,
+              "coeff": 1,
+              "formula": "CaCO3"
+            },
+            {
+              "name": "Water",
+              "mass": "",
+              "molar": 18.015,
+              "coeff": 1,
+              "formula": "H2O"
+            }
+          ],
+          "processRoute": "Calcium hydroxide carbonation"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-pla",
+      "name": "PLA hydrolysis to lactic acid",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 52.140285826357896,
+        "pmi": 53.140285826357896,
+        "rme": 75
+      },
+      "score": 64,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare enzyme-assisted PLA depolymerization",
+        "concept": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+        "source": "https://doi.org/10.1021/acssuschemeng.5c06901",
+        "baseline": "Uncatalyzed hydrolysis accounting baseline",
+        "problem": "An insoluble polymer can resist hydrolysis; reaction rate is absent from the mass balance.",
+        "limits": "The lower duration is an illustrative input, not a measured rate. Polymer morphology, molecular weight, buffers and enzyme preparation affect performance; no universal operating conditions are implied.",
+        "changes": {
+          "catalyst": "enzyme",
+          "catalystIdentity": "Proteinase K",
+          "catalystMass": 0.05,
+          "duration": 1,
+          "processRoute": "Enzyme-assisted PLA hydrolysis"
+        }
+      },
+      "dataType": "educational-scenario"
+    },
+    {
+      "id": "edu-pet",
+      "name": "PET hydrolysis to terephthalic acid",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary. Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+      "metrics": {
+        "atom": 72.80105170902718,
+        "yield": 75,
+        "ef": 28.96171718874148,
+        "pmi": 29.961717188741478,
+        "rme": 54.60078878177037
+      },
+      "score": 65,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false,
+      "optimization": {
+        "title": "Compare PET recycling without amorphization",
+        "concept": "Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+        "source": "https://doi.org/10.1021/acssuschemeng.4c09388",
+        "baseline": "Enzymatic PET recycling with a preparation-material allowance",
+        "problem": "Additional pretreatment and dilute processing can increase material demand.",
+        "limits": "This is ideal PET-repeat-unit accounting, not a measured PET-PE batch. PE, additives, enzyme production, buffer chemistry and monomer purification are not resolved. No thermal-energy saving is inferred.",
+        "changes": {
+          "otherMass": 1,
+          "solventMass": 15,
+          "processRoute": "PET hydrolysis without amorphization · accounting scenario"
+        }
+      },
+      "dataType": "educational-scenario"
+    }
+  ]
+}

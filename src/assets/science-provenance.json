@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-10",
+  "molecularSource": "PubChem PUG REST 3D SDF by explicit CID",
+  "geometry": "Natural Earth 1:110m; public domain",
+  "files": {
+    "assets/molecules/962.sdf": "c098ce4b351a55f0448a79360d72b782514432a9bc8a931aa82ab16756729376",
+    "assets/molecules/887.sdf": "304b8f1ebcd37ad1ed232c5f5e31a48305beceef39feafc592dd9ef4993f8418",
+    "assets/molecules/297.sdf": "b5f2219f80df129ed401c666f848f03792915ef5e75c2654f874db7f2f30c894",
+    "assets/molecules/176.sdf": "78cdfe15a93a20015550ea0e7e9de7a3bf3163d73926f7a0c7d72ea6da97feb0",
+    "assets/molecules/702.sdf": "4bb700444108590782319f7682749b204cb9ae28ffe15f5fa0863c89335fccd5",
+    "assets/molecules/280.sdf": "b3fc248424ff2817a8891541990a7bca449526d988a46204035bbb914d163ec1",
+    "assets/molecules/8857.sdf": "8ebd917e84aaec5f55f9c73a8f39fabafa5108549c5d0e92787930227d95069f",
+    "assets/molecules/222.sdf": "806bcd39ea0609512a8761d509fb70765cd5ac3a4584b620f5c841fd04bb622c",
+    "assets/earth.json": "54b46eff26f4cdc3bfab768ac374b50f4070e98fffbf389a3ce0e22a2c3b5165",
+    "vendor/3Dmol-min.js": "4ab374e1830bccec950b280fd285a430e05e91bd13c9ef0097c611c66de6cb36",
+    "vendor/3Dmol-LICENSE.txt": "4c6eaaed856f3f28a3b1a98e74f4a8a71618de7d51ea4155c29f6f793bcef861"
+  }
+}

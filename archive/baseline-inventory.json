@@ -1,0 +1,737 @@
+[
+  {
+    "id": "demo-0",
+    "name": "Sugar hydrolysis",
+    "category": "Hydrolysis",
+    "industrial": false,
+    "audit": {
+      "id": "demo-0",
+      "name": "Sugar hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of invertase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 50,
+        "yield": 80,
+        "ef": 6.016918670485579,
+        "pmi": 7.016918670485579,
+        "rme": 40
+      },
+      "score": 57.70857050425555,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 50,
+      "yield": 80,
+      "ef": 6.016918670485579,
+      "pmi": 7.016918670485579,
+      "rme": 40
+    },
+    "optimization": true
+  },
+  {
+    "id": "demo-1",
+    "name": "Starch hydrolysis",
+    "category": "Hydrolysis",
+    "industrial": false,
+    "audit": {
+      "id": "demo-1",
+      "name": "Starch hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "High-solids starch hydrolysis is an established processing approach. Explore less auxiliary water on the same ideal repeat-unit basis.",
+      "metrics": {
+        "atom": 100,
+        "yield": 90,
+        "ef": 6.4081228367513585,
+        "pmi": 7.4081228367513585,
+        "rme": 90.00000000000001
+      },
+      "score": 77.98349220221266,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 90,
+      "ef": 6.4081228367513585,
+      "pmi": 7.4081228367513585,
+      "rme": 90.00000000000001
+    },
+    "optimization": true
+  },
+  {
+    "id": "demo-2",
+    "name": "Glucose isomerization",
+    "category": "Isomerization",
+    "industrial": false,
+    "audit": {
+      "id": "demo-2",
+      "name": "Glucose isomerization",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of glucose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 70,
+        "ef": 3.854174001579584,
+        "pmi": 4.854174001579584,
+        "rme": 70
+      },
+      "score": 74.83003727121194,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 70,
+      "ef": 3.854174001579584,
+      "pmi": 4.854174001579584,
+      "rme": 70
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-lactose",
+    "name": "Lactose hydrolysis",
+    "category": "Disaccharide hydrolysis",
+    "industrial": false,
+    "audit": {
+      "id": "edu-lactose",
+      "name": "Lactose hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of β-galactosidase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 50,
+        "yield": 75,
+        "ef": 27.60714787924539,
+        "pmi": 28.607147879245392,
+        "rme": 37.50000000000001
+      },
+      "score": 50.99905654552325,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 50,
+      "yield": 75,
+      "ef": 27.60714787924539,
+      "pmi": 28.607147879245392,
+      "rme": 37.50000000000001
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-cellulose",
+    "name": "Cellulose hydrolysis",
+    "category": "Biomass conversion",
+    "industrial": false,
+    "audit": {
+      "id": "edu-cellulose",
+      "name": "Cellulose hydrolysis",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Biomass-water research supports studying higher solids loading and substrate accessibility together. Model reduced auxiliary water with an added preparation allowance.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 26.27381454591206,
+        "pmi": 27.27381454591206,
+        "rme": 75
+      },
+      "score": 68.48560013114022,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": 26.27381454591206,
+      "pmi": 27.27381454591206,
+      "rme": 75
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-isomaltulose",
+    "name": "Sucrose to isomaltulose",
+    "category": "Biocatalytic rearrangement",
+    "industrial": false,
+    "audit": {
+      "id": "edu-isomaltulose",
+      "name": "Sucrose to isomaltulose",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of isomaltulose-producing biocatalyst supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 13.986194250412167,
+        "pmi": 14.986194250412169,
+        "rme": 74.99999999999999
+      },
+      "score": 70.3421609112391,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": 13.986194250412167,
+      "pmi": 14.986194250412169,
+      "rme": 74.99999999999999
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-tagatose",
+    "name": "Galactose to tagatose",
+    "category": "Sugar isomerization",
+    "industrial": false,
+    "audit": {
+      "id": "edu-tagatose",
+      "name": "Galactose to tagatose",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Immobilization of L-arabinose isomerase supports catalyst recovery. The scenario allocates less fresh enzyme and includes an assumed support-material burden.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 26.27381454591206,
+        "pmi": 27.27381454591206,
+        "rme": 75
+      },
+      "score": 68.48560013114022,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": 26.27381454591206,
+      "pmi": 27.27381454591206,
+      "rme": 75
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-citrate",
+    "name": "Citric acid–bicarbonate neutralization",
+    "category": "Acid–base chemistry",
+    "industrial": false,
+    "audit": {
+      "id": "edu-citrate",
+      "name": "Citric acid–bicarbonate neutralization",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Balanced acid-carbonate chemistry permits a sodium-carbonate route. The atom-economy advantage is derived from stoichiometry; this is not a published process-performance comparison.",
+      "metrics": {
+        "atom": 58.105196322789396,
+        "yield": 75,
+        "ef": 19.377707770660816,
+        "pmi": 20.377707770660816,
+        "rme": 43.57889724209205
+      },
+      "score": 54.77332624482171,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 58.105196322789396,
+      "yield": 75,
+      "ef": 19.377707770660816,
+      "pmi": 20.377707770660816,
+      "rme": 43.57889724209205
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-calcium-lactate",
+    "name": "Calcium lactate formation",
+    "category": "Acid–carbonate chemistry",
+    "industrial": false,
+    "audit": {
+      "id": "edu-calcium-lactate",
+      "name": "Calcium lactate formation",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Research demonstrates conversion of bivalve-shell carbonate to calcium lactate. Compare a recovered-carbonate feedstock on the same ideal purified-CaCO₃ basis.",
+      "metrics": {
+        "atom": 77.86770005923451,
+        "yield": 75,
+        "ef": 22.097648528841194,
+        "pmi": 23.097648528841194,
+        "rme": 58.40077504442587
+      },
+      "score": 61.26165100247277,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 77.86770005923451,
+      "yield": 75,
+      "ef": 22.097648528841194,
+      "pmi": 23.097648528841194,
+      "rme": 58.40077504442587
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-calcite",
+    "name": "Calcium carbonate precipitation",
+    "category": "Precipitation",
+    "industrial": false,
+    "audit": {
+      "id": "edu-calcite",
+      "name": "Calcium carbonate precipitation",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Aqueous calcium hydroxide carbonation is an established alternative route to calcium carbonate. Its different net equation avoids sodium chloride coproduct.",
+      "metrics": {
+        "atom": 46.12980835706977,
+        "yield": 75,
+        "ef": 48.51696207927848,
+        "pmi": 49.51696207927848,
+        "rme": 34.59735626780234
+      },
+      "score": 48.40922414584706,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 46.12980835706977,
+      "yield": 75,
+      "ef": 48.51696207927848,
+      "pmi": 49.51696207927848,
+      "rme": 34.59735626780234
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-pla",
+    "name": "PLA hydrolysis to lactic acid",
+    "category": "Polymer recycling",
+    "industrial": false,
+    "audit": {
+      "id": "edu-pla",
+      "name": "PLA hydrolysis to lactic acid",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Proteinase K-assisted PLA depolymerization is established. Compare an enzyme-containing scenario with an assumed shorter duration.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": 52.140285826357896,
+        "pmi": 53.140285826357896,
+        "rme": 75
+      },
+      "score": 66.97719816771384,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": 52.140285826357896,
+      "pmi": 53.140285826357896,
+      "rme": 75
+    },
+    "optimization": true
+  },
+  {
+    "id": "edu-pet",
+    "name": "PET hydrolysis to terephthalic acid",
+    "category": "Polymer recycling",
+    "industrial": false,
+    "audit": {
+      "id": "edu-pet",
+      "name": "PET hydrolysis to terephthalic acid",
+      "decision": "KEEP",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Ideal polymer repeat units; terephthalic acid is the only credited target. Ethylene glycol is non-target material in this boundary. Research on PET-PE packaging demonstrates enzymatic PET depolymerization without amorphization pretreatment and at high solids loading. Model a reduced preparation inventory and less auxiliary water.",
+      "metrics": {
+        "atom": 72.80105170902718,
+        "yield": 75,
+        "ef": 28.96171718874148,
+        "pmi": 29.961717188741478,
+        "rme": 54.60078878177037
+      },
+      "score": 58.79733151920836,
+      "missingRequired": [],
+      "gaps": [],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 72.80105170902718,
+      "yield": 75,
+      "ef": 28.96171718874148,
+      "pmi": 29.961717188741478,
+      "rme": 54.60078878177037
+    },
+    "optimization": true
+  },
+  {
+    "id": "industrial-ammonia",
+    "name": "Haber–Bosch ammonia synthesis",
+    "category": "Industrial synthesis",
+    "industrial": true,
+    "audit": {
+      "id": "industrial-ammonia",
+      "name": "Haber–Bosch ammonia synthesis",
+      "decision": "REMOVE",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Only equation-level evidence is stored; process quantities cannot be derived from stoichiometry alone.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": null,
+        "pmi": null,
+        "rme": 75
+      },
+      "score": 88.63636363636364,
+      "missingRequired": [
+        {
+          "metric": "E-factor",
+          "reason": "Enter total waste and positive target mass, or complete the full input mass balance."
+        },
+        {
+          "metric": "Process mass intensity",
+          "reason": "Confirm all inputs are included; enter solvent, catalyst, other-input masses (0 if absent), and positive target product mass."
+        }
+      ],
+      "gaps": [
+        "Temperature and duration"
+      ],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": null,
+      "pmi": null,
+      "rme": 75
+    },
+    "optimization": false
+  },
+  {
+    "id": "industrial-contact",
+    "name": "Contact process — sulfur dioxide oxidation",
+    "category": "Catalytic oxidation",
+    "industrial": true,
+    "audit": {
+      "id": "industrial-contact",
+      "name": "Contact process — sulfur dioxide oxidation",
+      "decision": "REMOVE",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Only equation-level evidence is stored; process quantities cannot be derived from stoichiometry alone.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": null,
+        "pmi": null,
+        "rme": 75
+      },
+      "score": 88.63636363636364,
+      "missingRequired": [
+        {
+          "metric": "E-factor",
+          "reason": "Enter total waste and positive target mass, or complete the full input mass balance."
+        },
+        {
+          "metric": "Process mass intensity",
+          "reason": "Confirm all inputs are included; enter solvent, catalyst, other-input masses (0 if absent), and positive target product mass."
+        }
+      ],
+      "gaps": [
+        "Temperature and duration"
+      ],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": null,
+      "pmi": null,
+      "rme": 75
+    },
+    "optimization": false
+  },
+  {
+    "id": "industrial-methanol",
+    "name": "Methanol synthesis — carbon monoxide route",
+    "category": "Industrial synthesis",
+    "industrial": true,
+    "audit": {
+      "id": "industrial-methanol",
+      "name": "Methanol synthesis — carbon monoxide route",
+      "decision": "REMOVE",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Only equation-level evidence is stored; process quantities cannot be derived from stoichiometry alone.",
+      "metrics": {
+        "atom": 100,
+        "yield": 75,
+        "ef": null,
+        "pmi": null,
+        "rme": 74.99999999999999
+      },
+      "score": 88.63636363636364,
+      "missingRequired": [
+        {
+          "metric": "E-factor",
+          "reason": "Enter total waste and positive target mass, or complete the full input mass balance."
+        },
+        {
+          "metric": "Process mass intensity",
+          "reason": "Confirm all inputs are included; enter solvent, catalyst, other-input masses (0 if absent), and positive target product mass."
+        }
+      ],
+      "gaps": [
+        "Temperature and duration"
+      ],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 100,
+      "yield": 75,
+      "ef": null,
+      "pmi": null,
+      "rme": 74.99999999999999
+    },
+    "optimization": false
+  },
+  {
+    "id": "industrial-iron",
+    "name": "Iron oxide reduction — carbon monoxide route",
+    "category": "Metallurgical reduction",
+    "industrial": true,
+    "audit": {
+      "id": "industrial-iron",
+      "name": "Iron oxide reduction — carbon monoxide route",
+      "decision": "REMOVE",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Only equation-level evidence is stored; process quantities cannot be derived from stoichiometry alone.",
+      "metrics": {
+        "atom": 45.827742832875835,
+        "yield": 75,
+        "ef": null,
+        "pmi": null,
+        "rme": 34.37080712465687
+      },
+      "score": 57.856672064134,
+      "missingRequired": [
+        {
+          "metric": "E-factor",
+          "reason": "Enter total waste and positive target mass, or complete the full input mass balance."
+        },
+        {
+          "metric": "Process mass intensity",
+          "reason": "Confirm all inputs are included; enter solvent, catalyst, other-input masses (0 if absent), and positive target product mass."
+        }
+      ],
+      "gaps": [
+        "Temperature and duration"
+      ],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 45.827742832875835,
+      "yield": 75,
+      "ef": null,
+      "pmi": null,
+      "rme": 34.37080712465687
+    },
+    "optimization": false
+  },
+  {
+    "id": "industrial-hydrogen",
+    "name": "Hydrogen production — steam methane reforming",
+    "category": "Hydrogen production",
+    "industrial": true,
+    "audit": {
+      "id": "industrial-hydrogen",
+      "name": "Hydrogen production — steam methane reforming",
+      "decision": "REMOVE",
+      "scope": "Demo library; saved personal inputs remain available",
+      "reason": "Only equation-level evidence is stored; process quantities cannot be derived from stoichiometry alone.",
+      "metrics": {
+        "atom": 17.7579423336661,
+        "yield": 75,
+        "ef": null,
+        "pmi": null,
+        "rme": 13.318456750249574
+      },
+      "score": 41.9079217804921,
+      "missingRequired": [
+        {
+          "metric": "E-factor",
+          "reason": "Enter total waste and positive target mass, or complete the full input mass balance."
+        },
+        {
+          "metric": "Process mass intensity",
+          "reason": "Confirm all inputs are included; enter solvent, catalyst, other-input masses (0 if absent), and positive target product mass."
+        }
+      ],
+      "gaps": [
+        "Temperature and duration"
+      ],
+      "optionalUnavailable": [
+        "Individual coproduct quantities",
+        "Measured energy",
+        "Selectivity",
+        "Specific catalyst activity and reuse",
+        "Complete process safety and lifecycle data"
+      ],
+      "evidence": "educational-scenario",
+      "verifiedProcess": false
+    },
+    "metrics": {
+      "atom": 17.7579423336661,
+      "yield": 75,
+      "ef": null,
+      "pmi": null,
+      "rme": 13.318456750249574
+    },
+    "optimization": false
+  }
+]

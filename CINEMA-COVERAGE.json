@@ -1,0 +1,145 @@
+[
+  {
+    "id": "demo-0",
+    "name": "Sugar hydrolysis",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "demo-1",
+    "name": "Starch hydrolysis",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Starch repeat unit — polymer"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "demo-2",
+    "name": "Glucose isomerization",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-lactose",
+    "name": "Lactose hydrolysis",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-citrate",
+    "name": "Citric acid–bicarbonate neutralization",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Sodium bicarbonate — ionic",
+      "Trisodium citrate (anhydrous) — ionic"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-acetate",
+    "name": "Acetic acid–bicarbonate neutralization",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Sodium bicarbonate — ionic",
+      "Sodium acetate (anhydrous) — ionic"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-calcium-lactate",
+    "name": "Calcium lactate formation",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Calcium carbonate — ionic",
+      "Calcium lactate (anhydrous) — ionic"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-calcite",
+    "name": "Calcium carbonate precipitation",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Calcium chloride (anhydrous) — ionic",
+      "Sodium carbonate (anhydrous) — ionic",
+      "Calcium carbonate — ionic",
+      "Sodium chloride — ionic"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-pla",
+    "name": "PLA hydrolysis to lactic acid",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "PLA repeat unit — polymer"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "edu-pet",
+    "name": "PET hydrolysis to terephthalic acid",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "PET repeat unit — polymer"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "industrial-ammonia",
+    "name": "Haber–Bosch ammonia synthesis",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "industrial-contact",
+    "name": "Contact process — sulfur dioxide oxidation",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "industrial-methanol",
+    "name": "Methanol synthesis — carbon monoxide route",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "industrial-iron",
+    "name": "Iron oxide reduction — carbon monoxide route",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [
+      "Iron(III) oxide — ionic",
+      "Iron — metal"
+    ],
+    "browserWebGL": "not tested"
+  },
+  {
+    "id": "industrial-hydrogen",
+    "name": "Hydrogen production — steam methane reforming",
+    "scenes": 5,
+    "rendererHarness": "passed",
+    "materialSchematics": [],
+    "browserWebGL": "not tested"
+  }
+]

@@ -1,0 +1,25 @@
+/* New features only; existing theme and animations remain authoritative. */
+.anime-navbar:has([data-tab="Impact Atlas"]) { grid-template-columns:repeat(9,minmax(108px,1fr)); }
+@media(max-width:1150px) { .anime-navbar:has([data-tab="Impact Atlas"]) { grid-template-columns:repeat(5,minmax(0,1fr)); } }
+@media(max-width:700px) { .anime-navbar:has([data-tab="Impact Atlas"]) { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+impact-atlas,process-explorer-v2 { display:block; min-width:0; }
+.science-grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(260px,1fr); gap:24px; align-items:start; }
+.science-globe { width:100%; height:440px; touch-action:none; display:block; border-radius:var(--radius); }
+.science-steps { display:flex; gap:16px; overflow-x:auto; padding:16px 4px; }
+.science-equipment { flex:1 0 125px; min-width:0; }
+.science-equipment svg { display:block; width:100%; height:105px; color:var(--green); }
+.science-equipment[aria-pressed=true] { outline:2px solid var(--green); outline-offset:2px; }
+.science-equipment .science-flow { stroke-dasharray:6 4; animation:science-flow 900ms linear 1; }
+@keyframes science-flow { from { stroke-dashoffset:20; } to { stroke-dashoffset:0; } }
+.science-dialog { width:min(650px,94vw); max-height:90vh; overflow:auto; }
+.science-molecule { height:330px; width:100%; position:relative; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+.science-compounds { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.science-atlas-panel dl { margin:12px 0; }
+.science-atlas-panel dt { font-weight:600; margin-top:12px; }
+.science-atlas-panel dd { margin:5px 0 0; color:var(--muted); font-size:14px; line-height:1.5; }
+.science-tour { margin:16px 0; padding:16px; border:1px solid var(--line); border-radius:var(--radius); }
+@media(max-width:700px) { .science-grid { grid-template-columns:1fr; } .science-globe { height:340px; } .science-molecule { height:280px; } }
+@media(prefers-reduced-motion:reduce) { .science-equipment .science-flow { animation:none; } }
+
+/* Atlas-only additions: existing theme and navigation are unchanged. */
+impact-atlas [hidden]{display:none!important}impact-atlas .atlas-filters{margin-top:16px}impact-atlas .atlas-filters .btn{border-bottom:2px solid var(--category)}impact-atlas .atlas-filters [aria-pressed="true"]{outline:2px solid var(--category);outline-offset:2px}impact-atlas [data-level][aria-pressed="true"]{border-color:var(--green)}impact-atlas .science-atlas-panel{border-top:3px solid var(--atlas-category)}.atlas-flag{width:28px;height:21px;object-fit:cover;vertical-align:middle;margin-right:8px;border-radius:3px}.atlas-detail-map{display:block;width:100%;height:440px;max-width:100%;touch-action:manipulation}.atlas-detail-map path{fill:var(--surface);stroke:var(--muted);stroke-width:.6;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .15s,stroke .15s}.atlas-detail-map path.has-data{fill:color-mix(in srgb,var(--atlas-category) 28%,var(--surface))}.atlas-detail-map path:hover,.atlas-detail-map path:focus,.atlas-detail-map path.selected{stroke:var(--atlas-category);stroke-width:2;outline:none}.atlas-region-marker{fill:var(--atlas-category);stroke:var(--ink);stroke-width:1;vector-effect:non-scaling-stroke;cursor:pointer}impact-atlas [data-atlas-list]{margin-top:16px}impact-atlas select{max-width:100%}.science-molecule-links .btn{white-space:normal}@media(max-width:700px){.atlas-detail-map{height:340px}}@media(prefers-reduced-motion:reduce){.atlas-detail-map path{transition:none}}

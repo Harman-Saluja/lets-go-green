@@ -1,0 +1,19 @@
+/* Scoped to the new team section; existing theme and components are untouched. */
+.lgg-team { margin-top:40px; padding:28px 8px 12px; text-align:center; border-top:1px solid var(--line); }
+.lgg-team > h2 { margin:0 0 8px; }
+.lgg-team > p { color:var(--muted); margin:0; }
+.lgg-team .lgg-team__list { display:flex; flex-wrap:wrap; justify-content:center; gap:52px 28px; list-style:none; margin:0; padding:62px 0 12px; }
+.lgg-team .lgg-team__member { position:relative; width:128px; display:flex; justify-content:center; }
+.lgg-team .lgg-team__photo { display:block; width:104px; height:104px; padding:4px; border:1px solid var(--green); border-radius:50%; background:var(--surface); cursor:pointer; -webkit-tap-highlight-color:transparent; transition:transform 220ms ease,box-shadow 220ms ease; }
+.lgg-team .lgg-team__crop { display:block; width:100%; height:100%; overflow:hidden; border-radius:50%; }
+.lgg-team .lgg-team__crop img { display:block; width:100%; height:100%; object-fit:cover; }
+.lgg-team [data-team-member="harman"] img { object-position:50% 30%; transform:scale(2.2); transform-origin:50% 32%; }
+.lgg-team [data-team-member="disha"] img { object-position:50% 38%; transform:scale(1.25); transform-origin:50% 44%; }
+.lgg-team [data-team-member="harsh"] img { object-position:50% 50%; transform:scale(1.4); transform-origin:50% 62%; }
+.lgg-team [data-team-member="dipanshu"] img { object-position:50% 50%; transform:scale(1.35); transform-origin:55% 36%; }
+.lgg-team .lgg-team__photo:focus-visible { outline:2px solid var(--ink); outline-offset:5px; }
+.lgg-team .lgg-team__tooltip { position:absolute; z-index:2; bottom:calc(100% + 12px); left:50%; width:max-content; max-width:148px; padding:9px 12px; color:var(--ink); background:var(--green-dark); border:1px solid var(--line); border-radius:10px; font-size:13px; font-weight:600; line-height:1.4; box-shadow:0 6px 18px #00000026; opacity:0; visibility:hidden; transform:translate(-50%,6px); transition:opacity 180ms ease,transform 180ms ease,visibility 180ms; }
+.lgg-team .is-open .lgg-team__tooltip { opacity:1; visibility:visible; transform:translate(-50%,0); }
+.lgg-team .is-open .lgg-team__photo { transform:translateY(-4px) scale(1.04); box-shadow:0 0 0 4px var(--mint); }
+@media(max-width:600px) { .lgg-team .lgg-team__list { column-gap:12px; } .lgg-team .lgg-team__member { width:116px; } }
+@media(prefers-reduced-motion:reduce) { .lgg-team .lgg-team__photo,.lgg-team .lgg-team__tooltip { transition:none; } .lgg-team .is-open .lgg-team__photo { transform:none; } }
