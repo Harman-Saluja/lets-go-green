@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Navigation uses in-page tabs, not URL routes. No SPA rewrite is required.
