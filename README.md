@@ -28,7 +28,9 @@ Run `npm ci`, then `npm run dev`. Open the printed localhost URL. Changes are vi
 
 Run `npm run build` for production, then `npm run preview` to serve the output. Both servers default to port 4173; stop one before starting the other, or use `npm run preview -- --port 4174`.
 
-Run `npm test` to build and run the production regression suites, including 791 chemistry acceptance checks and the Platform 2.0 data/interaction harness. It writes `production-audit.json`. The full final output is in `PLATFORM-2-TEST-LOG.txt`.
+For the same preview command used during verification, run `npx serve -s build` and open its displayed URL. Keep `build/serve.json`: it disables HTML URL rewriting that otherwise sends the embedded game and Cinema back to the main app.
+
+Run `npm test` to build and run the production regression suites, including 791 chemistry acceptance checks and the Platform 2.0 data/interaction harness. It writes `production-audit.json`. The current output is in `EXHIBITION-TEST-LOG.txt`.
 
 Historical Part 3 HTTP results are retained in `part-3-http-audit.json`. Current production asset and browser checks are documented in `EXHIBITION-DELIVERY.md` and `EXHIBITION-VALIDATION.json`. Fullscreen, audio, physical-device and cross-browser testing remain open. No hosting deployment was performed.
 

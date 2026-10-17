@@ -1,0 +1,14 @@
+[
+  {
+    "file": "lets-go-green-updated.zip",
+    "files": 200,
+    "bytes": 5015473,
+    "sha256": "60f07246169a19e13e02252c535ec512c29f533b94eea9a3c8af9d1f524d74bd"
+  },
+  {
+    "file": "lets-go-green-netlify-deploy.zip",
+    "files": 113,
+    "bytes": 4654776,
+    "sha256": "9180adc550fffe22cea9e191a4e3d2b9d6f3e463ddc445b053e8caf28aa35579"
+  }
+]

@@ -21,6 +21,8 @@ execFileSync(process.execPath,[join(root,'scripts/test-cinema-3d.mjs')],{stdio:'
 execFileSync(process.execPath,[join(root,'scripts/test-green-rescue.mjs')],{stdio:'inherit'});
 execFileSync(process.execPath,[join(root,'scripts/test-pipe.mjs')],{stdio:'inherit'});
 execFileSync(process.execPath,[join(root,'scripts/test-resources.mjs')],{stdio:'inherit'});
+execFileSync(process.execPath,[join(root,'scripts/test-sorting.mjs')],{stdio:'inherit'});
+execFileSync(process.execPath,[join(root,'scripts/test-embed-loader.mjs')],{stdio:'inherit'});
 // Exercise the exact build bytes using the existing, unchanged acceptance suite.
 const temp=await mkdtemp(join(tmpdir(),'lgg-production-'));
 try{

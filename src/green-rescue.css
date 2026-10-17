@@ -8,4 +8,6 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.confetti,.hand-hint,.background-smoke{display:none}.pose-walking .leg-l{transform:rotate(-12deg)}.pose-walking .leg-r{transform:rotate(12deg)}.overlay{backdrop-filter:none}.pipe-flow.flowing{stroke-dasharray:none}}
 
 /* Keep narration in its own row so it cannot cover touch targets. */
-.action-hint{position:relative;bottom:auto;left:auto;transform:none;max-width:none;margin:0;padding:14px 18px;border-radius:0;border-width:1px 0 0;min-height:52px}.pipe-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 12px;font-size:13px}.pipe-controls button{border:1px solid #a9ceb2;background:#21444a;color:#eef5dc;border-radius:12px;padding:10px 16px;min-height:44px}
+.action-hint{position:relative;bottom:auto;left:auto;transform:none;max-width:none;width:100%;margin:0;padding:14px 18px;border-radius:0;border-width:1px 0 0;min-height:52px}.pipe-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 12px;font-size:13px}.pipe-controls button{border:1px solid #a9ceb2;background:#21444a;color:#eef5dc;border-radius:12px;padding:10px 16px;min-height:44px}
+/* Touch gestures belong to the puzzle while dragging; the surrounding page still scrolls. */
+.scene{touch-action:none}

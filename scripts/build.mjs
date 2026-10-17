@@ -13,7 +13,7 @@ for(const file of files){
  const text=await readFile(file,'utf8');
  if(ext==='.tsx')execFileSync(process.execPath,['--input-type=module','--check'],{input:text,stdio:['pipe','inherit','inherit']});
  if(ext==='.js')execFileSync(process.execPath,['--check',file],{stdio:'inherit'});
- const patterns=ext==='.js'?[/\bfrom\s+['"]([^'"]+)['"]/g]:ext==='.html'?[/\b(?:src|href)="([^"]+)"/g]:[/url\(['"]?([^)'"\s]+)['"]?\)/g];
+ const patterns=ext==='.js'?[/\bfrom\s+['"]([^'"]+)['"]/g,/\bimport\s*\(\s*['"]([^'"]+)['"]/g]:ext==='.html'?[/\b(?:src|href)="([^"]+)"/g]:[/url\(['"]?([^)'"\s]+)['"]?\)/g];
  for(const pattern of patterns)for(const match of text.matchAll(pattern)){
   const link=match[1];if(/^(https?:|data:|#)/.test(link))continue;
   const target=resolve(dirname(file),link.split(/[?#]/)[0]);

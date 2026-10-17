@@ -1,11 +1,12 @@
-Exhibition review validation — 14 October 2026
+17 October 2026 — current production verification
+Server: npx serve -s build at http://localhost:3000
+Browser: Chromium, desktop pointer and emulated mobile touch; not physical-device certification.
 
-Production build and complete portable regression suite
 
 > lets-go-green@1.0.0 test
 > node scripts/test-production.mjs
 
-Production build succeeded: 102 static files → build/ (no transpilation or external build service).
+Production build succeeded: 108 static files → build/ (no transpilation or external build service).
 PASS: both scope filters; all 15 production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).
 PASS: Chemistry Lab main entry and contextual materials panels.
 PASS weighted scoring, missing-data normalization, directional changes, independent factors and all 10 alternatives. Starch: 77.98349220221266 → 80.27416788872895.
@@ -29,6 +30,8 @@ PASS: four cardinal elbows, shared artwork, rotation wrap, correct/wrong placeme
 PASS: 10 material-specific waste journeys, 10 recovery processes, dedicated battery route, stage content/artwork, contamination feedback, and detailed prevention guides for all 50 Atlas records.
 PASS: 10 sourced field stories with four scoped narrative stages; eight distinct conceptual comparisons and valid related processes.
 PASS: eight material-specific comparison illustrations, distinct scenario labels and no measured-outcome claims.
+PASS: all 30 sorting pairs, battery/chemical separation, invalid items/routes, three collection destinations and seven scoped educational system layers.
+PASS: normal entry boots once; all isolated page fallback paths and nested app frame block recursive startup with a recovery message; serve preserves HTML URLs.
 Full pass 1: all 10 demos passed (337 checks).
 Full pass 2: all 10 demos passed (337 checks).
 PASS: 791 checks; 10 complete case-study optimization loops.
@@ -38,11 +41,14 @@ npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
 npm notice To update run: npm install -g npm@12.2.0
 npm notice
 
-Supplemental Chromium production browser checks
+PASS 8 game-level runs: serve -s exact embedded pages; requested game viewport(s) through pointer/touch, wrong/right choices, actual pipe dragging, pause/resume, sound toggle, restart, exit, no nested game scrolling; cinema renders local 3D; direct routes have one app header/footer.
+PASS: seven map system layers, desktop mouse and mobile touch sorting drags, all ten item routes, wrong choices, incomplete/contaminated collection guards, three destination explanations, linked recovery, reset, keyboard selection, reduced motion, journey shortcut and exit cleanup.
 PASS browser: 10 journeys, 10 processes, sort/contamination guards, playback, map controls, future choices, comparison, Atlas solutions, mobile layout/reduced motion, wrong/correct pipe orientation and Level 1.
 PASS: seven-stop visitor tour, embedded interactions, replay/exit, moving process material, actual browser pointer drag/drop and Level 1 completion; no uncaught errors.
 PASS production browser: perspective/plan/keyboard/pointer/touch map; river choices; 40 story stages; 8 dragged comparisons; 150 sourced case panels; wrong-sort playback reset; actual 14-second transition and controlled 98-second tour; 320/390/768px layouts; reduced motion; exit cleanup.
+PASS: real clean-URL/SPА fallback for game, Cinema and molecular child pages stops startup, displays recovery, and creates no nested iframe/header/footer.
 
-Production asset validation: 107 files, every file HTTP 200 and byte-identical; no broken local references.
-Isolated editable-ZIP npm ci and npm run build passed. All 107 rebuilt files match the production manifest.
-ZIP CRC, path layout, required source files, index.html at deployment root, exact byte equality and credential-pattern scan passed.
+PASS: all 113 production files returned HTTP 200 with exact build bytes.
+PASS: engine.js, data.js, workspace-tools.js and styles.css unchanged from 4ffb8b0.
+PASS: isolated source ZIP npm ci and complete npm test; all 113 rebuilt files exactly match deployment ZIP.
+PASS: source and deployment ZIP CRC, root layout and exact-byte validation.
