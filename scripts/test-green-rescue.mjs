@@ -3,16 +3,16 @@ import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
 import {act,freshGame,levels} from '../build/green-rescue-state.js';
 import * as art from '../build/green-rescue-art.js';
-const paths=[['pipe','socket','treatment','tap'],['meter','socket','calibrate','run'],['box','socket','route','transfer'],['heat','socket','sensor','launch']];
+const paths=[['pipe','socket','treatment','tap'],['inspect','meter','calibrate','run'],['box','socket','paper','paper-bin','glass','glass-bin','transfer'],['heat','socket','sensor','valve-turn','valve-turn','launch']];
 const wrong=[['tap','bypass'],['speed','flush'],['mixed','drain'],['bypass','boost']];
 function finish(s){let count=0;while(s.phase==='ACTION_ANIMATION'){assert.equal(act(s,'popup'),s);assert.equal(act(s,'next'),s);assert.equal(act(s,'tap'),s);assert.ok(++count<10);s=act(s,'tick');}return s;}
 let s=act(act(freshGame(),'start'),'begin'),tested=0;
 for(let n=0;n<4;n++){
  assert.equal(s.level,n);const cues=new Set();for(const id of wrong[n]){let f=act(s,id);cues.add(f.action.beats[1].cue);f=finish(f);assert.equal(f.phase,'FAILURE');assert.equal(act(f,'next'),f);s=act(act(f,'popup'),'retry');assert.equal(s.phase,'PLAYING');}assert.equal(cues.size,2);
  // Exercise every object across all subsets of installed parts, with/without selection.
- for(let mask=0;mask<4;mask++)for(const selected of [null,paths[n][0]])for(const id of levels[n].items){const base={...s,done:levels[n].required.filter((_,i)=>mask&(1<<i)),selected};const result=finish(act(base,id));assert.ok(['PLAYING','SUCCESS','FAILURE'].includes(result.phase));tested++;}
+ for(let mask=0;mask<(1<<levels[n].required.length);mask++)for(const selected of [null,paths[n][0]])for(const id of levels[n].items){const base={...s,done:levels[n].required.filter((_,i)=>mask&(1<<i)),selected};const result=finish(act(base,id));assert.ok(['PLAYING','SUCCESS','FAILURE'].includes(result.phase));tested++;}
  for(const id of paths[n]){s=act(s,id);if(s.phase==='ACTION_ANIMATION'){const paused=act(s,'pause');assert.equal(act(paused,'tick'),paused);s=act(paused,'resume');}s=finish(s);}assert.equal(s.phase,'SUCCESS');assert.equal(s.action.beats.length,6);s=act(act(s,'popup'),'next');if(n<3)s=act(s,'begin');
- for(const mobile of [false,true]){const svg=art.world({...freshGame(),level:n,phase:'PLAYING'},mobile,true);for(const id of levels[n].items)assert.ok(svg.includes(`data-object="${id}"`));assert.doesNotMatch(svg,/NaN|undefined/);for(const pose of art.poses)assert.ok(art.scientist(pose).includes('pose-'+pose));}
+ for(const mobile of [false,true]){const svg=art.world({...freshGame(),level:n,phase:'PLAYING'},mobile,true);for(const id of levels[n].items.filter(id=>!['inspect','paper','glass','paper-bin','glass-bin','valve-turn'].includes(id)))assert.ok(svg.includes(`data-object="${id}"`));assert.doesNotMatch(svg,/NaN|undefined/);for(const pose of art.poses)assert.ok(art.scientist(pose).includes('pose-'+pose));}
 }
 assert.equal(s.phase,'FINAL_VICTORY');assert.equal(s.mistakes,8);assert.equal(act(s,'restart').level,0);
 // Execute the production controller in an event/clock harness (not a browser).

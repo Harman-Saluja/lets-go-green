@@ -1,63 +1,7 @@
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(font-0.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(font-1.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(font-2.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(font-3.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(font-4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(font-5.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(font-6.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(font-7.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(font-8.ttf) format('truetype');
-}
+/* Poppins by Indian Type Foundry; SIL OFL 1.1, bundled for offline use. */
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(poppins-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(poppins-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(poppins-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(poppins-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:swap;src:url(poppins-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:900;font-display:swap;src:url(poppins-latin-900-normal.woff2) format('woff2')}

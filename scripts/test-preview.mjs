@@ -5,14 +5,15 @@ import {readFile,readdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 const root=fileURLToPath(new URL('../',import.meta.url));
-const server=spawn(process.execPath,['scripts/serve.mjs','build','--port','4187'],{cwd:root,stdio:['ignore','pipe','inherit']});
+const output=process.env.TEST_ROOT||'build';
+const server=spawn(process.execPath,['scripts/serve.mjs',output,'--port','4187'],{cwd:root,stdio:['ignore','pipe','inherit']});
 try{
  await new Promise((ok,no)=>{const t=setTimeout(()=>no(Error('Preview startup timeout')),10000);server.stdout.once('data',()=>{clearTimeout(t);ok()});server.once('error',no);server.once('exit',c=>{clearTimeout(t);no(Error('Preview exited: '+c))});});
  const origin='http://127.0.0.1:4187';let count=0;
  async function walk(dir,prefix=''){for(const e of await readdir(dir,{withFileTypes:true})){const path=prefix+e.name;if(e.isDirectory())await walk(resolve(dir,e.name),path+'/');else{const response=await fetch(origin+'/'+path);assert.equal(response.status,200,path);assert.deepEqual(Buffer.from(await response.arrayBuffer()),await readFile(resolve(dir,e.name)),path);count++;}}}
- await walk(resolve(root,'build'));
+ await walk(resolve(root,output));
  for(const [name,marker] of [['green-rescue','id="game"'],['cinema-stage','id="viewer"'],['molecular-frame','id="molecule-controls"']]){
-  assert.deepEqual(await readFile(resolve(root,'build',name+'.htm')),await readFile(resolve(root,'build',name+'.html')));
+  assert.deepEqual(await readFile(resolve(root,output,name+'.htm')),await readFile(resolve(root,output,name+'.html')));
   const url=origin+'/'+name+'.htm';const response=await fetch(url);const html=await response.text();assert.equal(response.url,url);assert.ok(html.includes(marker));assert.ok(!html.includes('app-loader.js'));
   for(const [,asset] of html.matchAll(/(?:src|href)="([^"]+)"/g)){const r=await fetch(new URL(asset,url));assert.equal(r.status,200,asset);}
  }

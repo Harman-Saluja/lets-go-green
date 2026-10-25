@@ -1,0 +1,9 @@
+/* Limited exhibition fills; existing dark theme, borders and layouts retained. */
+.hero .exhibition-headline{color:#fff;font-size:clamp(32px,4.1vw,62px);line-height:1.08;letter-spacing:-.035em;overflow-wrap:normal}
+.exhibition-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:24px 0 32px}
+.exhibition-features .card{display:flex;flex-direction:column;align-items:flex-start;color:#173c2c}
+.exhibition-features p{color:#355044;flex:1}.exhibition-features h2{font-size:20px;color:#173c2c}.exhibition-features .btn{white-space:normal;text-align:left}
+.exhibition-features .feature-sage{background:#DCE7D5}.exhibition-features .feature-peach{background:#EED5C8}.exhibition-features .feature-blue{background:#DDE9E9}.exhibition-features .feature-beige{background:#F1E7D5}
+.indore-more{margin:12px 0 22px}.indore-more summary{cursor:pointer;padding:12px;font-weight:600}.indore-more .indore-nav{margin-top:8px}
+.science-tour{margin:16px 0!important;padding:16px!important}.science-tour progress{width:100%;accent-color:#9fcf9b}.science-tour .actions{gap:8px;flex-wrap:wrap}
+@media(max-width:1050px){.exhibition-features{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.exhibition-features{grid-template-columns:1fr}.hero .exhibition-headline{font-size:clamp(28px,7.8vw,40px)}}
