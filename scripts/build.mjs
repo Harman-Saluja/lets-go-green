@@ -28,4 +28,11 @@ await cp(resolve(root,'public/team'),resolve(output,'team'),{recursive:true});
 for(const name of ['harman','disha','durgesh','harsh','dipanshu'])await access(resolve(output,'team',name+'.jpeg'));
 await writeFile(resolve(output,'components/ui/anime-navbar.js'),await readFile(nativeTSX));
 await rm(resolve(output,'components/ui/anime-navbar.tsx'));
+// .htm entry points are not rewritten by serve's .html clean-URL redirect.
+// Keep legacy .html bookmarks; all entries share the same JS/CSS/data.
+for(const name of ['green-rescue','cinema-stage','molecular-frame']){
+ await cp(resolve(source,name+'.html'),resolve(output,name+'.htm'));
+}
+const serving=JSON.parse(await readFile(resolve(output,'serve.json'),'utf8'));
+if(serving.cleanUrls!==false)throw Error('serve.json must preserve legacy HTML entry points.');
 console.log(`Production build succeeded: ${files.length} static files → build/ (no transpilation or external build service).`);

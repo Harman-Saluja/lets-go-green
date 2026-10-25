@@ -22,4 +22,4 @@ assert.equal(presentation.matchesFormula(structures.get(222),'NH3'),true);assert
 listeners.pagehide();context.window.$3Dmol=null;await context.testDraw({reaction:haber,kind:'reactants',title:'Reactants',step:1});assert.equal(messages.at(-1).type,'cinema-fallback');
 assert.doesNotMatch(await readFile(new URL('../build/app.js',import.meta.url),'utf8'),/\$\{moleculeLinks\(r\)\}/);
 await writeFile(new URL('../CINEMA-COVERAGE.json',import.meta.url),JSON.stringify(coverage,null,2));
-console.log('PASS: Haber reactant/product atom counts; all 15 × 5 scenes dispatched into the 3D renderer API; finite model geometry; supported material representations; cleanup and removal of separate molecular entry. WebGL output not verified by this harness.');
+console.log(`PASS: Haber reactant/product atom counts; all ${reactionLibrary.length} × 5 scenes dispatched into the 3D renderer API; finite model geometry; supported material representations; cleanup and removal of separate molecular entry. WebGL output not verified by this harness.`);

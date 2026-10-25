@@ -8,7 +8,7 @@ const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pen
 const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
 const until=async expression=>{for(let i=0;i<100;i++){if(await evaluate('Boolean('+expression+')'))return;await new Promise(r=>setTimeout(r,100));}throw Error('Timed out: '+expression);};
 const click=async selector=>{await until(`!!document.querySelector(${JSON.stringify(selector)})`);await evaluate(`document.querySelector(${JSON.stringify(selector)}).dispatchEvent(new MouseEvent('click',{bubbles:true}))`);};
-const shot=async name=>{await new Promise(r=>setTimeout(r,450));const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
+const shot=async name=>{if(process.env.NO_SCREENSHOTS==='1')return;await new Promise(r=>setTimeout(r,450));const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
 // Start a second serve instance with {"cleanUrls":true} to reproduce the bad host fallback.
 const origin=process.env.FALLBACK_URL||'http://localhost:3001';
 await send('Runtime.enable');await send('Page.enable');

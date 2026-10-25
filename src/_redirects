@@ -1,0 +1,4 @@
+# Legacy clean URLs must redirect to isolated experiences, never the main app.
+/green-rescue    /green-rescue.htm    302
+/cinema-stage    /cinema-stage.htm    302
+/molecular-frame /molecular-frame.htm 302

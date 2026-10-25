@@ -1,0 +1,234 @@
+Current repair evidence — 25 October 2026. Earlier repository reports are historical.
+
+## DEPENDENCY INSTALL
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+up to date in 274ms
+
+## CURRENT FULL SUITE AND BUILD
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> lets-go-green@1.0.0 test
+> node scripts/test-production.mjs
+
+Production build succeeded: 109 static files → build/ (no transpilation or external build service).
+PASS: both scope filters; all 15 production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).
+PASS: Chemistry Lab main entry and contextual materials panels.
+PASS weighted scoring, missing-data normalization, directional changes, independent factors and all 10 alternatives. Starch: 77.98349220221266 → 80.27416788872895.
+PASS: motion code endpoints, increase/decrease/unchanged, reduced motion and comparison guard (mock animation API; not browser visual QA).
+PASS: score display and signed differences use one decimal; changed metrics reach correct endpoints.
+PASS: all six controlled tabs, desktop/mobile mascot positioning, spring endpoints and reduced motion (DOM harness).
+PASS: all 15 educational profiles; five industrial equations, molar masses, metrics, missing-data boundaries and responsive edits.
+PASS: exact five names/order, Dashboard-only placement, image build bytes, hover/touch/focus/Escape interactions (DOM harness); responsive/reduced-motion CSS declarations checked, not browser layout QA.
+PASS: journey removed; 15 comparison datasets; range endpoints/input; 12 persistent wheel selections, hover does not change selection, keyboard wrap; score increase/decrease/zero/missing/rapid updates and precision. DOM/clock harness, not visual browser QA.
+PASS: score continuity across tabs; bounded pointer tilt, exit reset and touch/reduced-motion suppression.
+PASS: factor selection and keyboard disclosure show the supplied engine explanation.
+PASS: twelve glass segments/reflections, bounded pointer light/reset, accessible selection retained; scoped spacing and plain-language markup checks. Visual appearance is not browser-tested.
+PASS: 15 simulator isolation/edit/reset/compare flows; invalid inputs, unchanged atom economy, stale baseline rejection; all subsection routes and back navigation; all referenced process stages; dropdown pointer/tap/keyboard/outside dismissal (mock DOM).
+PASS: 22 local CID/3D/SDF atom/bond records; exact-name identity and material fallbacks; all 22 industrial stages and presentation controls; 7 Atlas categories, source-coordinate anchors and full tour; Canvas projection/input/cleanup harness. Browser WebGL/visual/touch rendering NOT verified.
+PASS: 36 selectable regions (28+8), 50 historical districts, all 7 filters, regional selection/reset and India tour, sourced case links, 7 local flag assets, visible shared molecular controls. DOM harness, not real browser.
+PASS: 15 curated records + archive compatibility; 21 CID/structure/formula checks; all 15 five-scene cinema controls with clock/reduced-motion/visibility/cleanup harness; 36 sourced regions, 34 numerical records, year-isolated chart; 7 diagrams; independent World/India/MP tours (7/10/6 stops). Not browser visual QA.
+PASS: Part 1 legacy/canonical routes, five industrial selectors, all 36 complete boundary fits and bounded markers, honest better/worse/unchanged feedback, unchanged reaction dataset. DOM/data checks; no real-browser visual claim.
+PASS: Haber reactant/product atom counts; all 15 × 5 scenes dispatched into the 3D renderer API; finite model geometry; supported material representations; cleanup and removal of separate molecular entry. WebGL output not verified by this harness.
+PASS: 184 object/state combinations; four complete six-beat successes; eight distinct failure routes; all 12 character poses; desktop/mobile SVG; controller timers, delayed popups, retry/next, pause/resume, restart, pointer-drop/keyboard adapters, optional audio and exit cleanup. Browser visual/touch timing not verified.
+PASS: four cardinal elbows, shared artwork, rotation wrap, correct/wrong placement, installed connection validation, Level 1 completion.
+PASS: 10 material-specific waste journeys, 10 recovery processes, dedicated battery route, stage content/artwork, contamination feedback, and detailed prevention guides for all 50 Atlas records.
+PASS: 10 sourced field stories with four scoped narrative stages; eight distinct conceptual comparisons and valid related processes.
+PASS: eight material-specific comparison illustrations, distinct scenario labels and no measured-outcome claims.
+PASS: all 30 sorting pairs, battery/chemical separation, invalid items/routes, three collection destinations and seven scoped educational system layers.
+PASS: normal entry boots once; all isolated page fallback paths and nested app frame block recursive startup with a recovery message; serve preserves HTML URLs.
+Full pass 1: all 10 demos passed (337 checks).
+Full pass 2: all 10 demos passed (337 checks).
+PASS: 791 checks; 10 complete case-study optimization loops.
+PASS: 117 production files served byte-for-byte; all isolated HTML entries and their assets; missing asset returns 404.
+
+## NORMAL CORE BROWSER
+PASS core browser demo-0 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-1 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-2 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-lactose load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-citrate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-acetate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcium-lactate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcite load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pla load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pet load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-ammonia load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-contact load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-methanol load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-iron load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-hydrogen load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS: all 15 reaction browser loops; all six tabs at desktop/mobile widths; no page exceptions.
+BROWSER SUITE test-core-browser.mjs EXIT 0
+
+## CLEAN URL HOST CORE
+PASS core browser demo-0 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-1 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-2 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-lactose load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-citrate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-acetate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcium-lactate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcite load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pla load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pet load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-ammonia load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-contact load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-methanol load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-iron load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-hydrogen load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS: all 15 reaction browser loops; all six tabs at desktop/mobile widths; no page exceptions.
+BROWSER SUITE test-core-browser.mjs EXIT 0
+
+## COMPATIBILITY CORE + WHEEL + INDUSTRIAL STAGES
+PASS core browser demo-0 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-1 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser demo-2 load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-lactose load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-citrate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-acetate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcium-lactate load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-calcite load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pla load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser edu-pet load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-ammonia load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-contact load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-methanol load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-iron load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS core browser industrial-hydrogen load/analyze/solvent/catalyst/optimize/compare/principles/save/refresh/restore/edit
+PASS 12 principle selections and 22 industrial process stages; presentation controls; compatibility mode=true
+PASS: all 15 reaction browser loops; all six tabs at desktop/mobile widths; no page exceptions.
+BROWSER SUITE test-core-browser.mjs EXIT 0
+
+## ALL CINEMAS — ISOLATED SESSIONS
+PASS WebGL demo-0 all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage demo-0; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL demo-1 all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage demo-1; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL demo-2 all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage demo-2; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-lactose all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-lactose; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-citrate all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-citrate; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-acetate all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-acetate; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-calcium-lactate all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-calcium-lactate; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-calcite all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-calcite; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-pla all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-pla; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL edu-pet all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage edu-pet; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL industrial-ammonia all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage industrial-ammonia; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL industrial-contact all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage industrial-contact; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL industrial-methanol all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage industrial-methanol; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL industrial-iron all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage industrial-iron; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+PASS WebGL industrial-hydrogen all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema coverage industrial-hydrogen; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+
+## HABER FULLSCREEN / TIMED CONTROLS
+PASS WebGL industrial-ammonia all five scenes; previous/rotate/reset/replay/pause
+PASS Cinema fullscreen enter/exit
+PASS Cinema coverage industrial-ammonia; timing tested for full run or ammonia only.
+BROWSER SUITE test-cinema-browser.mjs EXIT 0
+
+## FOLLOW THE WASTE FINAL RETEST
+PASS browser: 10 journeys, 10 processes, sort/contamination guards, playback, map controls, future choices, comparison, Atlas solutions, mobile layout/reduced motion, wrong/correct pipe orientation and Level 1.
+BROWSER SUITE test-resource-browser.mjs EXIT 0
+
+## ACTUAL SERVE ROUTING ENGINE
+PASS serve-handler cleanUrls=false green-rescue http://127.0.0.1:33485/green-rescue.htm
+PASS serve-handler cleanUrls=false cinema-stage http://127.0.0.1:33485/cinema-stage.htm
+PASS serve-handler cleanUrls=false molecular-frame http://127.0.0.1:33485/molecular-frame.htm
+Legacy HTML returned main app: false
+PASS serve-handler cleanUrls=true green-rescue http://127.0.0.1:37157/green-rescue.htm
+PASS serve-handler cleanUrls=true cinema-stage http://127.0.0.1:37157/cinema-stage.htm
+PASS serve-handler cleanUrls=true molecular-frame http://127.0.0.1:37157/molecular-frame.htm
+Legacy HTML returned main app: true
+
+## EXACT SERVE CLI ENVIRONMENT LIMIT
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+node:os:218
+  const data = getInterfaceAddresses();
+               ^
+
+SystemError [ERR_SYSTEM_ERROR]: A system error occurred: uv_interface_addresses returned Unknown system error 1 (Unknown system error 1)
+    at networkInterfaces (node:os:218:16)
+    at file:///root/.npm/_npx/aab42732f01924e5/node_modules/serve/build/main.js:133:25
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  code: 'ERR_SYSTEM_ERROR',
+  info: {
+    errno: 1,
+    code: 'Unknown system error 1',
+    message: 'Unknown system error 1',
+    syscall: 'uv_interface_addresses'
+  },
+  errno: [Getter/Setter],
+  syscall: [Getter/Setter]
+}
+
+Node.js v24.22.1
+
+## CONTINUOUS CINEMA STRESS FAILURE — NOT HIDDEN
+PASS WebGL demo-0 all five scenes; previous/rotate/reset/replay/pause
+PASS WebGL demo-1 all five scenes; previous/rotate/reset/replay/pause
+file:///workspace/scratch/68693ab4f238/exhibition-repair/scripts/test-cinema-browser.mjs:7
+const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;const timer=setTimeout(()=>{pending.delete(id);reject(Error('CDP timeout: '+method+' '+String(params.expression||'').slice(0,180)));},20000);pending.set(id,{resolve:r=>{clearTimeout(timer);resolve(r)},reject:e=>{clearTimeout(timer);reject(e)}});ws.send(JSON.stringify({id,method,params}));});
+                                                                                                                                   ^
+
+Error: CDP timeout: Runtime.evaluate document.querySelector("[data-action=tab][data-tab=Dashboard]").dispatchEvent(new MouseEvent('click',{bubbles:true}))
+    at Timeout._onTimeout (file:///workspace/scratch/68693ab4f238/exhibition-repair/scripts/test-cinema-browser.mjs:7:132)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+
+Node.js v24.22.1
+BROWSER SUITE test-cinema-browser.mjs EXIT 1
+
+## GAME DESKTOP / TOUCH AND ROUTES
+Testing game mouse level 1
+Testing game mouse level 2
+Testing game mouse level 3
+Testing game mouse level 4
+Testing game touch level 1
+Testing game touch level 2
+Testing game touch level 3
+Testing game touch level 4
+PASS 8 game-level runs: exact embedded pages on the configured SITE_URL; requested game viewport(s) through pointer/touch, wrong/right choices, actual pipe dragging, pause/resume, sound toggle, restart, exit, no nested game scrolling; cinema renders local 3D; direct routes have one app header/footer.
+BROWSER SUITE test-production-browser.mjs EXIT 0
+
+## OTHER COMPLETED BROWSER CHECKS
+PASS: seven map system layers, desktop mouse and mobile touch sorting drags, all ten item routes, wrong choices, incomplete/contaminated collection guards, three destination explanations, linked recovery, reset, keyboard selection, reduced motion, journey shortcut and exit cleanup.
+
+## OTHER COMPLETED BROWSER CHECKS
+PASS production browser: perspective/plan/keyboard/pointer/touch map; river choices; 40 story stages; 8 dragged comparisons; 150 sourced case panels; wrong-sort playback reset; actual 14-second transition and controlled 98-second tour; 320/390/768px layouts; reduced motion; exit cleanup.
+PASS: seven-stop visitor tour, embedded interactions, replay/exit, moving process material, actual browser pointer drag/drop and Level 1 completion; no uncaught errors.
+
+## PACKAGED DELIVERY CHECKS
+PASS: source ZIP extracted into a fresh temporary folder and built successfully. All 117 generated files match the tested production build byte-for-byte.
+PASS: deployment and backup ZIP CRC and per-file byte comparisons.
+PASS: extracted offline backup server returns the app, game and cinema documents correctly.
+PASS: Netlify TOML parsed; build command npm run build, publish build, Node 24, Pretty URLs disabled in review configuration.

@@ -32,3 +32,5 @@ try{
  execFileSync(process.execPath,[join(temp,'test.mjs')],{stdio:'inherit'});
  await cp(join(temp,'reaction-audit.json'),join(root,'production-audit.json'));
 }finally{await rm(temp,{recursive:true,force:true});}
+
+execFileSync(process.execPath,[join(root,'scripts/test-preview.mjs')],{stdio:'inherit'});

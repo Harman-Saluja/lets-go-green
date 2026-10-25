@@ -8,6 +8,7 @@ const port=Number(portIndex>=0?process.argv[portIndex+1]:4173);
 const types={'.jpeg':'image/jpeg','.html':'text/html; charset=utf-8','.tsx':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.woff2':'font/woff2','.ttf':'font/ttf','.json':'application/json'};
 createServer(async(req,res)=>{try{
  let path=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+ if(/^\/(green-rescue|cinema-stage|molecular-frame)\.htm$/.test(path))path=path.replace(/\.htm$/,'.html');
  let file=resolve(root,'.'+path);if(relative(root,file).startsWith('..'))throw Error('Invalid path');
  if(process.argv[2]==='src'&&/^\/team\/(harman|disha|durgesh|harsh|dipanshu)\.jpeg$/.test(path))file=resolve(root,'../public','.'+path);
  if(path==='/components/ui/anime-navbar.js'){try{await stat(file);}catch{file=resolve(root,'components/ui/anime-navbar.tsx');}}

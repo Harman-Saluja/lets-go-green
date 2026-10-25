@@ -1,3 +1,5 @@
+> **Exhibition repair — 25 October 2026:** Start with [WINDOWS-EXHIBITION.md](WINDOWS-EXHIBITION.md) and [EXHIBITION-REPAIR.md](EXHIBITION-REPAIR.md). Older reports below describe earlier revisions.
+
 # Let’s Go Green 2.0 — standalone project
 
 **Latest exhibition review:** see [EXHIBITION-DELIVERY.md](EXHIBITION-DELIVERY.md) for the current features, exact counts, research blockers, executed tests and two ZIP formats. The reports and progress sections below are historical snapshots; their older browser limitations and asset counts are superseded by that delivery record.

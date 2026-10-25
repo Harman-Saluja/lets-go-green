@@ -1,6 +1,6 @@
 // The SPA must never boot inside one of its own isolated experience frames.
 // A host's HTML fallback can return index.html with status 200 for a missing page.
-const embeddedPage=/\/(?:green-rescue|cinema-stage|molecular-frame)(?:\.html)?\/?$/.test(location.pathname);
+const embeddedPage=/\/(?:green-rescue|cinema-stage|molecular-frame)(?:\.html?|\/index\.html)?\/?$/.test(location.pathname);
 let nestedApp=false;
 try { nestedApp=window.parent!==window && !!window.frameElement?.matches('#green-rescue-frame,[data-cinema-frame],[data-lgg-embed]'); } catch { /* External preview frames may be cross-origin. */ }
 if(embeddedPage||nestedApp){

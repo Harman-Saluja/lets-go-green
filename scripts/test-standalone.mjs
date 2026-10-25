@@ -29,6 +29,6 @@ for(const entry of data.reactionLibrary){
  h.click('load',{id:before.history[0].id});assert.equal(JSON.parse(storage.get('lgg.v1')).reaction.libraryId,entry.id);assert.equal(before.history.length,1);assert.ok(before.overrides);
 }
 storage.clear();const filterHarness=boot();filterHarness.click('demos');for(const group of data.exhibitionGroups){filterHarness.group(group);const ids=[...filterHarness.app.innerHTML.matchAll(/data-action="library-load"[^>]*data-id="([^"]+)"/g)].map(x=>x[1]);assert.deepEqual(ids,data.reactionLibrary.filter(e=>data.exhibitionProfiles[e.id].groups.includes(group)).map(e=>e.id));}
-console.log('PASS: both scope filters; all 15 production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).');
+console.log(`PASS: both scope filters; all ${data.reactionLibrary.length} production demos load/apply/save/restore and render all tabs without document.modelContext or any Sites SDK (mock DOM).`);
 
 {const h=boot();h.click('tab',{tab:'Chemistry Lab'});assert.equal(JSON.parse(storage.get('lgg.v1')).tab,'Analyze');assert.match(h.app.innerHTML,/aria-label="Chemistry Lab tools"/);console.log('PASS: Chemistry Lab main entry and contextual materials panels.');}

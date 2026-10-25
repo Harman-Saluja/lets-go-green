@@ -8,7 +8,7 @@ const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pen
 const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
 const until=async expression=>{for(let i=0;i<100;i++){if(await evaluate(expression))return;await new Promise(r=>setTimeout(r,100));}throw Error('Timed out: '+expression);};
 const click=async selector=>{await until(`!!document.querySelector(${JSON.stringify(selector)})`);await evaluate(`document.querySelector(${JSON.stringify(selector)}).dispatchEvent(new MouseEvent('click',{bubbles:true}))`);};
-const shot=async name=>{await new Promise(r=>setTimeout(r,450));const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
+const shot=async name=>{if(process.env.NO_SCREENSHOTS==='1')return;await new Promise(r=>setTimeout(r,450));const r=await send('Page.captureScreenshot',{format:'png'});await fs.writeFile((process.env.SCREENSHOT_DIR||'/tmp')+'/'+name+'.png',Buffer.from(r.data,'base64'));};
 const origin=process.env.SITE_URL||'http://127.0.0.1:4174';
 await send('Runtime.enable');await send('Page.enable');await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});await send('Emulation.setEmulatedMedia',{features:[]});
 await send('Page.navigate',{url:origin+'/?exhibition-check='+Date.now()+'#/dashboard'});await until("document.querySelector('[data-action=indore]')");await click('[data-action=indore][data-section=city]');await until("document.querySelector('[data-indore-map]')");

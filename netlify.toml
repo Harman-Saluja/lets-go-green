@@ -6,3 +6,7 @@
   NODE_VERSION = "24"
 
 # Navigation uses in-page tabs, not URL routes. No SPA rewrite is required.
+
+# Isolated experience documents must retain their explicit asset URLs.
+[build.processing.html]
+  pretty_urls = false

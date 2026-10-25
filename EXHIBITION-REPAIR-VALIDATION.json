@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-25",
+  "baseBranch": "codex/exhibition-upgrade",
+  "baseCommit": "6be87ae531e34748f45700cbcb34436b7a988f52",
+  "reviewBranch": "codex/exhibition-repair-2026-10-25",
+  "runtime": "Node 24.22.1 / Chromium 153 / Linux",
+  "productionFilesHttpVerified": 117,
+  "deployed": false,
+  "chemistryEngineChanged": false,
+  "reactions": [
+    {
+      "id": "demo-0",
+      "name": "Sugar hydrolysis",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "demo-1",
+      "name": "Starch hydrolysis",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "demo-2",
+      "name": "Glucose isomerization",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-lactose",
+      "name": "Lactose hydrolysis",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-citrate",
+      "name": "Citric acid\u2013bicarbonate neutralization",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-acetate",
+      "name": "Acetic acid\u2013bicarbonate neutralization",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-calcium-lactate",
+      "name": "Calcium lactate formation",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-calcite",
+      "name": "Calcium carbonate precipitation",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-pla",
+      "name": "PLA hydrolysis to lactic acid",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "edu-pet",
+      "name": "PET hydrolysis to terephthalic acid",
+      "industrial": false,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "educational alternative applied and compared"
+    },
+    {
+      "id": "industrial-ammonia",
+      "name": "Haber\u2013Bosch ammonia synthesis",
+      "industrial": true,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "manual what-if, plant inventory unavailable"
+    },
+    {
+      "id": "industrial-contact",
+      "name": "Contact process \u2014 sulfur dioxide oxidation",
+      "industrial": true,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "manual what-if, plant inventory unavailable"
+    },
+    {
+      "id": "industrial-methanol",
+      "name": "Methanol synthesis \u2014 carbon monoxide route",
+      "industrial": true,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "manual what-if, plant inventory unavailable"
+    },
+    {
+      "id": "industrial-iron",
+      "name": "Iron oxide reduction \u2014 carbon monoxide route",
+      "industrial": true,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "manual what-if, plant inventory unavailable"
+    },
+    {
+      "id": "industrial-hydrogen",
+      "name": "Hydrogen production \u2014 steam methane reforming",
+      "industrial": true,
+      "coreBrowser": "pass, including refresh/restore/edit",
+      "cinemaBrowser": "five scenes passed in isolated session",
+      "optimization": "manual what-if, plant inventory unavailable"
+    }
+  ],
+  "game": [
+    {
+      "viewport": "desktop pointer",
+      "level": 1,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "desktop pointer",
+      "level": 2,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "desktop pointer",
+      "level": 3,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "desktop pointer",
+      "level": 4,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "mobile touch",
+      "level": 1,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "mobile touch",
+      "level": 2,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "mobile touch",
+      "level": 3,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    },
+    {
+      "viewport": "mobile touch",
+      "level": 4,
+      "wrongChoice": "rejected",
+      "correctChoice": "completed"
+    }
+  ],
+  "limitations": [
+    "Continuous WebGL switching stress run timed out; isolated rendering passed. Use ?safe=1 backup for dependable core presentation.",
+    "Exact npx serve -s build CLI blocked by uv_interface_addresses in this environment; actual serve-handler tested with its SPA rewrite and cleanUrls both false/true.",
+    "No Netlify deployment; no physical Windows/mobile/projector validation; sound toggle checked, audible quality not assessed.",
+    "Cinema retains conceptual before/after scenes; not continuous atom-mapped mechanisms."
+  ],
+  "packaging": {
+    "sourceExtractedBuild": "117 files identical",
+    "zipIntegrity": "CRC and byte comparisons passed",
+    "backupServer": "HTTP main/game/cinema passed",
+    "netlifyConfig": "TOML parsed; not deployed"
+  }
+}
