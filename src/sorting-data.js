@@ -17,3 +17,6 @@ export const sortingItems=[
  {id:'chemical',name:'Household chemical waste',icon:'oil',bin:'special',why:'Keep identified waste separate and follow authorised collection guidance. Do not mix unknown chemicals, pour them into drains or improvise treatment.'}
 ];
 export function classifySort(itemId,binId){const item=sortingItems.find(x=>x.id===itemId);return !!item&&item.bin===binId&&sortingBins.some(x=>x.id===binId);}
+
+// Shuffle display order only; classification and scientific explanations are unchanged.
+export function shuffledItems(random=Math.random){const items=[...sortingItems];for(let i=items.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[items[i],items[j]]=[items[j],items[i]];}return items;}

@@ -16,3 +16,8 @@
 .puzzle-panel{background:#143c32;border:1px solid #567b5d;border-radius:18px;padding:12px 18px;margin:12px auto;max-width:800px;color:#eff3dd}.puzzle-panel p{font-size:12px;margin:4px 0}.puzzle-panel svg{display:block;width:100%;max-height:330px;touch-action:none}.puzzle-object{cursor:pointer;outline:none}.puzzle-object:hover rect,.puzzle-object:focus rect{stroke:#f3dd9c;stroke-width:4}.puzzle-object.picked{filter:drop-shadow(0 2px 5px #a7d79466)}
 .level-1 .scene .hotspot,.level-2 .scene .hotspot{display:none}.game-bar nav{flex-wrap:wrap}.game-bar{gap:8px}.phase-paused .puzzle-panel,.phase-result_popup .puzzle-panel{opacity:.6}
 @media(max-width:650px){.puzzle-panel{padding:10px;margin:8px}.puzzle-panel svg{min-height:150px}.level-2 .puzzle-panel svg{min-height:250px}.game-bar nav button{padding:7px 8px}}
+
+/* Peach is reserved for instructions and progress, not the animated environment. */
+.level-strip{background:#EED5C8;color:#173c2c;padding:12px 16px;border-radius:14px}.level-strip .current{color:#173c2c}.intro .instruction{background:#EED5C8;color:#173c2c;border-radius:14px}.puzzle-panel>p{background:#EED5C8;color:#173c2c;padding:9px 12px;border-radius:10px}.game-task-progress{height:7px;width:100%;accent-color:#b9d5a7}.puzzle-object text{pointer-events:none}.puzzle-panel svg{max-height:420px}
+
+.result-popup .retry-hint{font-size:12px;line-height:1.5;max-width:440px}.game-bar nav{font-family:inherit}

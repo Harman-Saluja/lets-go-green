@@ -7,3 +7,32 @@
 .indore-more{margin:12px 0 22px}.indore-more summary{cursor:pointer;padding:12px;font-weight:600}.indore-more .indore-nav{margin-top:8px}
 .science-tour{margin:16px 0!important;padding:16px!important}.science-tour progress{width:100%;accent-color:#9fcf9b}.science-tour .actions{gap:8px;flex-wrap:wrap}
 @media(max-width:1050px){.exhibition-features{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.exhibition-features{grid-template-columns:1fr}.hero .exhibition-headline{font-size:clamp(28px,7.8vw,40px)}}
+
+/* Shared accent system: selected information surfaces only, never the page, charts or forms. */
+#main[data-page="Analyze"] .metric:first-child,
+#main[data-page="Analyze"] .card[aria-label="Automatic reaction analysis"],
+#main[data-page="Optimize"] .lgg-subview>section.card:first-of-type,
+#main[data-page="Principles"] .principle:nth-child(4n+1),
+#main[data-page="History"] .history-item:nth-child(4n+1),
+#main[data-page="Solvents"] .reference-card:nth-child(4n+1),
+#main[data-page="Catalysts"] .reference-card:nth-child(4n+1){background:#DCE7D5;color:#173c2c}
+#main[data-page="Compare"] .comparison-callout,
+#main[data-page="Compare"] .improvement-map>h2,
+#main[data-page="Optimize"] .current-suggested,
+#main[data-page="Analyze"] [aria-label="Reaction materials"]>details:first-child{background:#DAEAE0;color:#173c2c}
+#main[data-page="Compare"] .improvement-map>h2{padding:14px;border-radius:12px}
+#main[data-page="Impact Atlas"] .case-brief,
+#main[data-page="Impact Atlas"] .science-tour{background:#DDE9E9;color:#173c2c;border-radius:16px;padding:18px}
+.indore-shell .sorting-entry,.indore-shell .indore-section-intro,
+.indore-shell .resource-outcomes>div:first-child{background:#F1E7D5;color:#173c2c;border-radius:16px;padding:18px}
+/* Scope contrast adjustments to new light surfaces; preserve input/button/chart palettes. */
+:is(#main[data-page="Analyze"] .metric:first-child,#main[data-page="Analyze"] .card[aria-label="Automatic reaction analysis"],#main[data-page="Optimize"] .lgg-subview>section.card:first-of-type,#main[data-page="Principles"] .principle:nth-child(4n+1),#main[data-page="History"] .history-item:nth-child(4n+1),#main[data-page="Solvents"] .reference-card:nth-child(4n+1),#main[data-page="Catalysts"] .reference-card:nth-child(4n+1),#main[data-page="Compare"] .comparison-callout,#main[data-page="Optimize"] .current-suggested,#main[data-page="Analyze"] [aria-label="Reaction materials"]>details:first-child,.case-brief,.science-tour,.indore-shell .sorting-entry,.indore-shell .indore-section-intro,.indore-shell .resource-outcomes>div:first-child) :is(h2,h3,p,li,dt,dd,small,.muted,.eyebrow,.metric-label,.metric-value,.metric-value span,.lgg-term-help,.field,summary,.small){color:#284b39}
+:is(#main[data-page="Solvents"] .reference-card:nth-child(4n+1),#main[data-page="Catalysts"] .reference-card:nth-child(4n+1)) a:not(.btn){color:#235c46}
+#main[data-page="Principles"] .principle:nth-child(4n+1) summary h2{color:#173c2c}
+#main[data-page="Optimize"] .current-suggested :is(span,b){color:#284b39}
+.indore-nav{grid-template-columns:repeat(4,minmax(0,1fr))}.indore-nav button{white-space:normal}
+@media(max-width:700px){.indore-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+#main[data-page="Principles"] .principle:nth-child(4n+1) :is(.principle-number,.expand-mark){color:#284b39}
+
+:is(#main[data-page="Analyze"] .metric:first-child,#main[data-page="Analyze"] .card[aria-label="Automatic reaction analysis"],#main[data-page="Optimize"] .lgg-subview>section.card:first-of-type,#main[data-page="Principles"] .principle:nth-child(4n+1),#main[data-page="History"] .history-item:nth-child(4n+1),#main[data-page="Solvents"] .reference-card:nth-child(4n+1),#main[data-page="Catalysts"] .reference-card:nth-child(4n+1),#main[data-page="Compare"] .comparison-callout,#main[data-page="Optimize"] .current-suggested,#main[data-page="Analyze"] [aria-label="Reaction materials"]>details:first-child,.case-brief,.science-tour,.indore-shell .sorting-entry,.indore-shell .indore-section-intro,.indore-shell .resource-outcomes>div:first-child) .btn:not(.primary){color:#e8f1e5;background:#20382b}

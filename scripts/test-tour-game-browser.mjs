@@ -17,6 +17,7 @@ await click('[data-indore=tour][data-step="-1"]');assert.equal(await evaluate("d
 await click('[data-indore=tab][data-tab=processes]');await click('[data-rp=next]');assert.ok(await evaluate("document.querySelector('.resource-cargo.moving')!==null"));await shot('resource-lab-final');
 await send('Page.navigate',{url:(process.env.SITE_URL||'http://127.0.0.1:4174')+'/green-rescue.html'});await until("document.querySelector('[data-control=start]')");await click('[data-control=start]');await click('[data-control=begin]');
 const position=async sel=>await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(sel)});e.scrollIntoView({block:'center'});const r=e.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+Math.min(30,r.height/3)};})()`);
+for(const id of ['rotate-pipe','rotate-pipe'])await click('[data-control='+id+']');for(const id of ['route-0','route-0','route-0','route-1','route-1','route-2'])await click('[data-object='+id+']');
 const from=await position('[data-object=pipe]'),to=await position('[data-object=socket]');
 await send('Input.dispatchMouseEvent',{type:'mouseMoved',...from});await send('Input.dispatchMouseEvent',{type:'mousePressed',...from,button:'left',clickCount:1});
 for(let i=1;i<=8;i++)await send('Input.dispatchMouseEvent',{type:'mouseMoved',x:from.x+(to.x-from.x)*i/8,y:from.y+(to.y-from.y)*i/8,button:'left',buttons:1});
